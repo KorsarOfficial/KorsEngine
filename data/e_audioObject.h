@@ -23,3 +23,5 @@ void AudioObjectSetPitch(AudioObject *ao, float pitch);
 void AudioObjectSetSourcePosition3D(AudioObject *ao, vec3 position);
 void AudioObjectStopSound(AudioObject* ao, uint32_t num);
 void AudioObjectDestroy(AudioObject* ao);
+
+#endif
