@@ -17,4 +17,15 @@ typedef struct{
 typedef struct{
     void *update;
     void **textures;
-}
+    uint32_t num_textures;
+    UniformStruct *uniform;
+    uint32_t descrType;
+    uint32_t descrType;
+    uint32_t descrCount;
+    uint32_t stageflag;
+    uint32_t size;
+    uint32_t buffsize;
+    uint32_t flags;
+    uint32_t indx_layer;
+    GameObjectImage *image;
+} BluePrintDescriptor;
