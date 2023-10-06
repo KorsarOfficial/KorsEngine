@@ -18,3 +18,6 @@ void AudioObjectLoadFile(AudioObject* ao, const char* path);
 void AudioObjectJustPlaySound(AudioObject* ao, const char* path);
 void AudioObjectPlaySound(AudioObject* ao, uint32_t num);
 void AudioObjectSetPan(AudioObject *ao, float pan);
+void AudioObjectSetVolume(AudioObject *ao, float volume);
+void AudioObjectSetPitch(AudioObject *ao, float pitch);
+void AudioObjectSetSourcePosition3D(AudioObject *ao, vec3 position);
