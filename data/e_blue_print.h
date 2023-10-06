@@ -9,3 +9,12 @@ typedef enum{
     ENGINE_BLUE_PRINT_FLAG_LINKED_UNIFORM = 0x4,
     ENGINE_BLUE_PRINT_FLAG_LINKED_TEXTURE = 0x8,
 } EngineBluePrintFlag;
+typedef struct{
+    void** uniformBuffers;
+    void** uniformBuffersMemory;
+    uint32_t size;
+} UniformStruct;
+typedef struct{
+    void *update;
+    void **textures;
+}
