@@ -11,4 +11,8 @@ typedef struct{
     float volume;
     float pitch;
     float pan;
-}
+}AudioObject;
+
+void AudioObjectInit(AudioObject* ao);
+void AudioObjectLoadFile(AudioObject* ao, const char* path);
+void AudioObjectJustPlaySound(AudioObject* ao, const char* path);
