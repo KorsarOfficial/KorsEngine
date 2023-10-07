@@ -34,3 +34,12 @@ typedef struct{
     uint32_t offset;
     uint32_t size;
 } BluePrintPushConstant;
+typedef struct{
+    PipelineSetting settings[MAX_UNIFORMS];
+    uint32_t num_settings;
+    BluePrintDescriptor descriptor[MAX_UNIFORMS];
+    uint32_t num_descriptors;
+    BluePrintPushConstant push_constants[MAX_UNIFORMS];
+    uint32_t num_push_constants;
+    void *render_point;
+} BluePrintPack;
