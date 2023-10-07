@@ -43,3 +43,10 @@ typedef struct{
     uint32_t num_push_constants;
     void *render_point;
 } BluePrintPack;
+typedef struct{
+    BluePrintPack blue_print_packs[MAX_BLUE_PRINTS];
+    uint32_t num_blue_print_packs;
+    uint32_t isShadow;
+} Blueprints;
+void BluePrintAddPushConstant(Blueprints *blueprints, uint32_t indx_pack, uint64_t size, uint32_t stage, uint32_t offset);
+BluePrintDescriptor *BluePrintAddExistUniformStorage(Blueprints *blueprints, uint32_t indx_pack, uint64_t size, uint32_t stage, uint32_t offset);
