@@ -54,3 +54,14 @@ BluePrintDescriptor *BluePrintAddUniformStorage(Blueprints *blueprints, uint32_t
 void BluePrintAddUniformObject(Blueprints *blueprints, uint32_t indx_pack, uint64_t size, uint32_t flags, void *update_func, uint32_t layer_indx);
 
 void BluePrintRecreateUniform(BluePrintPack *pack);
+
+void BluePrintAddRenderImageCube(Blueprints *blueprints, uint32_t indx_pack, uint32_t indx_cube, void *obj);
+void BluePrintAddRenderImageVector(Blueprints *blueprints, uint32_t indx_pack, void *obj, uint32_t size);
+void BluePrintAddRenderImageArray(Blueprints *blueprints, uint32_t indx_pack, void *obj, uint32_t size);
+void BluePrintAddRenderImage(Blueprints *blueprints, uint32_t indx_pack, void *render);
+void BluePrintAddTextureImageArray(Blueprints *blueprints, uint32_t indx_pack, GameObjectImage *images, uint32_t size);
+
+BluePrintDescriptor *BluePrintAddExistTextureImage(Blueprints *blueprints, uint32_t indx_pack, void *texture);
+BluePrintDescriptorr *BluePrintAddTextureImage(Blueprints *blueprints, uint32_t indx_pack, GameObjectImage *image, uint32_t stage_bit);
+
+#endif
