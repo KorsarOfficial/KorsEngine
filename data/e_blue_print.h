@@ -29,3 +29,8 @@ typedef struct{
     uint32_t indx_layer;
     GameObjectImage *image;
 } BluePrintDescriptor;
+typedef struct{
+    uint32_t stageFlags;
+    uint32_t offset;
+    uint32_t size;
+} BluePrintPushConstant;
