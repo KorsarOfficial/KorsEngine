@@ -16,3 +16,7 @@ typedef enum{
     ENGINE_BUFFER_ALLOCATE_UNIFORM,
     ENGINE_BUFFER_ALLOCATE_STAGING,
 } BufferAllocType;
+
+void BuffersCreateCommandPool();
+
+void BuffersCreateCommand();
