@@ -1,1 +1,2 @@
-#ifndef
+#ifndef E_BUFFERS_VARIABLES_H
+#define E_BUFFERS_VARIABLES_H
