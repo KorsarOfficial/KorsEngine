@@ -20,3 +20,16 @@ typedef enum{
 void BuffersCreateCommandPool();
 
 void BuffersCreateCommand();
+
+void BuffersClearAll();
+void BuffersDestroyBuffer(void *buffer);
+
+int BuffersCreateVertexInst(vertexParam* vert);
+int BuffersCreateVertex(vertexParam* vert);
+int BufferUpdateVertex(vertexParam* vert);
+
+int BuffersCreateIndexInst(indexParam* ind);
+int BuffersCreateIndex(indexParam* ind);
+int BuffersUpdateIndex(indexParam* ind);
+
+void BuffersRecreateUniform(Blueprints* blueprints);
