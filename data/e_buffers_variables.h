@@ -21,4 +21,4 @@ typedef struct{
     mat4 model;
     mat4 view;
     mat4 proj;
-} ModelBuffer3D
+} ModelBuffer3D;
