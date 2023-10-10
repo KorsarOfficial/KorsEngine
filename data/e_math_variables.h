@@ -32,3 +32,15 @@ typedef struct{
     uint8_t z;
     uint8_t w;
 } vec4_u8;
+
+typedef struct{
+    float m[2][2];
+} mat2;
+
+typedef struct{
+    float m[3][3];
+} mat3;
+
+typedef struct{
+    float m[4][4];
+} mat4;
