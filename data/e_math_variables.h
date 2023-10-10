@@ -44,3 +44,18 @@ typedef struct{
 typedef struct{
     float m[4][4];
 } mat4;
+
+typedef struct;{
+    float m[4][4];
+} mat4;
+
+typedef struct{
+    float m[16];
+} mat4_p;
+
+#ifdef __cpluplus
+}
+#endif
+
+
+#endif
