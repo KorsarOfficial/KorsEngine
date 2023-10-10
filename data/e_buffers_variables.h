@@ -11,3 +11,14 @@ typedef struct {
     vec2 rotation;
     vec2 scale;
 } TransformBuffer2D;
+
+typedef struct{
+    vec2 offset;
+    vec2 rotation;
+} ImageBufferObjects;
+
+typedef struct{
+    mat4 model;
+    mat4 view;
+    mat4 proj;
+} ModelBuffer3D
