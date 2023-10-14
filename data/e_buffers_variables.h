@@ -39,3 +39,11 @@ typedef struct{
     vec2 viewportDim;
     float tessellatedEdgeSize;
 } TesselationBuffer;
+
+typedef struct {
+    vec3 position __attribute__ ((aligned (16)));
+
+    float constant;
+    float linear;
+    float quadratic;
+}
