@@ -38,4 +38,4 @@ typedef struct{
     float tessellationFactor;
     vec2 viewportDim;
     float tessellatedEdgeSize;
-} TesselationBuffer; //test
+} TesselationBuffer;
