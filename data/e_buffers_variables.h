@@ -74,3 +74,43 @@ typedef struct{
     vec3 diffuse __attribute__ ((aligned (16)));
     vec3 specular __attribute__ ((aligned (16)));
 } DirLight
+
+typedef struct{
+    mat4 proj;
+    mat4 view;
+} LightMatrix;
+
+typedef struct{
+    vec3 light_pos __attribute__ ((aligned (16)));
+    vec3 view_pos __attribute__ ((aligned (16)));
+} LightPosBuff;
+
+typedef struct{
+    DirLight dir[MAX_LIGHTS];
+    LightMatrix mats[MAX_LIGHT];
+    vec4 cascadeSplits __attribute__ ((aligned (16)));
+} DirLightBuffer;
+
+typedef struct{
+    PointLight points[MAX_LIGHTS];
+    LightPosBuff pos[MAX_LIGHTS];
+} PointLightBuffer
+
+typedef struct{
+    SpotLight spots[MAX_LIGHTS];
+    LightMatrix mats[MAX_LIGHTS];
+} SpotLightBuffer;
+
+typedef strut{
+    int num_dirs;
+    int num_points;
+    int num_spots;
+    int IsEnable;
+} LightStatusBuffer;
+
+typedef struct{
+    mat4 mats[MAX_BONES] __attribute__ ((aligned (16)));
+    float size __attribute__ ((aligned (16)));
+} InvMatrixsBuffer
+
+#endif
