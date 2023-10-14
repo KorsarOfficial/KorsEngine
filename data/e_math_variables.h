@@ -58,4 +58,4 @@ typedef struct{
 #endif
 
 
-#endif
+#endif // MATH_VARIABLES_H
