@@ -46,4 +46,31 @@ typedef struct {
     float constant;
     float linear;
     float quadratic;
-}
+
+    vec3 ambient __attribute__ ((aligned (16)));
+    vec3 diffuse __attribute__ ((aligned (16)));
+    vec3 specular __attribute__ ((aligned (16)));
+} PointLight;
+
+typedef struct{
+    vec3 position __attribute__ ((aligned (16)));
+    vec3 direction __attribute__ ((aligned (16)));
+
+    float constant;
+    float linear;
+    float quadratic;
+    float cutOff
+
+    vec3 ambient __attribute__ ((aligned (16)));
+    vec3 diffuse __attribute__ ((aligned (16)));
+    vec3 specular __attribute__ ((aligned (16)));
+} SpotLight;
+
+typedef struct{
+    vec3 position __attribute__ ((aligned (16)));
+    vec3 direction __attribute__ ((aligned (16)));
+
+    vec3 ambient __attribute__ ((aligned (16)));
+    vec3 diffuse __attribute__ ((aligned (16)));
+    vec3 specular __attribute__ ((aligned (16)));
+} DirLight
