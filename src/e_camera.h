@@ -1,0 +1,1 @@
+#ifndef E_CAMERA_H
