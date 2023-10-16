@@ -23,4 +23,5 @@ typedef struct{
 } Camera3D;
 
 void Camera2DInit(Camera2D *cam);
+void Camera3DInit(Camera3D *cam);
 }
