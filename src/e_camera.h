@@ -26,4 +26,9 @@ void Camera2DInit(Camera2D *cam);
 void Camera3DInit(Camera3D *cam);
 
 void Camera3DSetViewDistance(Camera3D *cam, double distance);
+void Camera3DSetViewAngle(Camera3D *cam, double angle);
+void Camera3DSetViewNear(Camera3D *cam, double near);
+
+void Camera3DSetActive(Camera3D *cam);
+void Camera2DSetActive(Camera2D *cam);
 }
