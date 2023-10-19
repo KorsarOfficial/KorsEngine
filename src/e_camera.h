@@ -31,4 +31,6 @@ void Camera3DSetViewNear(Camera3D *cam, double near);
 
 void Camera3DSetActive(Camera3D *cam);
 void Camera2DSetActive(Camera2D *cam);
+
+void Camera3DSetRotation(float x, float y, float z);
 }
