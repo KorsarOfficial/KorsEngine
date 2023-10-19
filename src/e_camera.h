@@ -34,4 +34,7 @@ void Camera2DSetActive(Camera2D *cam);
 
 void Camera3DSetRotation(float x, float y, float z);
 vec3 Camera3DGetRotation();
+
+void Camera2DSetPosition(float x, float y);
+void Camera3DSetPosition(float x, float y, float z);
 }
