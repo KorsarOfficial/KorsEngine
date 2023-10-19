@@ -24,4 +24,6 @@ typedef struct{
 
 void Camera2DInit(Camera2D *cam);
 void Camera3DInit(Camera3D *cam);
+
+void Camera3DSetViewDistance(Camera3D *cam, double distance);
 }
