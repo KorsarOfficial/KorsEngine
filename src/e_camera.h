@@ -45,4 +45,7 @@ void Camera2DSetScale(float x, float y);
 void Camera3DSetScale(float x, float y, float z);
 
 void destroyCameras();
+#ifdef __cplusplus
 }
+#endif
+#endif
