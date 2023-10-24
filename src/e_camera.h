@@ -37,4 +37,7 @@ vec3 Camera3DGetRotation();
 
 void Camera2DSetPosition(float x, float y);
 void Camera3DSetPosition(float x, float y, float z);
+
+vec2 Camera2DGetPosition();
+vec3 Camera3DGetPosition();
 }
