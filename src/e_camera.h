@@ -40,4 +40,7 @@ void Camera3DSetPosition(float x, float y, float z);
 
 vec2 Camera2DGetPosition();
 vec3 Camera3DGetPosition();
+
+void Camera2DSetScale(float x, float y);
+void Camera3DSetScale(float x, float y, float z);
 }
