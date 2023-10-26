@@ -13,6 +13,6 @@ typedef struct EdDebugUtilsMessengerCreateInfoEXT {
 } EdDebugUtilsMessengerCreateInfoEXT;
 
 typedef struct EdAllocationCallbacks {
-        void*                                   pUserData;
+        void*   pUserData;
         void*                                   
 }
