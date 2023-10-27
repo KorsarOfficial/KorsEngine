@@ -21,4 +21,4 @@ typedef struct EdAllocationCallbacks {
         void*   pfnInternalFree;
 } EdAllocationCallbacks;
 
-uint32_t CreateDebugUtilsMessengerEXT
+uint32_t CreateDebugUtilsMessengerEXT(void* instance, const EdDebugUtilsMessengerCreateInfoEXT* pCreateInfo, const EdAllocationCallbacks* pAllocator, void** pDebugMessenger);
