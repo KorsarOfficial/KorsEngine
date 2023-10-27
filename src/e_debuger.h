@@ -19,4 +19,4 @@ typedef struct EdAllocationCallbacks {
         void*   pfnFree;
         void*   pfnInternalAllocation;
         void*   pfnInternalFree;
-}
+} EdAllocationCallbacks;
