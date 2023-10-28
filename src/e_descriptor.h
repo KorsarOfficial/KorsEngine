@@ -1,0 +1,2 @@
+#ifndef E_DESCRIPTOR_H
+#define E_DESCRIPTOR_H
