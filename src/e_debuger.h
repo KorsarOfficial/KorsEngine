@@ -25,3 +25,8 @@ uint32_t CreateDebugUtilsMessengerEXT(void* instance, const EdDebugUtilsMessenge
 
 void DestroyDebugUtilsMessengerEXT(void* instance, void* debugMessenger, const EdAllocationCallbacks* pAllocator);
 
+uint32_t debugCallback(
+        uint32_t messageSeverity,
+        uint32_t messageType,
+        const void* pCallbackData,
+        void* pUserData);
