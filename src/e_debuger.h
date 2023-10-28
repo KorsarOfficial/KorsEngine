@@ -22,3 +22,6 @@ typedef struct EdAllocationCallbacks {
 } EdAllocationCallbacks;
 
 uint32_t CreateDebugUtilsMessengerEXT(void* instance, const EdDebugUtilsMessengerCreateInfoEXT* pCreateInfo, const EdAllocationCallbacks* pAllocator, void** pDebugMessenger); // debugcallback
+
+void DestroyDebugUtilsMessengerEXT(void* instance, void* debugMessenger, const EdAllocationCallbacks* pAllocator);
+
