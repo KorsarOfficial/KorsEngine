@@ -30,3 +30,5 @@ uint32_t debugCallback(
         uint32_t messageType,
         const void* pCallbackData,
         void* pUserData);
+
+void populateDebugMessengerCreateInfo(EdDebugUtilsMessengerCreateInfoEXT* createInfo) ;
