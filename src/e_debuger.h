@@ -32,3 +32,7 @@ uint32_t debugCallback(
         void* pUserData);
 
 void populateDebugMessengerCreateInfo(EdDebugUtilsMessengerCreateInfoEXT* createInfo) ;
+
+void setupDebugMessenger();
+
+#endif
