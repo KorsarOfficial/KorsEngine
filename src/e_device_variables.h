@@ -31,4 +31,5 @@ typedef struct{
 #ifdef __cplusplus
 }
 #endif
+
 #endif // E_DEVICE_VARIABLES_H
