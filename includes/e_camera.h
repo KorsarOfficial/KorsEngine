@@ -7,11 +7,12 @@
 extern "C"
 {
 #endif
+
 typedef struct{
     vec2 position;
     vec2 rotation;
     vec2 scale;
-} Camera2D
+} Camera2D;
 
 typedef struct{
     vec3 position __attribute__ ((aligned (16)));
@@ -45,7 +46,9 @@ void Camera2DSetScale(float x, float y);
 void Camera3DSetScale(float x, float y, float z);
 
 void destroyCameras();
+
 #ifdef __cplusplus
 }
 #endif
-#endif
+
+#endif // E_CAMERA_H
