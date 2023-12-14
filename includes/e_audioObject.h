@@ -2,7 +2,9 @@
 #define E_AUDIOOBJECT_H
 
 #include <engine_includes.h>
-typedef uint64_t EHandler;
+
+typedef uint64_t EAHandler;
+
 typedef struct{
     void* object;
     void** sounds;
@@ -24,4 +26,4 @@ void AudioObjectSetSourcePosition3D(AudioObject *ao, vec3 position);
 void AudioObjectStopSound(AudioObject* ao, uint32_t num);
 void AudioObjectDestroy(AudioObject* ao);
 
-#endif
+#endif // E_AUDIOOBJECT_H
