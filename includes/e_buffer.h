@@ -17,6 +17,12 @@ typedef enum{
     ENGINE_BUFFER_ALLOCATE_STAGING,
 } BufferAllocType;
 
+typedef struct{
+    BufferAllocType type;
+    void *some_buffer;
+    void *some_memory;
+} BufferStack;
+
 void BuffersCreateCommandPool();
 
 void BuffersCreateCommand();
@@ -26,7 +32,7 @@ void BuffersDestroyBuffer(void *buffer);
 
 int BuffersCreateVertexInst(vertexParam* vert);
 int BuffersCreateVertex(vertexParam* vert);
-int BufferUpdateVertex(vertexParam* vert);
+int BuffersUpdateVertex(vertexParam* vert);
 
 int BuffersCreateIndexInst(indexParam* ind);
 int BuffersCreateIndex(indexParam* ind);
@@ -43,4 +49,5 @@ void BuffersCreate(uint64_t size, uint32_t usage, uint32_t properties, void** bu
 
 void BuffersCopy(void* srcBuffer, void* dstBuffer, uint64_t size);
 
-#endif
+
+#endif // E_BUFFER_H
