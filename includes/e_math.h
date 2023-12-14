@@ -24,4 +24,10 @@ int get_sig(float val);
 mat3 rotateX(float theta); // Y axis
 mat3 rotateY(float theta); // Z axis
 mat3 rotateZ(float theta);
+
+mat3 m3_scale_matrix(vec2 scale );
+mat3 m3_rotation_matrix(vec3 rotation);
+mat3 m3_translation_matrix(mat3 matrix, vec2 pos);
+mat3 m3_mult(mat3 m1, mat3 m2);
+vec3 m3_v3_mult(mat3 m, vec3 v);
 }
