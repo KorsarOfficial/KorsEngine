@@ -45,17 +45,12 @@ typedef struct{
     float m[4][4];
 } mat4;
 
-typedef struct;{
-    float m[4][4];
-} mat4;
-
 typedef struct{
     float m[16];
 } mat4_p;
 
-#ifdef __cpluplus
+#ifdef __cplusplus
 }
 #endif
 
-
-#endif // MATH_VARIABLES_H
+#endif // E_MATH_VARIABLES_H
