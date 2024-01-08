@@ -132,4 +132,4 @@ mat4 m4_inv(mat4 mat);
 }
 #endif
 
-#endif // E_MATH_H
+#endif
