@@ -6,7 +6,7 @@
 #define MAX_GUI_PAINT_OBJECTS 256
 
 typedef enum{
-    ENGIME_PAINTER_TYPE_BOX,
+    ENGINE_PAINTER_TYPE_BOX,
     ENGINE_PAINTER_TYPE_CIRCLE,
     ENGINE_PAINTER_TYPE_ORIENTED_BOX,
     ENGINE_PAINTER_TYPE_SEGMENT,
@@ -26,9 +26,14 @@ typedef struct{
     vec2 offset;
     vec2 position;
     vec2 size;
-} PainterBuffer;
+}PainterBuffer;
 
 typedef struct{
     PObjectParams objs[MAX_GUI_PAINT_OBJECTS];
     int size;
 }DrawObjectsBuffer;
+
+typedef struct{
+    GameObject2D go;
+    DrawObjectsBuffer drawObjects;
+} EPainter;
