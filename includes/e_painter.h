@@ -37,3 +37,8 @@ typedef struct{
     GameObject2D go;
     DrawObjectsBuffer drawObjects;
 } EPainter;
+
+typedef void (*PaintDrawFunc)(EPainter *painter);
+
+void PainterObjectInit(EPainter *painter);
+void PainterObjectInitDefault(EPainter *painter, DrawParam *dParam);
