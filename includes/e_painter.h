@@ -47,3 +47,8 @@ void PainterObjectAddDefault(EPainter *painter, void *render);
 
 void PainterObjectSetPaintFunc(PaintDrawFunc paint_func);
 void PainterObjectSetColor(float r, float g, float b);
+
+void PainterObjectMakeRectangle(EPainter *painter, float x, float y, float width, float height);
+void PainterObjectMakeCircle(EPainter *painter, float x, float y, float radius);
+void PainterObjectMakeOrientedBox(EPainter *painter, float x, float y, float width, float height, float angle);
+void PainterObjectMakeSegment(EPainter *painter, float x, float y, float x2, float y2, float radius);
