@@ -52,3 +52,5 @@ void PainterObjectMakeRectangle(EPainter *painter, float x, float y, float width
 void PainterObjectMakeCircle(EPainter *painter, float x, float y, float radius);
 void PainterObjectMakeOrientedBox(EPainter *painter, float x, float y, float width, float height, float angle);
 void PainterObjectMakeSegment(EPainter *painter, float x, float y, float x2, float y2, float radius);
+
+#endif
