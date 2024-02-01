@@ -6,12 +6,12 @@
 #include "render_texture.h"
 
 typedef enum {
-	ENGINE_RENDER_OBJECT_MAIN,
+    ENGINE_RENDER_OBJECT_MAIN,
 } RenderObjectType;
 
 typedef struct {
-	RenderTexture render;
-	RenderObjectType type;
+    RenderTexture render;
+    RenderObjectType type;
 } RenderObject;
 
 #endif // E_R_O_H
