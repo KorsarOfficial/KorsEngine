@@ -1,0 +1,2 @@
+#ifndef E_RESOURCE_ENGINE_H
+#define E_RESOURCE_ENGINE_H
