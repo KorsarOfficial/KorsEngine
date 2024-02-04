@@ -24,3 +24,16 @@ extern void* current_render;
 extern void* swapChain;
 extern void** swapChainImages;
 extern void** swapChainImageViews;
+
+extern void* renderPass;
+extern void* commandPool;
+
+extern void** swapChainFramebuffers;
+extern void** commandBuffers;
+
+extern void** imageAvailableSemaphores;
+extern void** renderFinishedSemaphores;
+
+extern void* depthImage;
+extern void* depthImageMemory;
+extern void* depthImageView;
