@@ -10,3 +10,6 @@ extern EIExtent2D swapChainExtent;
 extern void* e_window;
 extern void* instance;
 extern void* debugMessenger;
+
+extern void* e_physicalDevice;
+extern void* e_device;
