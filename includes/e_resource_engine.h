@@ -25,10 +25,6 @@ extern void* swapChain;
 extern void** swapChainImages;
 extern void** swapChainImageViews;
 
-extern void* depthImage;
-extern void* depthImageMemory;
-extern void* depthImageView;
-
 extern void* renderPass;
 extern void* commandPool;
 
@@ -37,6 +33,10 @@ extern void** commandBuffers;
 
 extern void** imageAvailableSemaphores;
 extern void** renderFinishedSemaphores;
+
+extern void* depthImage;
+extern void* depthImageMemory;
+extern void* depthImageView;
 
 extern void** inFlightFences;
 extern void** imagesInFlight;
@@ -60,4 +60,4 @@ extern ChildStack* alloc_buffers_memory_head;
 extern ChildStack* alloc_descriptor_head;
 extern ChildStack* alloc_pipeline_head;
 
-#endif
+#endif 
