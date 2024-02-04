@@ -13,3 +13,14 @@ extern void* debugMessenger;
 
 extern void* e_physicalDevice;
 extern void* e_device;
+
+extern void* graphicsQueue;
+extern void* presentQueue;
+
+extern void* surface;
+
+extern void* current_render;
+
+extern void* swapChain;
+extern void** swapChainImages;
+extern void** swapChainImageViews;
