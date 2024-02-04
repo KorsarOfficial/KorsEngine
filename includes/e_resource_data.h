@@ -23,7 +23,7 @@ extern void* point_shadow_array;
 extern uint32_t num_point_shadows;
 
 extern void* spot_shadow_array;
-extern uint32_t num_point_shadows;
+extern uint32_t num_spot_shadows;
 
 extern void* geom_texture;
 extern void* geom_uniform;
@@ -39,10 +39,13 @@ extern int e_var_num_images;
 extern void** e_var_lights;
 extern int e_var_num_lights;
 
-extern Fontcache* e_var_fonts;
+extern FontCache* e_var_fonts;
 extern uint32_t e_var_num_fonts;
 
 extern int define_font_loaded;
+
+extern const char* validationLayers[];
+extern uint32_t num_valid_layers;
 
 extern const char* deviceExtensions[];
 extern uint32_t num_dev_extensions;
@@ -50,5 +53,3 @@ extern uint32_t num_dev_extensions;
 extern const FontIndexes fontIndexes[];
 
 #endif
-
-
