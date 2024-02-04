@@ -37,3 +37,27 @@ extern void** renderFinishedSemaphores;
 extern void* depthImage;
 extern void* depthImageMemory;
 extern void* depthImageView;
+
+extern void** inFlightFences;
+extern void** imagesInFlight;
+
+extern size_t currentFrame;
+
+extern uint32_t swapChainImageFormat;
+
+extern uint32_t MAX_FRAMES_IN_FLIGHT;
+
+extern uint32_t imageIndex;
+
+extern uint32_t extensionCount;
+extern uint32_t imagesCount;
+extern uint32_t glfwExtensionCount;
+
+extern bool framebufferResized;
+extern bool framebufferwasResized;
+
+extern ChildStack* alloc_buffers_memory_head;
+extern ChildStack* alloc_descriptor_head;
+extern ChildStack* alloc_pipeline_head;
+
+#endif 
