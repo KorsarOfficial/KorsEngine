@@ -22,9 +22,9 @@ float clamp(float a, float d1, float d2);
 int get_sig(float val);
 
 mat3 rotateX(float theta);
-// Rotation matrix around the Y axis.
+// Rotationsmatrix um die Y-Achse. 
 mat3 rotateY(float theta);
-// Rotation matrix around the Z axis.
+// Rotationsmatrix um die Z-Achse. 
 mat3 rotateZ(float theta);
 
 mat3 m3_scale_matrix(vec2 scale );
