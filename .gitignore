@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /.vs/KorsEngine/v17/Browse.VC.db
 /.vs/slnx.sqlite
+/.vs/KorsEngine/v17/.wsuo
+/.vs/VSWorkspaceState.json
