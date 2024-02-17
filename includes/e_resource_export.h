@@ -61,3 +61,9 @@ extern char _binary_shaders_geometry_frag_spv_start;
 extern char _binary_shaders_geometry_vert_spv_end;
 extern int _binary_shaders_geometry_vert_spv_size;
 extern char _binary_shaders_geometry_vert_spv_start;
+
+extern char _binary_shaders_depth_frag_omni_spv_end;
+extern int _binary_shaders_depth_frag_omni_spv_size;
+extern char _binary_shaders_depth_frag_omni_spv_start;
+extern char _binary_shaders_depth_vert_omni_spv_size;
+extern int _binary_shaders_depth_vert_omni_spv_size;
