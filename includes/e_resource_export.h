@@ -34,3 +34,16 @@ extern char _binary_shaders_default_frag3D_spv_start;
 extern char _binary_shaders_default_vert3D_spv_end;
 extern int _binary_shaders_default_vert3D_spv_size;
 extern char _binary_shaders_default_vert3D_spv_start;
+
+extern char _binary_shaders_quad_frag_spv_end;
+extern int _binary_shaders_quad_frag_spv_size;
+extern char _binary_shaders_quad_frag_spv_start;
+extern char _binary_shaders_quad_frag_2_spv_end;
+extern int _binary_shaders_quad_frag_2_spv_size;
+extern char _binary_shaders_quad_frag_2_spv_start;
+extern char _binary_shaders_quad_frag_3_spv_end;
+extern int _binary_shaders_quad_frag_3_spv_size;
+extern char _binary_shaders_quad_frag_3_spv_start;
+extern char _binary_shaders_quad_vert_spv_end;
+extern int _binary_shaders_quad_vert_spv_size;
+extern char _binary_shaders_quad_vert_spv_start;
