@@ -20,3 +20,17 @@ extern char _binary_shaders_text_frag_spv_start;
 extern char _binary_shaders_text_vert_spv_end;
 extern int _binary_shaders_text_vert_spv_size;
 extern char _binary_shaders_text_vert_spv_start;
+
+extern char _binary_shaders_default_frag2D_spv_end;
+extern int _binary_shaders_default_frag2D_spv_size;
+extern char _binary_shaders_default_frag2D_spv_start;
+extern char _binary_shaders_default_vert2D_spv_end;
+extern int _binary_shaders_default_vert2D_spv_size;
+extern char _binary_shaders_default_vert2D_spv_start;
+
+extern char _binary_shaders_default_frag3D_spv_end;
+extern int _binary_shaders_default_frag3D_spv_size;
+extern char _binary_shaders_default_frag3D_spv_start;
+extern char _binary_shaders_default_vert3D_spv_end;
+extern int _binary_shaders_default_vert3D_spv_size;
+extern char _binary_shaders_default_vert3D_spv_start;
