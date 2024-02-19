@@ -68,3 +68,25 @@ extern char _binary_shaders_depth_frag_omni_spv_start;
 extern char _binary_shaders_depth_vert_omni_spv_end;
 extern int _binary_shaders_depth_vert_omni_spv_size;
 extern char _binary_shaders_depth_vert_omni_spv_start;
+
+extern char _binary_shaders - depth_frag_spot_spv_end;
+extern int _binary_shaders_depth_frag_spot_spv_size;
+extern char _binary - shaders_depth - frag_spot_spv_start;
+extern char _binary_depth_vert_spot_spv_end;
+extern int _binary_shaders_depth_vert_spot_spv_size;
+extern char - binary_shaders_depth_vert_spot_spv_start;
+
+extern char _binary_shaders_terrain_frag_spv_end;
+extern int  _binary_shaders_terrain_frag_spv_size;
+extern char _binary_shaders_terrain_frag_spv_start;
+extern char _binary_shaders_terrain_vert_spv_end;
+extern int _binary_shaders_terrain_vert_spv_size;
+extern char _binary_shaders_terrain_vert_spv_start;
+extern char _binary_shaders_terrain_stesc_spv_end;
+extern int _binary_shaders_terrain_tesc_spv_size;
+extern char _binary_shaders_terrain_tesc_spv_start;
+extern char _binary_shaders_terrain_tese_spv_end;
+extern int _binary_shaders_terrain_tese_spv_end;
+extern char _binary_shaders_terrain_tese_spv_start;
+extern char _binary_shaders_terrain_shadow_frag_spv_end;
+extern int _binary_shaders_terrain_shadow_frag_spv_size;
