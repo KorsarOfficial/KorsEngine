@@ -90,3 +90,36 @@ extern int _binary_shaders_terrain_tese_spv_end;
 extern char _binary_shaders_terrain_tese_spv_start;
 extern char _binary_shaders_terrain_shadow_frag_spv_end;
 extern int _binary_shaders_terrain_shadow_frag_spv_size;
+extern char _binary_shaders_terrain_shadow_frag_spv_start;
+extern char _binary_shaders_terrain_shadow_vert_spv_end;
+extern int _binary_shaders_terrain_shadow_vert_spv_size;
+extern char _binary_shaders_terrain_shadow_vert_spv_start;
+
+extern char _binary_shaders_terrain_shadow_tree_frag_spv_end;
+extern int _binary_shaders_tree_frag_spv_size;
+extern char _binary_shaders_treee_frag_spv_start;
+extern char _binary_shaders_tree_vert_spv_end;
+extern int binary_shaders_tree_vert_spv_size;
+extern char _binary_shaders_treee_vert_spv_start;
+
+extern char _binary_shaders_tree_instance_frag_spv_end;
+extern int _binary_shaders_tree_instance_frag_spv_size;
+extern char _binary_shaders_tree_instance_frag_spv_start;
+extern char _binary_shaders_tree_instance_vert_spv_end;
+extern int - binary - shaders_tree_instance_vert_spv_size;
+extern char _binary_shaders_tree_instance_vert_spv_start;
+
+extern char _binary_shaders_tree_sdf_frag_spv_end;
+extern int _binary_shadows_tree_sf_frag_spv_size;
+extern char _binary_shaders_tree_sdf_frag_spv_start;
+extern char _binary_shaders_tree_sdf_vert_spv_end;
+extern int _binary_shaders_tree_sdf_vert_spv_size;
+extern char _binary_shaders_tree_sdf_vert_spv_start;
+extern char _binary_shaders_tree_sdf_vert_spv_end;
+
+extern char _binary_shaders_image_frag_spv_end;
+extern int _binary_shaders_image_frag_spv_size;
+extern char _binary_shaders_image_frag_spv_start;
+extern char _binary_shaders_image_vert_spv_end;
+extern int _binary_shaders_image_vert_spv_size;
+extern char _binary_shaders_image_vert_spv_start;
