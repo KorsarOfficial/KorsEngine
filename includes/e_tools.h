@@ -19,5 +19,5 @@ extern "C"
 	QueueFamilyIndices findQueueFamilies(void* device);
 	uint32_t findDepthFormat();
 
-	shader readfile(const char* filename);
+	shader readFile(const char* filename);
 }
