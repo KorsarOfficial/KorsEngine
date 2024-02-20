@@ -27,4 +27,9 @@ extern "C"
 	void InitPlane3D(vertexParam* vParam, indexParam* iParam, int rows, int colms);
 	void InitTerrain(vertexParam* vParam, indexParam* iParam, void* param);
 	int SphereGenerator3D(vertexParam* vParam, indexParam* iParam_radius, float radius, int stackCount, int sectorCount);
+	void ConeGenerator(vertexParam* vParam, indexParam* iParam, float radius);
+	int Cubesphere(vertexParam*Vparam*iParam, float radius, int vertexCountPerRow);
+
+	void ToolsCreateDepthResources();
+	void ToolsTransitionImageLayout(void* image, uint32_t format, // TTIL
 }
