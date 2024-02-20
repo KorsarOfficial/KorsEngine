@@ -43,5 +43,10 @@ extern "C"
 
 	float fade(float t);
 
-	mat4 MakeLookRender(uint32_t curr_frame, uint32_t layer_indx)
+	mat4 MakeLookRender(uint32_t curr_frame, uint32_t layer_indx);
+
+	float PerlinNoise1D(float x);
+	float PerlinNoise2D(float x, float y);
+	float PerlinOctave1D(uint32_t octaves, float x, float frequency, float amplitude);
+	float PerlinOctave2D(uint32_t octaves, float x, float y, float frequency, float amplitude);
 }
