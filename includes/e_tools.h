@@ -20,4 +20,8 @@ extern "C"
 	uint32_t findDepthFormat();
 
 	shader readFile(const char* filename);
+
+	void* createShaderModule(shader shdr);
+
+	void InitGrass3D(vertexParam* vParam, indexParam* iParam);
 }
