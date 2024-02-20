@@ -24,4 +24,5 @@ extern "C"
 	void* createShaderModule(shader shdr);
 
 	void InitGrass3D(vertexParam* vParam, indexParam* iParam);
+	void InitPlane3D(vertexParam* vParam, indexParam* iParam, int rows, int colms);
 }
