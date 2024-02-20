@@ -31,5 +31,6 @@ extern "C"
 	int Cubesphere(vertexParam*Vparam*iParam, float radius, int vertexCountPerRow);
 
 	void ToolsCreateDepthResources();
-	void ToolsTransitionImageLayout(void* image, uint32_t format, // TTIL
+	void ToolsTransitionImageLayout(void* image, uint32_t format, uint32_t oldLayout, uint32_t newLayout, uint32_t mip_levels);
+
 }
