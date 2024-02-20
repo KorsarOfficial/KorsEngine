@@ -5,3 +5,12 @@
 #include "graphicsItems.h"
 
 #include "e_device_variables.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+	void* beginSingleTimeCommands();
+	void endSingleTimeCommands(void* commandBuffer);
+}
