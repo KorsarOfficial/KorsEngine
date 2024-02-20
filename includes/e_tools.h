@@ -49,4 +49,25 @@ extern "C"
 	float PerlinNoise2D(float x, float y);
 	float PerlinOctave1D(uint32_t octaves, float x, float frequency, float amplitude);
 	float PerlinOctave2D(uint32_t octaves, float x, float y, float frequency, float amplitude);
+
+	float SimplexNoise1D(float x);
+	float SimplexNoise2D(float x, float y);
+	float SimplexOctave1D(uint32_t octaves, float x, float frequency, float amplitude);
+	float SimplexOctave2D(uint32_t octaves, float x, float y, float frequency, float amplitude);
+
+	float sinWithRange(float value, float minV, float range);
+	float cosWithRange(float value, float minV, float range);
+
+	char* ToolsMakeString(char* s1, char* s2);
+	void ToolsAddStrings(char* out, int buff_size, char* s1, char* s2);
+	bool ToolsCmpStrings(char* in, char* s1);
+	int ToolsStr32BitLength(uint32_t* text);
+	int ToolsUInt32ToString(char* dest, const uint32_t* src);
+
+	void* ToolsLoadImageFromFile(size_t* len, char* filepath);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // TOOLS_H
