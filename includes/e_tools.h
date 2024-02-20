@@ -15,4 +15,9 @@ extern "C"
 	void endSingleTimeCommands(void* commandBuffer); // InitGrass
 
 	bool isComplete(QueueFamilyIndices self);
+
+	QueueFamilyIndices findQueueFamilies(void* device);
+	uint32_t findDepthFormat();
+
+	shader readfile(const char* filename);
 }
