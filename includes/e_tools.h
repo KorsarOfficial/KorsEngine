@@ -35,4 +35,13 @@ extern "C"
 	void ToolsTransitionImageLayoutLite(void* image, uint32_t oldLayout, uint32_t newLayout, uint32_t aspect_mask, uint32_t mip_levels);
 	void ToolsCopyBufferToImage(void* buffer, void* image, uint32_t width, uint32_t height);
 	void ToolsCopyImage(void* cmdBuffer, void* cmdBuffer, void* srcimageId, void* dstImageId, uint32_t width, uint32_t height
+
+		float dot_grad(int hash, float xf);
+	float dot_grad2(int hash, float xf, float yf);
+
+	vec3 perp(const vec3 v);
+
+	float fade(float t);
+
+	mat4 MakeLookRender(uint32_t curr_frame, uint32_t layer_indx)
 }
