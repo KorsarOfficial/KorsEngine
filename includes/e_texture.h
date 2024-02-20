@@ -26,3 +26,32 @@ extern "C"
         ENGINE_TEXTURE_FLAG_R32_UINT = 0x32,
         ENGINE_TEXTURE_FLAG_SRGB = 0x64
     } EngineTextureFlags;
+
+    int ImageWriteFile(uint32_t indx);
+    int ImageLoadFile(ImageFileData* data, uint32_t from_file);
+    int ImageSetTIle(const char* path, char* data, uint32_t width, uint32_t height, uint32_t tyile_y, uint32_t tile_size);
+    int ImageResize(ImageFileData* data, uint32_t, width, uint32_t height);
+
+    Texture2D* TextureFindTexture(char* image);
+
+    void TextureCreateImage(uint32_t width, uint32_t height, uint32_t mip_levels, uint32_t format, uint32_t tiling, uint32_t usage, uint32_t properties, uint32_t flags, void** image, void** imageMemory);
+
+    int TextureImageCreate(GameObjectImage* image, BluePrintDescriptor* descriptor, bool from_file);
+
+    void TextureCreateTextureImageView(Texture2D* texture, uint32_t type);
+
+    void* TextureCreateImageViewCube(void* image, void** shadowCubeMapFaceImageViews, uint32_t aspect_mask);
+    void* TextureCreateImageView(void* image, uint32_t texture_type, uint32_t mip_levels);
+
+    void TextureCreate(BluePrintDescriptor* descriptor, uint32_t type, GameObjectImage* image, bool from_file);
+    void TextureCreateSpecific(BluePrintDescriptor* descriptor, void* in_data, uint32_t size_data, uint32_t offset);
+
+    void TextureSetTexture(BluePrintDescriptor* descriptor, const char* path);
+
+    void ImageDestroyTexture(Texture2D* texture);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // TEXTURE_H
