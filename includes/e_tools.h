@@ -32,5 +32,7 @@ extern "C"
 
 	void ToolsCreateDepthResources();
 	void ToolsTransitionImageLayout(void* image, uint32_t format, uint32_t oldLayout, uint32_t newLayout, uint32_t mip_levels);
-
+	void ToolsTransitionImageLayoutLite(void* image, uint32_t oldLayout, uint32_t newLayout, uint32_t aspect_mask, uint32_t mip_levels);
+	void ToolsCopyBufferToImage(void* buffer, void* image, uint32_t width, uint32_t height);
+	void ToolsCopyImage(void* cmdBuffer, void* cmdBuffer, void* srcimageId, void* dstImageId, uint32_t width, uint32_t height
 }
