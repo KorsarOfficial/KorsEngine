@@ -15,5 +15,4 @@ extern const uint32_t cubeIndx[];
 extern const uint32_t planeIndx[];
 extern const uint32_t projPlaneIndx[];
 
-
 #endif
