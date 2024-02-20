@@ -25,4 +25,5 @@ extern "C"
 
 	void InitGrass3D(vertexParam* vParam, indexParam* iParam);
 	void InitPlane3D(vertexParam* vParam, indexParam* iParam, int rows, int colms);
+	void InitTerrain(vertexParam* vParam, indexParam* iParam, void* param);
 }
