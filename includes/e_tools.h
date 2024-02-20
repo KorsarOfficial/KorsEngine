@@ -13,4 +13,6 @@ extern "C"
 
 	void* beginSingleTimeCommands();
 	void endSingleTimeCommands(void* commandBuffer); // InitGrass
+
+	bool isComplete(QueueFamilyIndices self);
 }
