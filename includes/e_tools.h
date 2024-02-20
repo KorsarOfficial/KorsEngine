@@ -12,5 +12,5 @@ extern "C"
 #endif
 
 	void* beginSingleTimeCommands();
-	void endSingleTimeCommands(void* commandBuffer);
+	void endSingleTimeCommands(void* commandBuffer); // InitGrass
 }
