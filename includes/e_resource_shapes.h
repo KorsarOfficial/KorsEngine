@@ -1,7 +1,7 @@
 #ifndef E_RESOURCE_SHAPES_H
 #define E_RESOURCE_SHAPES_H
 
-#include
+#include "engine_includes.h"
 
 extern const Vertex3D lineVert[];
 extern const Vertex3D triVert[];
