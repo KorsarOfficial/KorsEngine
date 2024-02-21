@@ -115,7 +115,7 @@ extern "C"
 	ChildStack* WidgetFindChild(EWidget* widget, int num);
 	void WidgetUpdateScissor(EWidget* widget, EIRect2D* scissor, vec2* parent_pos, vec2* offset);
 	void WidgetSetParent(EWidget* ew, EWidget* parent);
- // 	void WidgetSetParent(EWidget* ew,*dParam, EWidget* parent);
+	// 	void WidgetSetParent(EWidget* ew,*dParam, EWidget* parent);
 	void WidgetInit(EWidget* ew, DrawParam* dParam, EWidget* parent);
 	void WidgetAddDefault(EWidget* widget, void* render);
 	void WidgetConfirmTrigger(EWidget* widget, int trigger, void* entry);
@@ -125,4 +125,8 @@ extern "C"
 	void WingetDraw(EWidget* widget);
 	void WidgetDestroy(EWidget* widget);
 
+#ifdef __cplusplus
 }
+#endif
+
+#endif // WIDGET_H
