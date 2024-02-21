@@ -12,6 +12,7 @@
 #define EMPTY_IMAGE_WIDTH 100
 #define EMPTY_IMAGE_HEIGHT 100
 
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -29,8 +30,8 @@ extern "C"
 
     int ImageWriteFile(uint32_t indx);
     int ImageLoadFile(ImageFileData* data, uint32_t from_file);
-    int ImageSetTIle(const char* path, char* data, uint32_t width, uint32_t height, uint32_t tyile_y, uint32_t tile_size);
-    int ImageResize(ImageFileData* data, uint32_t, width, uint32_t height);
+    int ImageSetTile(const char* path, char* data, uint32_t width, uint32_t height, uint32_t tile_x, uint32_t tile_y, uint32_t tile_size);
+    int ImageResize(ImageFileData* data, uint32_t width, uint32_t height);
 
     Texture2D* TextureFindTexture(char* image);
 
@@ -38,13 +39,22 @@ extern "C"
 
     int TextureImageCreate(GameObjectImage* image, BluePrintDescriptor* descriptor, bool from_file);
 
+    void TextureGenerateMipmaps(Texture2D* texture);
+
+    void ImageCreateEmpty(Texture2D* texture, uint32_t usage);
+    void TextureCreateEmptyDefault(Texture2D* texture);
+
     void TextureCreateTextureImageView(Texture2D* texture, uint32_t type);
 
-    void* TextureCreateImageViewCube(void* image, void** shadowCubeMapFaceImageViews, uint32_t aspect_mask);
-    void* TextureCreateImageView(void* image, uint32_t texture_type, uint32_t mip_levels);
+    void* TextureCreateImageViewCube(void* image, void** shadowCubeMapFaceImageViews, uint32_t format, uint32_t aspect_mask);
+    void* TextureCreateImageView(void* image, uint32_t type, uint32_t format, uint32_t aspectFlags, uint32_t mip_levels);
+
+    void TextureCreateSampler(void* sampler, uint32_t texture_type, uint32_t mip_levels);
 
     void TextureCreate(BluePrintDescriptor* descriptor, uint32_t type, GameObjectImage* image, bool from_file);
-    void TextureCreateSpecific(BluePrintDescriptor* descriptor, void* in_data, uint32_t size_data, uint32_t offset);
+    void TextureCreateSpecific(BluePrintDescriptor* descriptor, uint32_t format, uint32_t width, uint32_t height);
+
+    void TextureUpdate(BluePrintDescriptor* descriptor, void* in_data, uint32_t size_data, uint32_t offset);
 
     void TextureSetTexture(BluePrintDescriptor* descriptor, const char* path);
 
@@ -54,4 +64,4 @@ extern "C"
 }
 #endif
 
-#endif // TEXTURE_H
+#endif 
