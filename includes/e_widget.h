@@ -73,4 +73,19 @@ extern "C"
 		CallbackStruct* stack;
 		int size;
 	} CallbackStack;
+
+	typedef struct EWidget {
+		GameObject2D go;
+		vec2 offset;
+		vec4 color;
+		vec2 position;
+		vec2 scale;
+		float transparent;
+		struct EWidget* parent;
+		struct ChildStack* child;
+		struct ChildStack* first;
+		struct ChildStack* last;
+		uint32_t widget_flags, type;
+		CallbackStack callbacks;
+	} EWidget;
 }
