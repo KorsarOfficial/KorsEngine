@@ -15,3 +15,9 @@ typedef enum {
 	ENGINE_VERTEX_TYPE_TERRAIN,
 	ENGINE_VERTEX_TYPE_SKY,
 } VertexType;
+
+typedef struct {
+		vec2 position;
+	vec3 color;
+	vec2 texCoord;
+} Vertex 2D;
