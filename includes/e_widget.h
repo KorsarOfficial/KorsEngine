@@ -117,4 +117,7 @@ extern "C"
 	void WidgetSetParent(EWidget* ew, EWidget* parent);
  // 	void WidgetSetParent(EWidget* ew,*dParam, EWidget* parent);
 	void WidgetInit(EWidget* ew, DrawParam* dParam, EWidget* parent);
+	void WidgetAddDefault(EWidget* widget, void* render);
+	void WidgetConfirmTrigger(EWidget* widget, int trigger, void* entry);
+	void WidgetConnect(EWidget* widget, int trigger, widget_callback callback, void* args);
 }
