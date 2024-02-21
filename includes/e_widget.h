@@ -114,4 +114,6 @@ extern "C"
 	int WidgetFindIdChild(EWidget* widget);
 	ChildStack* WidgetFindChild(EWidget* widget, int num);
 	void WidgetUpdateScissor(EWidget* widget, EIRect2D* scissor, vec2* parent_pos, vec2* offset);
+	void WidgetSetParent(EWidget* ew, EWidget* parent);
+ // 	void WidgetSetParent(EWidget* ew,*dParam, EWidget* parent);
 }
