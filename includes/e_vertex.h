@@ -21,3 +21,10 @@ typedef struct {
 	vec3 color;
 	vec2 texCoord;
 } Vertex 2D;
+
+
+typedef struct {
+	vec3 position;
+	vec3 normal;
+	vec2 texCoord;
+} Vertex3D;
