@@ -53,3 +53,8 @@ typedef struct {
 	vec3 normal;
 	vec2 texCoord;
 } TerrainVertex;
+
+typedef struct {
+	vec2 position;
+	vec2 textture_uv;
+} SkyVertex;
