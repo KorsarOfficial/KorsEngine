@@ -8,3 +8,6 @@
 #include "e_widget_text.h"
 
 #include <wchar.h>
+
+#ifdef __cplusplus
+extern "C"
