@@ -62,4 +62,10 @@ extern "C"
 		ENGINE_FLAG_WIDGET_SELF_VISIBLE = 0x40,
 		ENGINE_FLAG_WIDGET_ALLOCATED = 0x80,
 	} EngineWidgetFlag;
+
+	typedef struct {
+		void* func;
+		void* args;
+		int trigger;
+	} CallbackStruct;
 }
