@@ -37,5 +37,7 @@ typedef struct {
 } TreeVertex3D;
 
 typedef struct {
-
-};
+	vec2 position
+		float size;
+	vec3 color;
+} ParticleVertex2D;
