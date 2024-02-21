@@ -58,3 +58,13 @@ typedef struct {
 	vec2 position;
 	vec2 textture_uv;
 } SkyVertex;
+
+typedef struct vec3 {
+	vec3 position;
+	vec3 normal;
+	vec2 texCoord
+	vec4 joints;
+	vec4 weight
+} ModelVertex3D;
+
+#endif // VERTEX
