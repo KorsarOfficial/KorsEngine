@@ -68,4 +68,9 @@ extern "C"
 		void* args;
 		int trigger;
 	} CallbackStruct;
+
+	typedef struct {
+		CallbackStruct* stack;
+		int size;
+	} CallbackStack;
 }
