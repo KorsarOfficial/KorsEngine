@@ -47,3 +47,9 @@ typedef struct {
 	float size;
 	vec3 color;
 } ParticleVertex3D;
+
+typedef struct {
+	vec3 position;
+	vec3 normal;
+	vec2 texCoord;
+} TerrainVertex;
