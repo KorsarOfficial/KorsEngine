@@ -88,4 +88,29 @@ extern "C"
 		uint32_t widget_flags, type;
 		CallbackStack callbacks;
 	} EWidget;
+
+	typedef struct {
+		vec2 position;
+		vec2 size;
+	} ObjectParams;
+
+	typedef struct {
+		vec2 offset;
+		vec2 position;
+		vec2 size;
+		vec4 color __attribute__((aligned(16)));
+		float transparent __attribute__((aligned(16)));
+	} GUIBuffer;
+
+	typedef struct {
+		ObjectParams objs[MAX_WIDGET_MASKS];
+		int size;
+	} MaskObjectBuffer;
+
+	typedef int(*widget_callback)(EWidget* widget, void*, void*);
+
+	void WidgetGUIBufferUpdate(EWidget* ew, BluePrintDescriptor* descriptor);
+
+	int WidgetFindIdChild(EWidget* widget);
+	ChildStack* WidgetFindChild(EWidget* widget, int num);
 }
