@@ -7,4 +7,25 @@
 
 #ifdef __cplusplus
 extern "C"
+{
 #endif // !
+
+	typedef struct {
+		EWidget widget;
+		EWidgetButton button;
+		EWidgetList list;
+		bool show;
+		int currId;
+		int size_x;
+		int size_y;
+	} EWidgetCombobox;
+
+	void ComboboxWidgetInit(EWidget* combobox, vec2 scale, DrawParam* dParam, EWidget* parent);
+
+	void ComboboxWidgetAddItem(EWidgetCombobox* combobox, const char* text, DrawParam* dParam);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // E_WIDGET_COMBOBOX
