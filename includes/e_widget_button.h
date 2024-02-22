@@ -11,3 +11,12 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+    typedef struct {
+        EWidget widget;
+        EWidgetText text;
+        EWidgetImage image;
+        vec4 selfColor;
+    } EWidgetButton;
