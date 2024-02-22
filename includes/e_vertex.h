@@ -73,4 +73,4 @@ typedef struct {
     vec4 weight;
 } ModelVertex3D;
 
-#endif // VERTEX_H
+#endif
