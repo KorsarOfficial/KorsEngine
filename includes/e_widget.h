@@ -1,4 +1,4 @@
-#ifndef E_WIDGET_H#ifndef E_WIDGET_H
+#ifndef E_WIDGET_H
 #define E_WIDGET_H
 
 #include "engine_includes.h"
