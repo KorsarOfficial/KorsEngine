@@ -21,6 +21,11 @@ extern "C"
 
 	void ListWidgetInit(EWidgetList* list, int size_x, int size_y, DrawParam* dParam, EWidget* parent);
 	void ListWidgetSetColor(EWidgetList* list, vec4 color);
+	EWidgetButton* ListWidgetAddItem(EWidgetList* list, const char* text, DrawParam* dParam);
+	void ListWidgetRemoveItem(EWidgetList* list, int num);
 
+#ifdef __cplusplus
 }
-#endif // !E_WIDGET_LIST_H
+
+#endif
+#endif // E_WIDGET_LIST_H
