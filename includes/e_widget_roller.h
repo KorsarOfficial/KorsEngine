@@ -16,6 +16,9 @@ extern "C"
 		float stable_val;
 		vec4 selfColor;
 	} EWidgetRoller;
+
+	void RollerWidgetInit(EWidgetRoller* roller, DrawParam* dParam, EWidget* parent);
+
 }
 
 #endif // !E_WIDGET_ROLLER_H
