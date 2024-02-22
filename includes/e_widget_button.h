@@ -24,3 +24,4 @@ extern "C"
     void ButtonWidgetInit(EWidgetButton* button, const char* text, DrawParam* dParam, EWidget* parent);
     void ButtonWidgetSetText(EWidgetButton* button, const char* text);
     void ButtonWidgetSetColor(EWidgetButton* button, float r, float g, float b);
+    void ButtonWidgetSetImage(EWidgetButton* button, char* path, DrawParam* dParam);
