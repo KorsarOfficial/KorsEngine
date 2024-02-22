@@ -30,4 +30,4 @@ extern "C"
 }
 #endif
 
-#endif // BUTTON_H
+#endif
