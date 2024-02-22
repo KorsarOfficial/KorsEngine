@@ -132,4 +132,4 @@ extern "C"
 }
 #endif
 
-#endif // WIDGET_H
+#endif
