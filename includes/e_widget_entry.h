@@ -29,7 +29,14 @@ extern "C"
 	void EntryWidgetUpdate();
 	void EntryWidgetCharacterCallback(void* window, uint32_t codepoint);
 	void EntryWidgetKeyCallback(void* window, int key, int scancode, int action, int mods);
+	char* EntryWidgetGetText(EWidgetEntry* entry);
+	void EntryWidgetSetText(EWidgetEntry* entry, char* text);
+
+#ifdef __cplusplus
+
+
+
 }
 #endif // __cplusplus
 
-#endif // !1
+#endif // E_WIDGET_ENTRY
