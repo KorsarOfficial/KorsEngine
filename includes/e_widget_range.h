@@ -19,5 +19,6 @@ extern "C"
 	} EWidgetRange;
 
 	void RangeWidgetInit(EWidgetRange* range, float size_x, float size_y, float min, float max, DrawParam* dParam, EWidget* parent);
+	void RangeWidgetSetValueDestin(EWidgetRange* range, float* val_dest);
 
 }
