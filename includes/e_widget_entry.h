@@ -27,6 +27,8 @@ extern "C"
 
 	void EntryWidgetInit(EWidgetEntry* entry, int fontSize, DrawParam* dParam, EWidget* parent);
 	void EntryWidgetUpdate();
+	void EntryWidgetCharacterCallback(void* window, uint32_t codepoint);
+	void EntryWidgetKeyCallback(void* window, int key, int scancode, int action, int mods);
 }
 #endif // __cplusplus
 
