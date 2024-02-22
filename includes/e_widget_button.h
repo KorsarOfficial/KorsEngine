@@ -22,3 +22,4 @@ extern "C"
     } EWidgetButton;
 
     void ButtonWidgetInit(EWidgetButton* button, const char* text, DrawParam* dParam, EWidget* parent);
+    void ButtonWidgetSetText(EWidgetButton* button, const char* text);
