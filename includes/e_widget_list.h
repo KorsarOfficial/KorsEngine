@@ -6,4 +6,7 @@
 #include "e_widget_button.h"
 
 #include "e_widget_scroll.h"
+
+#ifdef __cplusplus
+extern "C"
 #endif // !E_WIDGET_LIST_H
