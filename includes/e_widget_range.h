@@ -6,3 +6,18 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+	typedef struct {
+		EWidget widget;
+		EWidget range;
+		EWidget line;
+		float min;
+		float max;
+		float* dest;
+		vec4 selfColor;
+	} EWidgetRange;
+
+	void RangeWidgetInit(EWidgetRange* range, float size_x, float size_y, float min, float max, DrawParam* dParam, EWidget* parent);
+
+}
