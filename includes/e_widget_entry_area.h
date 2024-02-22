@@ -5,4 +5,11 @@
 #ifdef __cplusplus
 
 extern "C"
+{
+#endif
+	typedef struct {
+		EWidgetEntry entry;
+		float textHeight;
+	} EWidgetEntryArea;
+}
 #endif // __cplusplus
