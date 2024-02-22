@@ -20,3 +20,6 @@ extern "C"
 
 #ifdef __cplusplus
 }
+#endif
+
+#endif // E_IMAGE_H
