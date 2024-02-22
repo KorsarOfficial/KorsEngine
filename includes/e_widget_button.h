@@ -20,3 +20,5 @@ extern "C"
         EWidgetImage image;
         vec4 selfColor;
     } EWidgetButton;
+
+    void ButtonWidgetInit(EWidgetButton* button, const char* text, DrawParam* dParam, EWidget* parent);
