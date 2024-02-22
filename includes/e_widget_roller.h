@@ -5,6 +5,17 @@
 
 #ifdef __cplusplus
 extern "C"
-#endif // __cplusplus
+{
+#endif
+
+	typedef struct {
+		EWidget widget;
+		bool vertical;
+		float* source;
+		float move_val;
+		float stable_val;
+		vec4 selfColor;
+	} EWidgetRoller;
+}
 
 #endif // !E_WIDGET_ROLLER_H
