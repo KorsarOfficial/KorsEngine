@@ -25,3 +25,6 @@ extern "C"
     void ButtonWidgetSetText(EWidgetButton* button, const char* text);
     void ButtonWidgetSetColor(EWidgetButton* button, float r, float g, float b);
     void ButtonWidgetSetImage(EWidgetButton* button, char* path, DrawParam* dParam);
+#ifdef __cplusplus
+}
+#endif
