@@ -26,4 +26,5 @@ extern "C"
 
 	void TextWidgetSetColor(EWidgetText* wt, vec3 color);
 	void TextWidgetSetText(EWidgetText* wt, const char* text);
+	void TextWidgetGetText(EWidgetText* wt, char* dest);
 }
