@@ -31,4 +31,7 @@ extern "C"
 		uint32_t num_elems;
 		void* render;
 	} EWidgetTopMenu;
+
+	void TopMenuWidgetResize(EWidgetTopMenu* top_menu);
+	
 }
