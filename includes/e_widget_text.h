@@ -27,4 +27,10 @@ extern "C"
 	void TextWidgetSetColor(EWidgetText* wt, vec3 color);
 	void TextWidgetSetText(EWidgetText* wt, const char* text);
 	void TextWidgetGetText(EWidgetText* wt, char* dest);
+
+#ifdef __cplusplus
 }
+
+#endif
+
+#endif // WIDGET_TEXT_H
