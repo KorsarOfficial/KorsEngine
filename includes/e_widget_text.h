@@ -19,5 +19,6 @@ extern "C"
 		TextData tData;
 	} EWidgetText;
 
+	void TextWidgetInitDefault(EWidgetText* wt, int fontSize, DrawParam* dParam, EWidget* parent);
 	
 }
