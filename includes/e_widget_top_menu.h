@@ -36,4 +36,9 @@ extern "C"
 	void TopMenuWidgetInit(EWidgetTopMenu* top_menu, DrawParam* dParam, EWidgetWindow* window);
 	int TopMenuWidgetAddMenu(EWidgetTopMenu* top_menu, char* name, DrawParam* dParam);
 	void TopMenuWidgetAddItem(EWidgetTopMenu* top_menu, int num_menu, char* name, DrawParam* dParam);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // WIDGET_TOP_MENU_H
