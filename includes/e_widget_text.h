@@ -20,5 +20,7 @@ extern "C"
 	} EWidgetText;
 
 	void TextWidgetInitDefault(EWidgetText* wt, int fontSize, DrawParam* dParam, EWidget* parent);
+	void TextWidgetInit(EWidgetText* wt, int fontSize, DrawParam* dParam, EWidget* parent);
+
 	
 }
