@@ -19,6 +19,9 @@ extern "C"
 
 	void RollerWidgetInit(EWidgetRoller* roller, DrawParam* dParam, EWidget* parent);
 	void RollerWidgetSetSource(EWidgetRoller* roller, float* source);
-}
 
-#endif // !E_WIDGET_ROLLER_H
+#ifdef __cplusplus
+}
+#endif
+
+#endif // E_WIDGET_ROLLER
