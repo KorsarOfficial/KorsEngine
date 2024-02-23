@@ -22,4 +22,13 @@ extern "C"
 		int num_menu;
 		int elem_id;
 	} MenuData;
+	
+	typedef struct {
+		EWidget widget;
+		EWidget top;
+		EWidgetWindow* window;
+		LinkedButtonList list[256];
+		uint32_t num_elems;
+		void* render;
+	} EWidgetTopMenu;
 }
