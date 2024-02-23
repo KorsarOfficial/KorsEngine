@@ -9,3 +9,12 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+	typedef struct {
+		EWidgetButton* button;
+		EWidgetList* list;
+		bool submenu;
+	} LinkedButtonList;
+}
