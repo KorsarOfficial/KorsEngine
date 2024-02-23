@@ -11,3 +11,13 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+	typedef struct {
+		EWidget widget;
+		TextData tData;
+	} EWidgetText;
+
+	
+}
