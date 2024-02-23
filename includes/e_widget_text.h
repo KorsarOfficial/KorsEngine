@@ -8,3 +8,6 @@
 #include "textObject.h"
 
 #include "e_widget.h"
+
+#ifdef __cplusplus
+extern "C"
