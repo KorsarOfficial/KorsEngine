@@ -34,4 +34,5 @@ extern "C"
 
 	void TopMenuWidgetResize(EWidgetTopMenu* top_menu);
 	void TopMenuWidgetInit(EWidgetTopMenu* top_menu, DrawParam* dParam, EWidgetWindow* window);
+	int TopMenuWidgetAddMenu(EWidgetTopMenu* top_menu, char* name, DrawParam* dParam);
 }
