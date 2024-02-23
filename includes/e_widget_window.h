@@ -8,3 +8,21 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+	typedef struct {
+		EWidget widget;
+		EWidget top;
+		EWidget hide;
+		EWidget resize;
+		EWidget clode;
+		EWidgetText name;
+		bool show;
+		bool wasResize;
+		bool wasHide;
+		bool resizeble;
+		vec2 lastSize;
+		vec2 lastPos;
+	} EWidgetWindow;
+}
