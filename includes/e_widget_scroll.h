@@ -15,4 +15,8 @@ extern "C"
 		uint32_t height;
 		uint32_t scroll_size;
 	} EWidgetScroll;
+
+	void ScrollWidgetInit(EWidgetScroll* scroll, uint32_t width, uint32_t height, DrawParam* dParam, EWidget* parent);
+	void ScrollWidgetSetScrollSize(EWidgetScroll* scroll, float percent);
+	void SCrollWidgetUpdate(EWidgetScroll* scroll, void* list);
 }
