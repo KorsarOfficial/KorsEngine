@@ -6,3 +6,6 @@
 #include "e_widget_scroll.h"
 #include "e_widget_list.h"
 #include "e_widget_window.h"
+
+#ifdef __cplusplus
+extern "C"
