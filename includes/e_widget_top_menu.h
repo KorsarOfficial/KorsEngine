@@ -17,4 +17,9 @@ extern "C"
 		EWidgetList* list;
 		bool submenu;
 	} LinkedButtonList;
+
+	typedef struct {
+		int num_menu;
+		int elem_id;
+	} MenuData;
 }
