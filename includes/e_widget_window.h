@@ -30,5 +30,5 @@ extern "C"
 	void WindowWidgetShow(EWidgetWindow* ww);
 	void WindowWidgetHide(EWidgetWindow* ww);
 	void WIndowWidgetUpdate(EWidgetWindow* ww);
-
+	void WindowWidgetDraw(EWidgetWindow* ww);
 }
