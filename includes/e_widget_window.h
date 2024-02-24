@@ -32,4 +32,10 @@ extern "C"
 	void WIndowWidgetUpdate(EWidgetWindow* ww);
 	void WindowWidgetDraw(EWidgetWindow* ww);
 	void WindowWidgetDestroy(EWidgetWindow* ww);
+
+#ifdef __cplusplus
+
 }
+#endif
+
+#endif // WIDGET_WINDOW_H
