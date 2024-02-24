@@ -5,3 +5,8 @@
 
 #ifdef __cplusplus
 extern "C"
+[
+#endif
+
+#define ENGINE_RELEASE		0
+]
