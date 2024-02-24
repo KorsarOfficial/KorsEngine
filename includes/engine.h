@@ -5,7 +5,7 @@
 
 #ifdef __cplusplus
 extern "C"
-[
+{
 #endif
 
 #define ENGINE_RELEASE					0
@@ -14,4 +14,4 @@ extern "C"
 
 #define ENGINE_MOUSE_BUTTON_1			0
 #define ENGINE_MOUSE_BUTTON_2			1
-]
+}
