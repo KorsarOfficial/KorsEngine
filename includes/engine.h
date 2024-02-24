@@ -10,4 +10,5 @@ extern "C"
 
 #define ENGINE_RELEASE		0
 #define ENGINE_PRESS		1
+#define ENGINE_REPEAT		2
 ]
