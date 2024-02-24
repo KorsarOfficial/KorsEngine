@@ -13,4 +13,5 @@ extern "C"
 #define ENGINE_REPEAT					2
 
 #define ENGINE_MOUSE_BUTTON_1			0
+#define ENGINE_MOUSE_BUTTON_2			1
 ]
