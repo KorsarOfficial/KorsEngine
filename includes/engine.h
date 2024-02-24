@@ -9,4 +9,5 @@ extern "C"
 #endif
 
 #define ENGINE_RELEASE		0
+#define ENGINE_PRESS		1
 ]
