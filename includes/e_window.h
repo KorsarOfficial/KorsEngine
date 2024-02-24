@@ -22,4 +22,9 @@ extern "C"
 	void createSurface();
 
 	vec2 getWindowSize();
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif
