@@ -25,4 +25,8 @@ extern "C"
 		vec2 lastSize;
 		vec2 lastPos;
 	} EWidgetWindow;
+
+	void WindowWidgetInit(EWidgetWindow* ww, char* name, vec2 size, DrawParam* dParam, vec2 position);
+	void WindowWidgetShow(EWidgetWindow* ww);
+
 }
