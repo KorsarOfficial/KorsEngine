@@ -6,3 +6,16 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+	bool checkValidationLayerSupport();
+
+	const char** getRequiredExtensions();
+
+	void initWindow();
+
+	static void framebufferResizeCallback(void* window, int width, int height);
+
+	void createInstance();
+}
