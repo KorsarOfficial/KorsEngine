@@ -18,4 +18,8 @@ extern "C"
 	static void framebufferResizeCallback(void* window, int width, int height);
 
 	void createInstance();
+
+	void createSurface();
+
+	vec2 getWindowSize();
 }
