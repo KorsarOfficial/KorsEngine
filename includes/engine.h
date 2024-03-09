@@ -32,5 +32,14 @@ extern "C"
 #define ENGINE_KEY_MINUS				45 // -
 #define ENGINE_KEY_PERIOD				46 // .
 #define ENGINE_KEY_SLASH				47 // /
-
+#define ENGINE_KEY_0					48
+#define ENGINE_KEY_1					49
+#define ENGINE_KEY_2					50
+#define ENGINE_KEY_3					51
+#define ENGINE_KEY_4					52
+#define ENGINE_KEY_5					53
+#define ENGINE_KEY_6					54
+#define ENGINE_KEY_7					55
+#define ENGINE_KEY_8					56
+#define ENGINE_KEY_9					57
 }
