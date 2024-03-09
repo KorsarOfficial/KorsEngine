@@ -43,4 +43,7 @@ extern "C"
 #define ENGINE_KEY_8					56
 #define ENGINE_KEY_9					57
 #define ENGINE_KEY_SEMICOLON			59 // ;
+#define ENGINE_KEY_EQUAL				61 // =
+#define ENGINE_KEY_A					65
+
 }
