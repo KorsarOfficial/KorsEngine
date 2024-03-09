@@ -45,5 +45,5 @@ extern "C"
 #define ENGINE_KEY_SEMICOLON			59 // ;
 #define ENGINE_KEY_EQUAL				61 // =
 #define ENGINE_KEY_A					65
-
+#define ENGINE_KEY_B					66
 }
