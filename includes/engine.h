@@ -25,4 +25,12 @@ extern "C"
 #define ENGINE_MOUSE_BUTTON_MIDDLE		ENGINE_MOUSE_BUTTON_3
 
 #define ENGINE_KEY_UNKNOWN				-1
+
+#define ENGINE_KEY_SPACE				32
+#define ENGINE_KEY_APOSTROPHE			39 // '
+#define ENGINE_KEY_COMMA				44 // ,
+#define ENGINE_KEY_MINUS				45 // -
+#define ENGINE_KEY_PERIOD				46 // .
+#define ENGINE_KEY_SLASH				47 // /
+
 }
