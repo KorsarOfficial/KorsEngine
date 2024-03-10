@@ -48,4 +48,6 @@ extern "C"
 #define ENGINE_KEY_B					66
 #define ENGINE_KEY_C					67
 #define ENGINE_KEY_D					68
+#define ENGINE_KEY_E					69
+
 }
