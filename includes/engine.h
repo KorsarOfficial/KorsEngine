@@ -98,5 +98,6 @@ extern "C"
 #define ENGINE_KEY_PAUSE				284
 #define ENGINE_KEY_F1					290
 #define ENGINE_KEY_F2					291
+#define ENGINE_KEY_F3					292
 
 }
