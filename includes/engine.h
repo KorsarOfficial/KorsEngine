@@ -56,4 +56,5 @@ extern "C"
 #define ENGINE_KEY_J					74
 #define ENGINE_KEY_K					75
 #define ENGINE_KEY_L					76
+#define ENGINE_KEY_M					77
 }
