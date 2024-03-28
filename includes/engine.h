@@ -80,5 +80,6 @@ extern "C"
 #define ENGINE_KEY_ESCAPE				256
 #define ENGINE_KEY_ENTER				257
 #define ENGINE_KEY_TAB					258
+#define ENGINE_KEY_BACKSPACE			259
 
 }
