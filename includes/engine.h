@@ -71,4 +71,6 @@ extern "C"
 #define ENGINE_KEY_Y					89
 #define ENGINE_KEY_Z					90
 #define ENGINE_KEY_LEFT_BRACKET			91
+#define ENGINE_KEY_BACKSLASH			92
+
 }
