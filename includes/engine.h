@@ -91,5 +91,6 @@ extern "C"
 #define ENGINE_KEY_PAGE_DOWN			267
 #define ENGINE_KEY_HOME					268
 #define ENGINE_KEY_END					269
+#define ENGINE_KEY_CAPS_LOCK			280
 
 }
