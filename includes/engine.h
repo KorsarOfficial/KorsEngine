@@ -97,5 +97,6 @@ extern "C"
 #define ENGINE_KEY_PRINT_SCREEN			283
 #define ENGINE_KEY_PAUSE				284
 #define ENGINE_KEY_F1					290
+#define ENGINE_KEY_F2					291
 
 }
