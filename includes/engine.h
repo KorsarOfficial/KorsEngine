@@ -78,5 +78,6 @@ extern "C"
 #define ENGINE_KEY_WORLD_2				162
 
 #define ENGINE_KEY_ESCAPE				256
+#define ENGINE_KEY_ENTER				257
 
 }
