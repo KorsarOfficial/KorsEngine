@@ -95,5 +95,6 @@ extern "C"
 #define ENGINE_KEY_SCROLL_LOCK			281
 #define ENGINE_KEY_NUM_LOCK				282
 #define ENGINE_KEY_PRINT_SCREEN			283
+#define ENGINE_KEY_PAUSE				284
 
 }
