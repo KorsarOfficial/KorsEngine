@@ -101,5 +101,6 @@ extern "C"
 #define ENGINE_KEY_F3					292
 #define ENGINE_KEY_F4					293
 #define ENGINE_KEY_F5					294
+#define ENGINE_KEY_F6					295
 
 }
