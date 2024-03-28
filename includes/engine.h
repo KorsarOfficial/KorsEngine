@@ -83,5 +83,6 @@ extern "C"
 #define ENGINE_KEY_BACKSPACE			259
 #define ENGINE_KEY_INSERT				260
 #define ENGINE_KEY_DELETE				261
+#define ENGINE_KEY_RIGHT				262
 
 }
