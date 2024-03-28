@@ -62,4 +62,5 @@ extern "C"
 #define ENGINE_KEY_P					80
 #define ENGINE_KEY_Q					81
 #define ENGINE_KEY_R					82
+#define ENGINE_KEY_S					83
 }
