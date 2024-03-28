@@ -87,5 +87,6 @@ extern "C"
 #define ENGINE_KEY_LEFT					263
 #define ENGINE_KEY_DOWN					264
 #define ENGINE_KEY_UP					265
+#define ENGINE_KEY_PAGE_UP				266
 
 }
