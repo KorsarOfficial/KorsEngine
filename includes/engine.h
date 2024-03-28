@@ -76,4 +76,7 @@ extern "C"
 #define ENGINE_KEY_GRAVE_ACCENT			96
 #define ENGINE_KEY_WORLD_1				161
 #define ENGINE_KEY_WORLD_2				162
+
+#define ENGINE_KEY_ESCAPE				256
+
 }
