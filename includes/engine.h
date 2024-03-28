@@ -93,5 +93,6 @@ extern "C"
 #define ENGINE_KEY_END					269
 #define ENGINE_KEY_CAPS_LOCK			280
 #define ENGINE_KEY_SCROLL_LOCK			281
+#define ENGINE_KEY_NUM_LOCK				282
 
 }
