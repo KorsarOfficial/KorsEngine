@@ -158,4 +158,5 @@ void EngineInitSystem(int width, int height, const char* name);
 void EngineFixedCursorCenter();
 
 void EngineGetCursorPos(double* xpos, double* ypos);
+void EngineSetCursorPos(float xpos, float ypos);
 }
