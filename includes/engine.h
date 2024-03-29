@@ -120,4 +120,5 @@ extern "C"
 #define ENGINE_KEY_F22					311
 #define ENGINE_KEY_F23					312
 #define ENGINE_KEY_F24					313
+#define ENGINE_KEY_F25					314
 }
