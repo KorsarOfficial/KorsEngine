@@ -197,4 +197,6 @@ void EngineLoop();
 void EngineUpdateUniformBuffer();
 
 void EngineCleanUp();
+
+#ifdef __cplusplus
 }
