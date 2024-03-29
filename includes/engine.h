@@ -185,4 +185,6 @@ void EnginePoolEvents();
 void EngineDeviceWaitIdle();
 
 void EngineCleanupSwapChain();
+
+void EnginereRecreateSwapChain();
 }
