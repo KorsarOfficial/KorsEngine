@@ -162,4 +162,5 @@ void EngineSetCursorPos(float xpos, float ypos);
 void EngineHideCursor(char state);
 
 int EngineGetMousePress(int Key);
+int EngineGetKeyPress(int Key);
 }
