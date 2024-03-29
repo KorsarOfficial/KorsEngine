@@ -156,4 +156,6 @@ extern "C"
 void EngineInitSystem(int width, int height, const char* name);
 
 void EngineFixedCursorCenter();
+
+void EngineGetCursorPos(double* xpos, double* ypos);
 }
