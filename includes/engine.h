@@ -159,4 +159,5 @@ void EngineFixedCursorCenter();
 
 void EngineGetCursorPos(double* xpos, double* ypos);
 void EngineSetCursorPos(float xpos, float ypos);
+void EngineHideCursor(char state);
 }
