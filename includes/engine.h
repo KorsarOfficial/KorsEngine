@@ -140,4 +140,5 @@ extern "C"
 #define ENGINE_KEY_KP_ADD				334
 #define ENGINE_KEY_KP_ENTER				335
 #define ENGINE_KEY_KP_EQUAL				336
+#define ENGINE_KEY_KP_LEFT_SHIFT		340
 }
