@@ -181,4 +181,6 @@ const char* EngineGetClipboard();
 void EngineSetClipBoardString(const char* string);
 
 void EnginePoolEvents();
+
+void EngineDeviceWaitIdle();
 }
