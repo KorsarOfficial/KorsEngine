@@ -200,3 +200,6 @@ void EngineCleanUp();
 
 #ifdef __cplusplus
 }
+#endif
+
+#endif
