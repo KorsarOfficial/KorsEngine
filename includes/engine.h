@@ -195,4 +195,6 @@ void EngineSetRender(void* obj, uint32_t count);
 void EngineDraw(void* obj);
 void EngineLoop();
 void EngineUpdateUniformBuffer();
+
+void EngineCleanUp();
 }
