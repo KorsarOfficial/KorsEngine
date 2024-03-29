@@ -194,4 +194,5 @@ void EngineAcceptShadow(void* shadow, uint32_t count, uint32_t shadow_type);
 void EngineSetRender(void* obj, uint32_t count);
 void EngineDraw(void* obj);
 void EngineLoop();
+void EngineUpdateUniformBuffer();
 }
