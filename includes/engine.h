@@ -138,4 +138,5 @@ extern "C"
 #define ENGINE_KEY_KP_MULTIPLY			332
 #define ENGINE_KEY_KP_SUBTRACT			333
 #define ENGINE_KEY_KP_ADD				334
+#define ENGINE_KEY_KP_ENTER				335
 }
