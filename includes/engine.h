@@ -187,4 +187,6 @@ void EngineDeviceWaitIdle();
 void EngineCleanupSwapChain();
 
 void EnginereRecreateSwapChain();
+
+void EngineCreateSyncobjects();
 }
