@@ -191,4 +191,5 @@ void EnginereRecreateSwapChain();
 void EngineCreateSyncobjects();
 
 void EngineAcceptShadow(void* shadow, uint32_t count, uint32_t shadow_type);
+void EngineSetRender(void* obj, uint32_t count);
 }
