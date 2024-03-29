@@ -171,4 +171,6 @@ void EngineSetCharCallback(void* callback);
 void EngineSetCursorPoscallback(void* callback);
 
 void EngineSetRecreateFunc(void* func);
+
+int EngineWindowIsClosed();
 }
