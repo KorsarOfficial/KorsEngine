@@ -175,4 +175,6 @@ void EngineSetRecreateFunc(void* func);
 int EngineWindowIsClosed();
 
 double EngineGetTime();
+
+const char* EngineGetClipboard();
 }
