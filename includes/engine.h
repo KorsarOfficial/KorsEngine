@@ -173,4 +173,6 @@ void EngineSetCursorPoscallback(void* callback);
 void EngineSetRecreateFunc(void* func);
 
 int EngineWindowIsClosed();
+
+double EngineGetTime();
 }
