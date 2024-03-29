@@ -154,4 +154,6 @@ extern "C"
 #define ENGINE_KEY_LAST					ENGINE_KEY_MENU
 
 void EngineInitSystem(int width, int height, const char* name);
+
+void EngineFixedCursorCenter();
 }
