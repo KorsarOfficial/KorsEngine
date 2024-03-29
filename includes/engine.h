@@ -114,5 +114,6 @@ extern "C"
 #define ENGINE_KEY_F16					305
 #define ENGINE_KEY_F17					306 // */ */
 #define ENGINE_KEY_F18					307
+#define ENGINE_KEY_F19					308
 
 }
