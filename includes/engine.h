@@ -167,4 +167,6 @@ int EngineGetKeyPress(int Key);
 void EngineSetMouseKeyCallback(void* callback);
 void EngineSetKeyCallback(void* callback);
 void EngineSetCharCallback(void* callback);
+
+void EngineSetCursorPoscallback(void* callback);
 }
