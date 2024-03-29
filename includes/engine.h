@@ -132,4 +132,6 @@ extern "C"
 #define ENGINE_KEY_KP_7					327
 #define ENGINE_KEY_KP_8					328
 #define ENGINE_KEY_KP_9					329
+
+#define ENGINE_KEY_KP_DECIMAL			330
 }
