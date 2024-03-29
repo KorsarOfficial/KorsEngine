@@ -183,4 +183,6 @@ void EngineSetClipBoardString(const char* string);
 void EnginePoolEvents();
 
 void EngineDeviceWaitIdle();
+
+void EngineCleanupSwapChain();
 }
