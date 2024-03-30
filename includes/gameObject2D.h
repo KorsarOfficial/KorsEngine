@@ -13,4 +13,15 @@
 
 #ifdef __cplusplus
 extern 'C'
+{
+#endif
+
+	typedef struct {
+		GameObject self;
+		GraphicsObject graphObj;
+		Transform2D transform;
+		GameObjectImage* image;
+		char name[256];
+	} GameObject2D;
+}
 #endif // __cplusplus
