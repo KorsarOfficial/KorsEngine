@@ -39,7 +39,9 @@ extern 'C'
 	void GameObject2DAddSettingPipeline(GameObject* go, uint32_t indx_pack, void* args);
 
 	vec2 GameObject2DGetSize(GameObject2D* go);
+
+#ifdef __cplusplus
 }
+#endif
 
-
-#endif // __cplusplus
+#endif // 2D
