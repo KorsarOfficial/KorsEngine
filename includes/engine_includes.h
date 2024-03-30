@@ -155,4 +155,17 @@ extern 'C'
 		char* render;
 		char* geom;
 	} DrawParam
+
+	typedef struct EISurfaceCapabilitiesKHR {
+		uint32_t	minImageCount;
+		uint32_t	maxImageCount;
+		EIExtent2D	currentExtent;
+		EIExtent2D	maxImageExtent;
+		EIExtent2D	minImageExtent;
+		uint32_t	maxImageArrayLayers;
+		uint32_t	supportedTransforms;
+		uint32_t	currentTransform;
+		uint32_t	supportedCompositeAlpha;
+		uint32_t	supportedUsageFlags;
+	} EISurfaceCapabilitiesKHR;
 #endif // __cplusplus
