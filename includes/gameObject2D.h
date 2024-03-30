@@ -27,6 +27,7 @@ extern 'C'
 	void GameObject2DTransformBufferUpdate(GameObject2D* go, BluePrintDescriptor *descriptor);
 	void GameObject2DImageBuffer(GameObject2D* go, BluePrintDescriptor* descriptor);
 
-
+	void GameObject2DDefaultUpdate(GameObject2D* go);
+	void GameObject2DDefaultDraw(GameObject2D* go, void* command);
 }
 #endif // __cplusplus
