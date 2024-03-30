@@ -22,3 +22,7 @@
 #define MAX_GUI_CALLBACKS 25
 
 #define NODE_COUNT 20
+
+#ifdef __cplusplus
+extern 'C'
+#endif // __cplusplus
