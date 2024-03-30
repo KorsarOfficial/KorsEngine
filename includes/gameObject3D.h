@@ -60,7 +60,11 @@ extern 'C' {
 
 	void GameObject3DEnableLight(GameObject3D* go, bool enable);
 
-	void
+	void GameObject3DAddSettingPipeline(GameObject3D* go, uint32_t indx_pack, void* arg);
 
+#ifdef __cplusplus
 }
+#endif
+
+#endif // OBJECT3D_H
 
