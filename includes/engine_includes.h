@@ -33,5 +33,8 @@ extern 'C'
 	typedef enum { false, true} bool;
 #endif // !__cplusplus
 
+	struct GameObject;
+	struct RenderTexture;
+
 }
 #endif // __cplusplus
