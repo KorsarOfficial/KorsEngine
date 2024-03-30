@@ -141,4 +141,18 @@ extern 'C'
 		uint32_t v_index;
 		uint32_t i_index;
 	} VertexIterator;
+
+	typedef struct {
+		char diffuse[256];
+		char specular[256];
+		char normal[256];
+		char second[256];
+		char font[256];
+		char vertShader[256];
+		char fragShader[256];
+		char topology;
+		char flags;
+		char* render;
+		char* geom;
+	} DrawParam
 #endif // __cplusplus
