@@ -26,4 +26,8 @@ extern 'C' {
 		InstanceBuffer buffer;
 		uint32_t num_instance;
 	} GameObject3D;
+
+	void GameObject3DDefaultUpdate(GameObject3D* go);
+	void GameObject3DDefaultDraw(GameObject3D* go, void* command);
+
 }
