@@ -29,5 +29,9 @@ extern 'C'
 
 	void GameObject2DDefaultUpdate(GameObject2D* go);
 	void GameObject2DDefaultDraw(GameObject2D* go, void* command);
+
+	void GameObject2DInitDraw(GameObject2D* go);
 }
+
+
 #endif // __cplusplus
