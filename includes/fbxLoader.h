@@ -37,6 +37,16 @@ extern 'C'
 
 		engine_fbx_blend_channel_anim* blend_channel;
 	} engine_fbx_anim;
+
+	typedef struct {
+		int32_t parent_index;
+
+		mat4 geometry_to_node;
+		mat4 node_to_parent;
+		mat4 node_to_world;
+		mat4 geometry_to_world;
+		mat4 normal_to_world;
+	} engine_fbx_node;
 #endif // !__cplusplus
 
 }
