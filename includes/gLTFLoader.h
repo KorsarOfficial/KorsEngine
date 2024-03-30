@@ -65,4 +65,7 @@ extern 'C'
 
 #ifdef __cplusplus
 }
-#endif // __cplusplus
+#endif
+
+
+#endif // GLTF_H
