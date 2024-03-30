@@ -31,6 +31,12 @@ extern 'C'
 	void GameObject2DDefaultDraw(GameObject2D* go, void* command);
 
 	void GameObject2DInitDraw(GameObject2D* go);
+	void GameObject2DInit(GameObject2D* go);
+	void GameObject2DClean(GameObject2D* go);
+	void GameObject2DRecreate(GameObject2D* go);
+	void GameObject2DDestroy(GameObject2D* go);
+
+	
 }
 
 
