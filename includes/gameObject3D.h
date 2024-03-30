@@ -38,5 +38,8 @@ extern 'C' {
 	void GameObject3DSpotlightUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
 	void GameObject3DLightStatusBufferUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
 	void GameObject3DSDFBufferUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
+
+	void GameObject3DInitDraw(GameObject3D* go);
+	void GameObject3DClean(GameObject3D* go);
 }
 
