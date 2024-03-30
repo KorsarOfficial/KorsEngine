@@ -48,6 +48,7 @@ extern 'C' {
 	void GameObject3DSetInstance(GameObject* go, uint32_t indx, VertexInstance3D vertex);
 	void GameObject3DRemoveInstance(GameObject3D* go, uint32_t indx);
 
-	
+	void GameObject3DInitTextures(GameObject3D* go, DrawParam* dParam);
+
 }
 
