@@ -136,4 +136,9 @@ extern 'C'
 		vec3 dir;
 		float angle;
 	} TreePeace;
+
+	typedef struct {
+		uint32_t v_index;
+		uint32_t i_index;
+	} VertexIterator;
 #endif // __cplusplus
