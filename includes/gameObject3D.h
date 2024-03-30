@@ -58,5 +58,9 @@ extern 'C' {
 	void GameObject3DAddShadowDescriptor(GameObject3D* go, uint32_t type, void* render, uint32_t type, void* render, uint32_t layer_indx);
 	void GameObject3DAddOmiShadow(GameObject3D* go, void* render, uint32_t layer_indx);
 
+	void GameObject3DEnableLight(GameObject3D* go, bool enable);
+
+	void
+
 }
 
