@@ -53,7 +53,7 @@ extern 'C'
 	} engine_fbx_blend_channel;
 
 	typedef struct {
-		
+
 		float anim_time;
 
 		engine_fbx_node* nodes;
@@ -71,6 +71,9 @@ extern 'C'
 
 	void Load3DFBXNextFrame(ModelObject3D* mo);
 	void Load3DFBXModel(ModelObject* mo, char* filepath, DrawParam* dParam);
+
+#ifdef __cplusplus
+}
 
 #endif // !__cplusplus
 
