@@ -10,3 +10,7 @@
 #include "e_descriptor.h"
 #include "pipeline.h"
 #include "e_texture.h"
+
+#ifdef __cplusplus
+extern 'C'
+#endif // __cplusplus
