@@ -62,4 +62,10 @@ extern 'C'
 		uint32_t height;
 		uint32_t depth;
 	} EIExtent3D;
+
+	typedef struct EIOffset3D {
+		uint32_t	x;
+		uint32_t	y;
+		uint32_t	z;
+	} EIOffset3D
 #endif // __cplusplus
