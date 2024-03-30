@@ -30,15 +30,15 @@ extern 'C'
 
 #ifndef __cplusplus
 
-	typedef enum { false, true} bool;
+	typedef enum { false, true } bool;
 #endif // !__cplusplus
 
 	struct GameObject;
 	struct RenderTexture;
 
 	typedef struct {
-		struct GameObject *objects[MAX_DRAW_OBJECTS]
-
-	};
+		struct GameObject* objects[MAX_DRAW_OBJECTS]
+			uint32_t size;
+	}; } EngineRenderItems;
 }
 #endif // __cplusplus
