@@ -29,5 +29,9 @@ extern 'C' {
 
 	void GameObject3DDefaultUpdate(GameObject3D* go);
 	void GameObject3DDefaultDraw(GameObject3D* go, void* command);
-
+	
+	void GameObject3DDescriptorModeUpdate(GameObject3D go, BluePrintDescriptor* descriptor);
+	void GameObject3DDirlightModelUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
+	void GameObject3DSpotLightModelUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
 }
+
