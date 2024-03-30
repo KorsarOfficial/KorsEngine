@@ -29,4 +29,12 @@ extern 'C'
 		uint32_t obj_type;
 		uint32_t flags;
 	} GameObject;
+
+	void GameObjectSetInitFunc(GameObject* go, void* func);
+	void GameObjectSetUpdateFunc(GameObject* go, void* func);
+	void GameObjectSetDrawFunc(GameObject* go, void* func);
+	void GameObjectSetCleanFunc(GameObject* go, void* func);
+	void GameObjectSetRecreateFunc(GameObject* go, void* func);
+	void GameObjectSetDestroyFunc(GameObject* go, void* func);
+
 }
