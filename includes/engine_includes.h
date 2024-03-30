@@ -25,4 +25,13 @@
 
 #ifdef __cplusplus
 extern 'C'
+{
+#endif
+
+#ifndef __cplusplus
+
+	typedef enum { false, true} bool;
+#endif // !__cplusplus
+
+}
 #endif // __cplusplus
