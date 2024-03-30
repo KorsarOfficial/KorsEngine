@@ -50,5 +50,13 @@ extern 'C' {
 
 	void GameObject3DInitTextures(GameObject3D* go, DrawParam* dParam);
 
+	void GameObject3DInit(GameObject3D* go);
+	void GameObject3DInitInstance(GameObject3D* go);
+	void GameObject3DUpdateInstances(GameObject3D* go);
+	void GameObject3DInitCopy(GameObject3D* to, GameObject3D* from);
+
+	void GameObject3DAddShadowDescriptor(GameObject3D* go, uint32_t type, void* render, uint32_t type, void* render, uint32_t layer_indx);
+	void GameObject3DAddOmiShadow(GameObject3D* go, void* render, uint32_t layer_indx);
+
 }
 
