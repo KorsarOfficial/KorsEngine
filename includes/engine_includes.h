@@ -8,3 +8,5 @@
 
 #include "e_vertex.h"
 #include "e_buffers_variables.h"
+
+#include "e_math_variables.h"
