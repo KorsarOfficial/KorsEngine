@@ -43,4 +43,9 @@ extern 'C'
 	void GameObjectClean(GameObject* go);
 	void GameObjectRecreate(GameObject* go);
 	void GameObjectDestroy(GameObject* go);
+
+#ifdef
 }
+#endif
+
+#endif
