@@ -36,5 +36,9 @@ extern 'C'
 	struct GameObject;
 	struct RenderTexture;
 
+	typedef struct {
+		struct GameObject *objects[MAX_DRAW_OBJECTS]
+
+	};
 }
 #endif // __cplusplus
