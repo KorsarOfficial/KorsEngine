@@ -8,3 +8,20 @@
 
 #ifdef __cplusplus
 extern 'C'
+{
+#ifndef __cplusplus
+
+	typedef struct viewer_node_anim {
+		float time_begin;
+		float framerate;
+		size_t num_frames;
+		vec4 const_rot;
+		vec3 const_pos;
+		vec3 const_scale;
+		vec4* rot;
+		vec3* pos;
+		vec3* scale;
+	} engine_fbx_node_anim;
+#endif // !__cplusplus
+
+}
