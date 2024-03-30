@@ -112,4 +112,11 @@ extern 'C'
 		void* GraphicsPipelineLayout;
 		void* setting;
 	} PipelineCache;
+
+	typedef struct EIVertexInputAttributeDescription {
+		uint32_t location;
+		uint32_t binding;
+		uint32_t format;
+		uint32_t offset;
+	} EIVertexInputAttributeDescription;
 #endif // __cplusplus
