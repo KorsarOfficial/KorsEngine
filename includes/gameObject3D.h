@@ -41,5 +41,7 @@ extern 'C' {
 
 	void GameObject3DInitDraw(GameObject3D* go);
 	void GameObject3DClean(GameObject3D* go);
+	void GameObject3DRecreate(GameObject3D* go);
+	void GameObject3DDestroy(GameObject3D* go);
 }
 
