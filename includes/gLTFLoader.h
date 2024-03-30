@@ -31,6 +31,15 @@ extern 'C'
 		int curr_key;
 	} engine_gltf_anim;
 
-
+	typedef struct {
+		char name[256];
+		int id_node;
+		int id_parent;
+		char isModel;
+		engine_model_mesh** mesh;
+		uint32_t num_mesh;
+		mat4 global_matrix;
+		mat4 local_matrix;
+	} engine_gltf_node;
 }
 #endif // __cplusplus
