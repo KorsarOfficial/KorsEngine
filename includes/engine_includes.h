@@ -10,3 +10,9 @@
 #include "e_buffers_variables.h"
 
 #include "e_math_variables.h"
+
+#define MAX_FONTS 32
+#define MAX_IMAGES 32
+#define MAX_PIPELINES 50
+#define MAX_UNIFORMS 25
+#define MAX_BLUE_PRINTS 25
