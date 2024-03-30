@@ -106,4 +106,10 @@ extern 'C'
 		void* info;
 		void* texture;
 	} FontCache;
+
+	typedef struct PipelineCache {
+		void* GraphicsPipeline;
+		void* GraphicsPipelineLayout;
+		void* setting;
+	} PipelineCache;
 #endif // __cplusplus
