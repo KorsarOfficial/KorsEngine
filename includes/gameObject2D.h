@@ -36,7 +36,9 @@ extern 'C'
 	void GameObject2DRecreate(GameObject2D* go);
 	void GameObject2DDestroy(GameObject2D* go);
 
-	
+	void GameObject2DAddSettingPipeline(GameObject* go, uint32_t indx_pack, void* args);
+
+	vec2 GameObject2DGetSize(GameObject2D* go);
 }
 
 
