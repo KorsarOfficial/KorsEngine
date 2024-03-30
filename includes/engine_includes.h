@@ -94,4 +94,9 @@ extern 'C'
 		float depth;
 		uint32_t next;
 	} Node;
+
+	typedef struct {
+		uint32_t count;
+		uint32_t maxNodeCount;
+	} GeometrySBO;
 #endif // __cplusplus
