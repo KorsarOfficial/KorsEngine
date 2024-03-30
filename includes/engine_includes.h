@@ -74,5 +74,9 @@ extern 'C'
 		uint32_t	y;
 	} EIOffset2D;
 
+	typedef struct EIRect2D {
+		EIOffset2D offset;
+		EIExtent2D extent;
+	} EIRect2D
 
 #endif // __cplusplus
