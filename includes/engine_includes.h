@@ -79,4 +79,13 @@ extern 'C'
 		EIExtent2D extent;
 	} EIRect2D
 
+	typedef struct {
+		char* path;
+		char* buffer
+		int size;
+		int imgWidth;
+		int imgHeight;
+		uint32_t img_type;
+		uint32_t flags;
+	} GameObjectImage;
 #endif // __cplusplus
