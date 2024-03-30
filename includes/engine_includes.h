@@ -99,4 +99,11 @@ extern 'C'
 		uint32_t count;
 		uint32_t maxNodeCount;
 	} GeometrySBO;
+
+	typedef struct FontCache {
+		char path[2048];
+		void* cdata;
+		void* info;
+		void* texture;
+	} FontCache;
 #endif // __cplusplus
