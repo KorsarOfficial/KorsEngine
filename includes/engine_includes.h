@@ -69,7 +69,7 @@ extern 'C'
 		uint32_t	z;
 	} EIOffset3D
 
-	typedef struct EIOffset2D {
+		typedef struct EIOffset2D {
 		uint32_t	x;
 		uint32_t	y;
 	} EIOffset2D;
@@ -79,7 +79,7 @@ extern 'C'
 		EIExtent2D extent;
 	} EIRect2D
 
-	typedef struct {
+		typedef struct {
 		char* path;
 		char* buffer
 		int size;
@@ -156,7 +156,7 @@ extern 'C'
 		char* geom;
 	} DrawParam
 
-	typedef struct EISurfaceCapabilitiesKHR {
+		typedef struct EISurfaceCapabilitiesKHR {
 		uint32_t	minImageCount;
 		uint32_t	maxImageCount;
 		EIExtent2D	currentExtent;
@@ -168,4 +168,16 @@ extern 'C'
 		uint32_t	supportedCompositeAlpha;
 		uint32_t	supportedUsageFlags;
 	} EISurfaceCapabilitiesKHR;
-#endif // __cplusplus
+
+	typedef struct {
+		uint32_t FindLetter;
+		uint16_t IndexLetter;
+	} FontIndexes;
+
+#ifdef __cplusplus
+}
+
+
+#endif 
+
+#endif 
