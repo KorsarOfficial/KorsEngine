@@ -59,5 +59,10 @@ extern 'C'
 		char* name;
 		char* path;
 	} glTFStruct;
+
+	void Load3DglTFNextFrame(void* ptr, float time, int num_animation);
+	void Load3DglTFModel(void* ptr, char* path, char* name, uint8_t type, DrawParam* dParam);
+
+#ifdef __cplusplus
 }
 #endif // __cplusplus
