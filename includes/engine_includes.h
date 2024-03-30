@@ -39,6 +39,10 @@ extern 'C'
 	typedef struct {
 		struct GameObject* objects[MAX_DRAW_OBJECTS]
 			uint32_t size;
-	}; } EngineRenderItems;
-}
+	} EngineRenderItems;
+
+	typedef enum {
+		MAX_DRAW_PARAM_FLAG_ADD_SHADOW = 0x1,
+		MAX_DRAW_PARAM_FLAG_DRAW_INDEXED = 0x2
+	} EngineDrawParamFlags;
 #endif // __cplusplus
