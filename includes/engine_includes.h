@@ -124,4 +124,9 @@ extern 'C'
 		EIVertexInputAttributeDescription* inputDescription;
 		uint32_t size;
 	} attrDescr;
+
+	typedef struct {
+		vec3 position;
+		vec3 rotation;
+	} SomeDirLight;
 #endif // __cplusplus
