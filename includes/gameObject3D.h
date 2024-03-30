@@ -15,4 +15,15 @@ extern 'C' {
 		void* buffer_memory;
 		void* buffer;
 	} InstanceBuffer;
+
+	typedef struct GameObject3D {
+		GameObject self;
+		GraphicsObject graphObj;
+		Transform3D transform;
+		GameObject* images;
+		uint32_t num_images;
+		VertexInstance3D instances[MAX_INSTANCES];
+		InstanceBuffer buffer;
+		uint32_t num_instance;
+	} GameObject3D;
 }
