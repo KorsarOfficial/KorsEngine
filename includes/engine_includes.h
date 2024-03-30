@@ -119,4 +119,9 @@ extern 'C'
 		uint32_t format;
 		uint32_t offset;
 	} EIVertexInputAttributeDescription;
+
+	typedef struct {
+		EIVertexInputAttributeDescription* inputDescription;
+		uint32_t size;
+	} attrDescr;
 #endif // __cplusplus
