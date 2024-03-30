@@ -22,6 +22,11 @@ extern 'C'
 		vec3* pos;
 		vec3* scale;
 	} engine_fbx_node_anim;
+
+	typedef struct viewer_blend_channel_anim {
+		float const_weight;
+		float* weight;
+	} engine_fbx_blend_channel_anim;
 #endif // !__cplusplus
 
 }
