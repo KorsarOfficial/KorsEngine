@@ -49,5 +49,8 @@ extern 'C'
 	typedef struct ChildStackOver {
 		struct ChildStack* before;
 		struct ChildStack* next;
+		void* node;
 	} ChildStack;
+
+
 #endif // __cplusplus
