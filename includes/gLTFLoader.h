@@ -41,5 +41,23 @@ extern 'C'
 		mat4 global_matrix;
 		mat4 local_matrix;
 	} engine_gltf_node;
+
+	typedef struct {
+		float anim_time;
+		
+		engine_gltf_anim* animations;
+		uint32_t num_anim;
+
+		join_mat_struct* joint_mats;
+		uint32_t num_join_mats;
+
+		engine_gltf_node* nodes;
+		uint32_t num_nodes;
+
+		uint32_t num_meshes;
+
+		char* name;
+		char* path;
+	} glTFStruct;
 }
 #endif // __cplusplus
