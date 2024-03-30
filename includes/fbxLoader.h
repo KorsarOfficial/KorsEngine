@@ -27,6 +27,16 @@ extern 'C'
 		float const_weight;
 		float* weight;
 	} engine_fbx_blend_channel_anim;
+
+	typedef struct fbx_anim {
+		const char* name;
+		float time_begin;
+		float time_end;
+		float framerate;
+		size_t num_frames;
+
+		engine_fbx_blend_channel_anim* blend_channel;
+	} engine_fbx_anim;
 #endif // !__cplusplus
 
 }
