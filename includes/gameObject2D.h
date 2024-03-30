@@ -23,5 +23,10 @@ extern 'C'
 		GameObjectImage* image;
 		char name[256];
 	} GameObject2D;
+
+	void GameObject2DTransformBufferUpdate(GameObject2D* go, BluePrintDescriptor *descriptor);
+	void GameObject2DImageBuffer(GameObject2D* go, BluePrintDescriptor* descriptor);
+
+
 }
 #endif // __cplusplus
