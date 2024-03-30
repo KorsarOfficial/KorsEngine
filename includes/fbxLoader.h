@@ -51,6 +51,27 @@ extern 'C'
 	typedef struct  viewer_blend_channel {
 		float weight;
 	} engine_fbx_blend_channel;
+
+	typedef struct {
+		
+		float anim_time;
+
+		engine_fbx_node* nodes;
+		uint32_t num_nodes;
+
+		engine_model_mesh* meshes;
+		uint32_t num_meshes;
+
+		engine_fbx_anim* animations;
+		uint32_t num_animations;
+
+		engine_fbx_blend_channel* blend_channels;
+		size_t num_blend_channels;
+	} FBXStruct;
+
+	void Load3DFBXNextFrame(ModelObject3D* mo);
+	void Load3DFBXModel(ModelObject* mo, char* filepath, DrawParam* dParam);
+
 #endif // !__cplusplus
 
 }
