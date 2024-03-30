@@ -52,5 +52,8 @@ extern 'C'
 		void* node;
 	} ChildStack;
 
-
+	typedef struct EIExtent2D {
+		uint32_t width;
+		uint32_t height;
+	} EIExtent2D;
 #endif // __cplusplus
