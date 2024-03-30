@@ -34,6 +34,9 @@ extern 'C' {
 	void GameObject3DDirlightModelUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
 	void GameObject3DSpotLightModelUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
 	void GameObject3DOmnilightModelUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
-
+	void GameObject3DDescriptorPointLightsUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
+	void GameObject3DSpotlightUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
+	void GameObject3DLightStatusBufferUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
+	void GameObject3DSDFBufferUpdate(GameObject3D* go, BluePrintDescriptor* descriptor);
 }
 
