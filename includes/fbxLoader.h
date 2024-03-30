@@ -47,6 +47,10 @@ extern 'C'
 		mat4 geometry_to_world;
 		mat4 normal_to_world;
 	} engine_fbx_node;
+
+	typedef struct  viewer_blend_channel {
+		float weight;
+	} engine_fbx_blend_channel;
 #endif // !__cplusplus
 
 }
