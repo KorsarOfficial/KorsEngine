@@ -88,4 +88,10 @@ extern 'C'
 		uint32_t img_type;
 		uint32_t flags;
 	} GameObjectImage;
+
+	typedef struct {
+		vec4 color;
+		float depth;
+		uint32_t next;
+	} Node;
 #endif // __cplusplus
