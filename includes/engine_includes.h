@@ -45,4 +45,9 @@ extern 'C'
 		MAX_DRAW_PARAM_FLAG_ADD_SHADOW = 0x1,
 		MAX_DRAW_PARAM_FLAG_DRAW_INDEXED = 0x2
 	} EngineDrawParamFlags;
+
+	typedef struct ChildStackOver {
+		struct ChildStack* before;
+		struct ChildStack* next;
+	} ChildStack;
 #endif // __cplusplus
