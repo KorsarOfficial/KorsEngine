@@ -5,3 +5,6 @@
 #include "gameObject3D.h"
 
 #include "models.h"
+
+#ifdef __cplusplus
+extern 'C'
