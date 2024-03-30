@@ -129,4 +129,11 @@ extern 'C'
 		vec3 position;
 		vec3 rotation;
 	} SomeDirLight;
+
+	typedef struct {
+		uint32_t type;
+		vec3 orig;
+		vec3 dir;
+		float angle;
+	} TreePeace;
 #endif // __cplusplus
