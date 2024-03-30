@@ -18,4 +18,15 @@ extern 'C'
 		ENGINE_GAME_OBJECT_TYPE_2D,
 		ENGNE_GAME_OBJECT_TYPE_3D
 	} GameObjectType;
+
+	typedef struct {
+		void* InitPoint;
+		void* UpdatePoint;
+		void* DrawPoint;
+		void* CleanPoint;
+		void* RecreatePoint;
+		void* DestroyPoint;
+		uint32_t obj_type;
+		uint32_t flags;
+	} GameObject;
 }
