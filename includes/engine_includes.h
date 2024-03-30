@@ -56,4 +56,10 @@ extern 'C'
 		uint32_t width;
 		uint32_t height;
 	} EIExtent2D;
+
+	typedef struct EIExtent3D {
+		uint32_t width;
+		uint32_t height;
+		uint32_t depth;
+	} EIExtent3D;
 #endif // __cplusplus
