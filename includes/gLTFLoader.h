@@ -24,5 +24,13 @@ extern 'C'
 		char type;
 		int num_keyframe;
 	} engine_gltf_anim_channel;
+
+	typedef struct {
+		engine_gltf_anim_channel* channels;
+		int num_channels;
+		int curr_key;
+	} engine_gltf_anim;
+
+
 }
 #endif // __cplusplus
