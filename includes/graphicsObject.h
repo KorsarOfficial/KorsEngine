@@ -28,4 +28,7 @@ extern "C"
 	void GraphicsObjectCleanPipelines(GraphicsObject* graphObj);
 	void GraphicsObjectClean(GraphicsObject* graphObj);
 	void GraphicsObjectDestroy(GraphicsObject* graphObj);
+
+	void GraphicsObjectSetShadersPath(GraphicsObject* graphObj, const char* vert, const char* frag);
+
 }
