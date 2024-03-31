@@ -10,4 +10,13 @@
 extern "C"
 {
 #endif
+
+	typedef struct {
+		Blueprints blueprints;
+		GraphicItems gItems;
+		aboutShader aShader;
+		bool lock;
+		Shape shapes[MAX_SHAPES];
+		uint32_t num_shapes;
+	} GraphicsObject;
 }
