@@ -431,3 +431,5 @@ extern PFN_glfwGetMouseButton glfwGetMouseButton;
 extern PFN_glfwWindowShouldClose glfwWindowShouldClose;
 
 void InitGLFWFun();
+
+#endif // GLFW_HEAD_H
