@@ -400,3 +400,4 @@ typedef void (*PFN_glfwSetInputMode)(GLFWwindow* window, int mode, int value);
 typedef void (*PFN_glfwSetCursorPos)(GLFWwindow* window, double xpos, double ypos);
 typedef void (PFN_glfwTerminate)(void);
 typedef void (*PFN_glfwDestroyWindow)(GLFWwindow* window);
+typedef GLFWwindow* (*PFN_glfwCreateWindow)(int width, int height, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
