@@ -390,3 +390,4 @@ typedef GLFWframebuffersizefun(*PFN_glfwSetFramebufferSizeCallback)(GLFWwindow* 
 typedef int (*PFN_glfwGetKey)(GLFWwindow* window, int key);
 typedef int (*PFN_glfwInit)(void);
 typedef const char** (*PFN_glfwGetRequiredInstanceExtensions)(uint32_t* count);
+typedef void (*PFN_glfwGetFramebufferSize)(GLFWwindow* window, int* width, int* height);
