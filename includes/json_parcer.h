@@ -40,4 +40,9 @@ int read_string(const char* point, char* out);
 	char* char_point;
 	out = calloc(len + 1, sizeof(char));
 	char_point = out;
+
+	for (int i = 0; i < len; i++)
+	{
+		char_point[len] = '\0';
+	}
 }
