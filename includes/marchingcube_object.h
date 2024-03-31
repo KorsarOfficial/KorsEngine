@@ -17,3 +17,5 @@ void MarchingCubeObjectSetGridValue(float* grid, uint32_t size, int x, int y, in
 void MarchingCubeObjectInit(MarchingCubeObject* mco, float* grid, uint32_t size, float isolevel);
 void MarchingCubeObjectSetDefaultDescriptor(MarchingCubeObject* mco, DrawParam* dParam);
 void MarchingCubeObjectDefaultInit(MarchingCubeObject* mco, float* grid, uint32_t size, float isolevel, DrawParam* dParam);
+
+#endif // MARCHINGCUBE_OBJECT_H
