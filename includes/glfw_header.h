@@ -168,3 +168,5 @@
 #define GLFW_MOD_ALT			0x0004
 
 #define GLFW_MOD_SUPER			0x0008
+
+#define GLFW_MOD_CAPS_LOCK		0x0010
