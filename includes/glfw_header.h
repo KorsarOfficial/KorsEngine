@@ -133,3 +133,4 @@
 #define GLFW_KEY_F25			320
 #define GLFW_KEY_KP_0			321
 #define GLFW_KEY_KP_1			322
+#define GLFW_KEY_KP_2			323
