@@ -10,3 +10,10 @@ typedef enum {
 	gltf_type_array,
 	gltf_type_head,
 } engine_gltf_type_enum;
+
+typedef struct {
+	char* name;
+	void** data;
+	site_t size;
+	engine_gltf_type_num type;
+} json_struct;
