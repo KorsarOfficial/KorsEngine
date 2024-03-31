@@ -410,3 +410,4 @@ typedef int (*PFN_glfwWindowShouldClose)(GLFWwindow* window);
 extern PFN_glfwSetCursorPosCallback glfwSetCursorPosCallback;
 extern PFN_glfwCreateWindow glfwCreateWindow;
 extern PFN_glfwCreateWindowSurface glfwCreateWindowSurface;
+extern PFN_glfwSetFramebufferSizeCallback glfwSetFramebufferSizeCallback;
