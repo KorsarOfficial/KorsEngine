@@ -51,4 +51,5 @@ extern "C"
 
 	void LightObjectSetAmbientColor(LightObject* lo, float r, float g, float b);
 	void LightObjectSetDiffuseColor(LightObject* lo, float r, float g, float b);
+	void LightObjectSetSpecularColor(LightObject* lo, float r, float g, float b);
 }
