@@ -179,5 +179,10 @@ int read_struct(const char* point, json_struct* out)
 		iter++;
 		out = calloc(1, sizeof(json_struct));
 		out->type = gltf_type_struct
+
+			while (point[iter] != '}')
+			{
+				if(point[iter] == '"')
+			}
 	}
 }
