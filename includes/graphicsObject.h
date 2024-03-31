@@ -27,5 +27,5 @@ extern "C"
 	void GraphicsObjectCreateDrawItems(GraphicsObject* graphObj);
 	void GraphicsObjectCleanPipelines(GraphicsObject* graphObj);
 	void GraphicsObjectClean(GraphicsObject* graphObj);
-
+	void GraphicsObjectDestroy(GraphicsObject* graphObj);
 }
