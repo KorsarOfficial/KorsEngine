@@ -20,4 +20,11 @@ extern "C"
 		GameObjectImage* specular;
 		GameObjectImage* normal;
 	} ModelStruct;
+
+	typedef struct {
+		ModelStruct* models;
+		uint32_t num_models;
+		uint32_t id_node;
+		mat4 model;
+	} ModelNode;
 }
