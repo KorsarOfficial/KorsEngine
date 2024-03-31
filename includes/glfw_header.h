@@ -402,4 +402,5 @@ typedef void (PFN_glfwTerminate)(void);
 typedef void (*PFN_glfwDestroyWindow)(GLFWwindow* window);
 typedef GLFWwindow* (*PFN_glfwCreateWindow)(int width, int height, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
 typedef void (*PFN_glfwWindowHint)(int hint, int value);
-typedef GLFWmousebuttonfun(*PFN_glfwSetMouseButtonCallback)(GLFWwindow* window, GLFWmousebuttonfun callback);
+typedef GLFWmousebuttonfun (*PFN_glfwSetMouseButtonCallback)(GLFWwindow* window, GLFWmousebuttonfun callback);
+typedef GLFWkeyfun(PFN_glfwSetKeyCallback)(GLFWwindow* window, GLFWkeyfun callback);
