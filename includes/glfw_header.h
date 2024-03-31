@@ -405,3 +405,4 @@ typedef void (*PFN_glfwWindowHint)(int hint, int value);
 typedef GLFWmousebuttonfun (*PFN_glfwSetMouseButtonCallback)(GLFWwindow* window, GLFWmousebuttonfun callback);
 typedef GLFWkeyfun(PFN_glfwSetKeyCallback)(GLFWwindow* window, GLFWkeyfun callback);
 typedef int (*PFN_glfwGetMouseButton)(GLFwindow* window, int button);
+typedef int (*PFN_glfwWindowShouldClose)(GLFWwindow* window);
