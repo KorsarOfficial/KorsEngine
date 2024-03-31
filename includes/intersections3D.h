@@ -17,5 +17,7 @@ extern "C"
 	int IntersectionSphereShape(void* obj1, void* shape, float* dist, float* depth, vec3* dir);
 	int IntersectionSphereToSphere(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
 	int IntersectionSphereCapsule(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
+	int IntersectionCapsuleCapsule(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
+
 
 }
