@@ -47,4 +47,14 @@ extern "C"
 		bool extend;
 		void* vertices;
 	} vertexParam;
+
+	typedef struct {
+		void* indexBuffer;
+		void* indexBufferMemory;
+		uint32_t typeSize;
+		uint32_t indexesSize;
+		uint32_t bufferSize;
+		bool extend;
+		uint32_t* indices;
+	} indexParam;
 }
