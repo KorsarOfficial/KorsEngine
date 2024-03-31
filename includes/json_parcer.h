@@ -97,19 +97,24 @@ int read_value(char* point, json_struct* out)
 
 		switch (out->type)
 		{
-			case gltf_type_string;
+			case gltf_type_string:
 				out->data = calloc(out->size, sizeof(char*));
 				char_point = out->data;
 				char_point[out->size - 1] = calloc(len, sizeof(char));
 				memcpy(&out->data[out->size - 1], buff, len);
 				break;
 				
-			case gltf_type_float;
+			case gltf_type_float:
 				out->data = calloc(out->size, sizeof(double*));
 				float_point = out->data;
 				sscanf(buff, "%lf", float_point);
 				break;
 
+			case gltf_type_scalar:
+				out->data = calloc(out->size, sizeof(int*));
+				int_point = out->data;
+				*int_point = atoi(buff);
+				break;
 		}
 	}
 }
