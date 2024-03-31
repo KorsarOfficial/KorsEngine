@@ -12,7 +12,7 @@
 #include "e_texture.h"
 
 #ifdef __cplusplus
-extern 'C'
+extern "C"
 {
 #endif
 

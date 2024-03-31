@@ -8,7 +8,8 @@
 #define MAX_INSTANCES UINT16_MAX
 
 #ifdef __cplusplus
-extern 'C' {
+extern "C" 
+{
 #endif
 
 	typedef struct {

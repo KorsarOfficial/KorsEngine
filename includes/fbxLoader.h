@@ -7,7 +7,7 @@
 #include "models.h"
 
 #ifdef __cplusplus
-extern 'C'
+extern "C"
 {
 #ifndef __cplusplus
 

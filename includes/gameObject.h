@@ -4,7 +4,7 @@
 #include "engine_includes.h"
 
 #ifdef __cplusplus
-extern 'C'
+extern "C"
 {
 #endif
 

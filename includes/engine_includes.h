@@ -24,7 +24,7 @@
 #define NODE_COUNT 20
 
 #ifdef __cplusplus
-extern 'C'
+extern "C"
 {
 #endif
 
