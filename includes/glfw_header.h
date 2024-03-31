@@ -140,3 +140,4 @@
 #define GLFW_KEY_KP_6			327
 #define GLFW_KEY_KP_7			328
 #define GLFW_KEY_KP_8			329
+#define GLFW_KEY_KP_9			330
