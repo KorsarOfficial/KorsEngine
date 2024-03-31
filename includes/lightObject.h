@@ -42,4 +42,6 @@ extern "C"
 	void LightObjectFillLightStatus(LightStatusBuffer* lsb);
 
 	void LightObjectInit(LightObject* lo, ELightType type);
+
+	void LightObjectSetPosition(LightObject* lo, float x, float y, float z);
 }
