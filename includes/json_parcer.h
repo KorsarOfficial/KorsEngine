@@ -48,3 +48,15 @@ int read_string(const char* point, char* out);
 
 	return iter;
 }
+
+int read_value(char* point, json_struct* out)
+{
+	if (point == NULL)
+		return 0;
+
+	out = calloc(1, sizeof(json_struct));
+
+	int len = 0, iter = 0;
+
+	char buff[256];
+}
