@@ -143,3 +143,4 @@
 #define GLFW_KEY_KP_9			330
 
 #define GLFW_KEY_KP_DECIMAL		331
+#define GLFW_KEY_KP_DIVIDE		332
