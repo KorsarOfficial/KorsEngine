@@ -38,4 +38,5 @@ extern "C"
 
 	void LightObjectFillDirLights(DirLightBuffer* blb);
 	void LightObjectFillPointLights(PointLightBuffer* plb);
+	void LightObjectFillSpotLights(SpotLightBuffer* slb);
 }
