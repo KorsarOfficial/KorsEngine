@@ -83,4 +83,8 @@ extern "C"
 		ENGINE_DESCRIPTOR_TYPE_IMAGE_ARRAY
 	};
 
+#ifdef __cplusplus
 }
+#endif
+
+#endif // GRAPHICSITEMS_H
