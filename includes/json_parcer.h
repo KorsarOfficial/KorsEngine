@@ -29,4 +29,10 @@ int read_string(const char* point, char* out);
 		int len = 0;
 		char* start = &point[iter];
 	}
+
+	while (point[iter] != '"')
+	{
+		len++;
+		iter++;
+	}
 }
