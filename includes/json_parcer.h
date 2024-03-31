@@ -220,6 +220,8 @@ int read_struct(const char* point, json_struct* out)
 						iter += read_value(&point[iter], &json_point[out->size - 1]);
 					}
 				}
+
+				iter++;
 			}
 	}
 }
