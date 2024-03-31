@@ -2,250 +2,259 @@
 #define JSON_PARCER_H
 
 typedef enum {
-	gltf_type_none,
-	gltf_type_string,
-	gltf_type_scalar,
-	gltf_type_float,
-	gltf_type_struct,
-	gltf_type_array,
-	gltf_type_head,
-} engine_gltf_type_enum;
+    gltf_type_none,
+    gltf_type_string,
+    gltf_type_scalar,
+    gltf_type_float,
+    gltf_type_struct,
+    gltf_type_array,
+    gltf_type_head,
+} engine_gltf_type_num;
 
 typedef struct {
-	char* name;
-	void** data;
-	site_t size;
-	engine_gltf_type_num type;
+    char* name;
+    void** data;
+    size_t size;
+    engine_gltf_type_num type;
 } json_struct;
 
-int read_string(const char* point, char* out);
+
+int read_string(const char* point, char* out)
 {
-	int iter = 0;
+    int iter = 0;
 
-	if (point[iter] == '"')
-	{
-		iter++;
 
-		int len = 0;
-		char* start = &point[iter];
-	}
+    if (point[iter] == '"')
+    {
+        iter++;
 
-	while (point[iter] != '"')
-	{
-		len++;
-		iter++;
-	}
+        int len = 0;
+        char* start = &point[iter];
 
-	iter++;
-	char* char_point;
-	out = calloc(len + 1, sizeof(char));
-	char_point = out;
+        while (point[iter] != '"')
+        {
+            len++;
+            iter++;
+        }
 
-	for (int i = 0; i < len; i++)
-	{
-		char_point[len] = '\0';
-	}
+        iter++;
+        char* char_point;
+        out = calloc(len + 1, sizeof(char));
+        char_point = out;
 
-	return iter;
+        for (int i = 0; i < len; i++)
+        {
+            char_point[i] = start[i];
+        }
+
+        char_point[len] = '\0';
+    }
+
+    return iter;
 }
 
 int read_value(char* point, json_struct* out)
 {
-	if (point == NULL)
-		return 0;
 
-	out = calloc(1, sizeof(json_struct));
+    if (point == NULL)
+        return 0;
 
-	int len = 0, iter = 0;
+    out = calloc(1, sizeof(json_struct));
 
-	char buff[256];
+    int len = 0, iter = 0;
 
-	while (point[iter] == ' ')
-		iter++;
+    char buff[256];
 
-	if (point[iter] == '"')
-		iter++;
+    while (point[iter] == ' ')
+        iter++;
 
-	char* temp = &point[iter];
+    if (point[iter] == '"')
+        iter++;
 
-	while (point[iter] != ',' && point[iter] != ']') {
-		if (point[iter] == '.')
-			out->type = gltf_type_float;
-		else if (point[iter] == '"')
-			out->type = gltf_type_string;
+    char* temp = &point[iter];
 
-		len++;
-		iter++;
-	}
+    while (point[iter] != ',' && point[iter] != ']') {
+        if (point[iter] == '.')
+            out->type = gltf_type_float;
+        else if (point[iter] == '"')
+            out->type = gltf_type_string;
 
-	if (out->type == gltf_type_none)
-		out->type = gltf_type_scalar;
+        len++;
+        iter++;
+    }
 
-	if (len > 0)
-	{
-		memcpy(buff, temp, len);
+    if (out->type == gltf_type_none)
+        out->type = gltf_type_scalar;
 
-		for (int i = 0; i < len; i++)
-		{
-			if (buff[i] == '.')
-				buff[i] = ',';
-		}
+    if (len > 0)
+    {
+        memcpy(buff, temp, len);
 
-		char* char_point;
-		int* int_point;
-		double* float_point;
+        for (int i = 0; i < len; i++)
+        {
+            if (buff[i] == '.')
+                buff[i] = ',';
+        }
 
-		switch (out->type)
-		{
-			case gltf_type_string:
-				out->data = calloc(out->size, sizeof(char*));
-				char_point = out->data;
-				char_point[out->size - 1] = calloc(len, sizeof(char));
-				memcpy(&out->data[out->size - 1], buff, len);
-				break;
-				
-			case gltf_type_float:
-				out->data = calloc(out->size, sizeof(double*));
-				float_point = out->data;
-				sscanf(buff, "%lf", float_point);
-				break;
+        char* char_point;
+        int* int_point;
+        double* float_point;
 
-			case gltf_type_scalar:
-				out->data = calloc(out->size, sizeof(int*));
-				int_point = out->data;
-				*int_point = atoi(buff);
-				break;
+        switch (out->type)
+        {
+        case gltf_type_string:
+            out->data = calloc(out->size, sizeof(char*));
+            char_point = out->data;
+            char_point[out->size - 1] = calloc(len, sizeof(char));
+            memcpy(&out->data[out->size - 1], buff, len);
+            break;
+        case gltf_type_float:
+            out->data = calloc(out->size, sizeof(double*));
+            float_point = out->data;
+            sscanf(buff, "%lf", float_point);
+            break;
+        case gltf_type_scalar:
+            out->data = calloc(out->size, sizeof(int*));
+            int_point = out->data;
+            *int_point = atoi(buff);
+            break;
+        case gltf_type_none:
+            break;
+        default:
+            break;
+        }
+    }
 
-			case gltf_type_none:
-				break;
-			default:
-				break;
-		}
-	}
-
-	return iter;
+    return iter;
 }
 
-int read_array(const char* point, json_struct* out) 
-{
-	int iter = 0;
+int read_array(const char* point, json_struct* out) {
 
-	if (point[iter] == '[')
-	{
-		out = calloc(1, sizeof(json_struct));
-		out->size = 0;
-		out->type = gltf_type_array;
+    int iter = 0;
 
-		iter++;
+    if (point[iter] == '[')
+    {
+        out = calloc(1, sizeof(json_struct));
+        out->size = 0;
+        out->type = gltf_type_array;
 
-		while (point[iter] != ']')
-		{
-			if (point[iter] == '{')
-			{
-				out->data = calloc(1, sizeof(json_struct*));
-				out->size++;
+        iter++;
+        while (point[iter] != ']')
+        {
+            if (point[iter] == '{')
+            {
+                out->data = calloc(1, sizeof(json_struct*));
+                out->size++;
 
-				json_struct* json_point = out->data;
+                json_struct* json_point = out->data;
 
-				iter += read_struct(&point[iter], &json_point[out->size - 1]);
-			}
-			else if (point[iter] != ' ' && point[iter] != '\n')
-			{
-				out->data = calloc(1, sizeof(json_struct*));
+                iter += read_struct(&point[iter], &json_point[out->size - 1]);
 
-				json_struct* json_point = out->data;
+            }
+            else if (point[iter] != ' ' && point[iter] != '\n')
+            {
+                out->data = calloc(1, sizeof(json_struct*));
 
-				iter += read_value(&point[iter], &json_point[out->size - 1]);
-			}
-			if (point[iter] == ',')
-			{
-				out->size++;
-			}
+                json_struct* json_point = out->data;
 
-			if (point[iter] != ']')
-				iter++;
-		}
-		iter++;
+                iter += read_value(&point[iter], &json_point[out->size - 1]);
+            }
 
-		return iter;
-	}
+            if (point[iter] == ',')
+            {
+                out->size++;
+            }
+
+            if (point[iter] != ']')
+                iter++;
+        }
+        iter++;
+
+        return iter;
+    }
 }
+
 int read_struct(const char* point, json_struct* out)
 {
-	int iter = 0;
 
-	if (point[iter] == '{')
-	{
-		iter++;
-		out = calloc(1, sizeof(json_struct));
-		out->type = gltf_type_struct
+    int iter = 0;
 
-			while (point[iter] != '}')
-			{
-				if (point[iter] == '"')
-				{
-					iter += read_string(&point[iter], out->name);
-				}
-				if (point[iter] == ':')
-				{
-					iter++;
+    if (point[iter] == '{')
+    {
+        iter++;
+        out = calloc(1, sizeof(json_struct));
+        out->type = gltf_type_struct;
 
-					while (point[iter] == ' ')
-						iter++;
+        while (point[iter] != '}')
+        {
+            if (point[iter] == '"')
+            {
+                iter += read_string(&point[iter], out->name);
+            }
 
-					if (point[iter] == '[')
-					{
-						out->size++;
-						out->data = realloc(out->data, out->size * sizeof(json_struct*));
+            if (point[iter] == ':')
+            {
+                iter++;
 
-						json_struct* json_point = out->data;
+                while (point[iter] == ' ')
+                    iter++;
 
-						iter += read_array(&point[iter], &json_point[out->size - 1]);
-					}
-					else if (point[iter] == '{')
-					{
-						out->size++;
-						out->data = realloc(out->data, out->size * sizeof(json_struct*));
 
-						json_struct* json_point = out->data;
+                if (point[iter] == '[')
+                {
+                    out->size++;
+                    out->data = realloc(out->data, out->size * sizeof(json_struct*));
 
-						iter += read_struct(&point[iter], &json_point[out->size - 1]);
-					}
-					else
-					{
-						out->size++;
-						out->data = realloc(out->data, out->size * sizeof(json_struct*));
-						json_struct* json_point = out->data;
+                    json_struct* json_point = out->data;
 
-						iter += read_value(&point[iter], &json_point[out->size - 1]);
-					}
-				}
+                    iter += read_array(&point[iter], &json_point[out->size - 1]);
+                }
+                else if (point[iter] == '{')
+                {
+                    out->size++;
+                    out->data = realloc(out->data, out->size * sizeof(json_struct*));
 
-				iter++;
-			}
+                    json_struct* json_point = out->data;
 
-		iter++;
-	}
+                    iter += read_struct(&point[iter], &json_point[out->size - 1]);
+                }
+                else
+                {
+                    out->size++;
+                    out->data = realloc(out->data, out->size * sizeof(json_struct*));
+                    json_struct* json_point = out->data;
 
-	void read_json(char* buffer, int size, json_struct * json)
-	{
-		int iter = 0;
-		while (iter <= size)
-		{
+                    iter += read_value(&point[iter], &json_point[out->size - 1]);
+                }
+            }
 
-			if (buffer[iter] == '{')
-			{
-				json->data = calloc(1, sizeof(json_struct*));
-				json->size++;
+            iter++;
+        }
 
-				json_struct* json_point = json->data;
-
-				iter += read_struct(&buffer[iter], &json_point[json->size - 1]);
-			}
-
-			iter++;
-		}
-	}
+        iter++;
+    }
+    return iter;
 }
 
-#endif // JSON_PARCER_H
+void read_json(char* buffer, int size, json_struct* json)
+{
+    int iter = 0;
+    while (iter <= size)
+    {
+
+        if (buffer[iter] == '{')
+        {
+
+            json->data = calloc(1, sizeof(json_struct*));
+            json->size++;
+
+            json_struct* json_point = json->data;
+
+            iter += read_struct(&buffer[iter], &json_point[json->size - 1]);
+        }
+
+        iter++;
+    }
+}
+
+#endif
