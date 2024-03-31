@@ -141,3 +141,5 @@
 #define GLFW_KEY_KP_7			328
 #define GLFW_KEY_KP_8			329
 #define GLFW_KEY_KP_9			330
+
+#define GLFW_KEY_KP_DECIMAL		331
