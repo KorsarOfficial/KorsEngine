@@ -420,3 +420,4 @@ extern PFN_glfwSetCharCallback glfwSetCharCallback;
 extern PFN_glfwWaitEvents glfwWaitEvents;
 extern PFN_glfwPollEvents glfwPollEvents;
 extern PFN_glfwGetCursorPos glfwGetCursorPos;
+extern PFN_glfwSetInputMode glfwSetInputMode;
