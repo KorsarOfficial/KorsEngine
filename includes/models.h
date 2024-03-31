@@ -50,4 +50,5 @@ extern "C"
 	void ModelDefaultUpdate(ModelObject3D* mo);
 	void ModelClean(ModelObject3D* mo);
 	void ModelDestroy(ModelObject3D* mo);
+	void ModelRecreate(ModelObject3D* mo);
 }
