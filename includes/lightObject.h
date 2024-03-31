@@ -48,4 +48,6 @@ extern "C"
 
 	void LightObjectSetDirection(LightObject* lo, float x, float y, float z);
 	vec3 LightObjectGetDirection(LightObject* lo);
+
+	void LightObjectSetAmbientColor(LightObject* lo, float r, float g, float b);
 }
