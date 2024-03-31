@@ -223,5 +223,9 @@ int read_struct(const char* point, json_struct* out)
 
 				iter++;
 			}
+
+		iter++;
 	}
+
+	void read_json(char* buffer, int size, json_struct * json)
 }
