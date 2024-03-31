@@ -31,4 +31,9 @@ extern "C"
 
 	void GraphicsObjectSetShadersPath(GraphicsObject* graphObj, const char* vert, const char* frag);
 
+#ifdef __cplusplus
 }
+
+#endif
+
+#endif // GRAPHICSOBJECT_H
