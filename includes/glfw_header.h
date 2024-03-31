@@ -398,3 +398,4 @@ typedef void (*PFN_glfwPollEvents)(void);
 typedef void (*PFN_glfwGetCursorPos)(GLFWwindow* window, double* xpos, double* ypos);
 typedef void (*PFN_glfwSetInputMode)(GLFWwindow* window, int mode, int value);
 typedef void (*PFN_glfwSetCursorPos)(GLFWwindow* window, double xpos, double ypos);
+typedef void (PFN_glfwTerminate)(void);
