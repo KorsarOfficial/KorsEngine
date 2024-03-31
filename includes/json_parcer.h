@@ -65,4 +65,13 @@ int read_value(char* point, json_struct* out)
 
 	if (point[iter] == '"')
 		iter++;
+
+	char* temp = &point[iter];
+
+	while (point[iter] != ',' && point[iter] != ']') {
+		if (point[iter] == '.')
+			out->type = gltf_type_float;
+		else if (point[iter] == '"')
+			out->type = gltf_type_string;
+	}
 }
