@@ -395,3 +395,5 @@ typedef double (*PFN_glfwGetTime)(void);
 typedef GLFWcharfun(*PFN_glfwSetCharCallback)(GLFWwindow* window, GLFWcharfun callback);
 typedef void (*PFN_glfwWaitEvents)(void);
 typedef void (*PFN_glfwPollEvents)(void);
+typedef void (*PFN_glfwGetCursorPos)(GLFWwindow* window, double* xpos, double* ypos);
+typedef void (*PFN_glfwSetInputMode)(GLFWwindow* window, int mode, int value);
