@@ -11,5 +11,5 @@ extern "C"
 #endif
 
 	int IntersectionSpherePlane(void* plane, void* sphere, float* distance, float* depth, vec3* dir);
-	
+	int IntersectionSphereTerrain(void* terrain, void* sphere, float* distance, float* depth, vec3* dir);
 }
