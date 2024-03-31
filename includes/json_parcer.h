@@ -192,6 +192,12 @@ int read_struct(const char* point, json_struct* out)
 
 					while (point[iter] == ' ')
 						iter++;
+
+					if (point[iter] == '[')
+					{
+						out->size++;
+						out->data = realloc(out->data, out->size * sizeof(json_struct*));
+					}
 				}
 			}
 	}
