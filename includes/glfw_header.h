@@ -419,3 +419,4 @@ extern PFN_glfwGetTime glfwGetTime;
 extern PFN_glfwSetCharCallback glfwSetCharCallback;
 extern PFN_glfwWaitEvents glfwWaitEvents;
 extern PFN_glfwPollEvents glfwPollEvents;
+extern PFN_glfwGetCursorPos glfwGetCursorPos;
