@@ -80,4 +80,8 @@
 #define GLFW_KEY_Z			90
 
 #define GLFW_KEY_LEFT_BRACKET		91
+#define GLFW_KEY_BACKSLASH			92
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
 #define GLFW_KEY_
