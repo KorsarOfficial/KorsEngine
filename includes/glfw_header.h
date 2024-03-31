@@ -85,3 +85,26 @@
 #define GLFW_KEY_GRAVE_ACCENT		96
 #define GLFW_KEY_WORLD_1			161
 #define GLFW_KEY_WORLD_2			162
+
+// keys
+#define GLFW_KEY_ESCAPE		256
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
