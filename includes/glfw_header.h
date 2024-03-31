@@ -401,3 +401,4 @@ typedef void (*PFN_glfwSetCursorPos)(GLFWwindow* window, double xpos, double ypo
 typedef void (PFN_glfwTerminate)(void);
 typedef void (*PFN_glfwDestroyWindow)(GLFWwindow* window);
 typedef GLFWwindow* (*PFN_glfwCreateWindow)(int width, int height, const char* title, GLFWmonitor* monitor, GLFWwindow* share);
+typedef void (*PFN_glfwWindowHint)(int hint, int value);
