@@ -182,7 +182,11 @@ int read_struct(const char* point, json_struct* out)
 
 			while (point[iter] != '}')
 			{
-				if(point[iter] == '"')
+				if (point[iter] == '"')
+				{
+					iter += read_string(&point[iter], out->name);
+				}
+				
 			}
 	}
 }
