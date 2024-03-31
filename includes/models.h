@@ -57,4 +57,9 @@ extern "C"
 	void ModelSetSomeViewport(ModelObject3D* mo, float x, float y, float height, float width);
 
 	void ModelDefaultInit(ModelStruct* model, DrawParam* dParam);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // MODELS_H
