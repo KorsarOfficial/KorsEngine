@@ -30,3 +30,5 @@ typedef struct {
 	GameObjectImage* specular;
 	GameObjectImage* normal;
 } engine_model_mesh;
+
+#endif // MODEL_INCLUDE_H
