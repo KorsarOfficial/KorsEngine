@@ -135,3 +135,4 @@
 #define GLFW_KEY_KP_1			322
 #define GLFW_KEY_KP_2			323
 #define GLFW_KEY_KP_3			324
+#define GLFW_KEY_KP_4			325
