@@ -90,5 +90,9 @@ int read_value(char* point, json_struct* out)
 			if (buff[i] == '.')
 				buff[i] = ',';
 		}
+
+		char* char_point;
+		int* int_point;
+		double* float_point;
 	}
 }
