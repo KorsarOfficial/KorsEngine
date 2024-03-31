@@ -56,4 +56,5 @@ extern "C"
 	void ModelSetSelCameraEnable(void* obj, bool enable);
 	void ModelSetSomeViewport(ModelObject3D* mo, float x, float y, float height, float width);
 
+	void ModelDefaultInit(ModelStruct* model, DrawParam* dParam);
 }
