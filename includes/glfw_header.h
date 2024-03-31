@@ -374,3 +374,4 @@
 #define GLFW_OSMESA_CONTEXT_API			0x00036003
 
 typedef struct GLFWwindow GLFWwindow;
+typedef struct GLFWmonitor GLFWmonitor;
