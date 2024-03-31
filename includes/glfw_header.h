@@ -381,3 +381,4 @@ typedef void (*GLFWcursorposfun)(GLFWwindow*, double, double);
 typedef void (*GLFWframebuffersizefun)(GLFWwindow*, int, int);
 typedef void (*GLFWcharfun)(GLFWwindow*, unsigned int);
 typedef void (*GLFWmousebuttonfun)(GLFWwindow*, int, int, int);
+typedef void (*GLFWkeyfun)(GLFWwindow* int, int, int, int);
