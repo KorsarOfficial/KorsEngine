@@ -8,3 +8,5 @@
 typedef struct {
 	GameObject3D go;
 } GrassObject;
+
+void GrassObjectSetDefaultDescriptor(GrassObject* grass, DrawParam* dParam);
