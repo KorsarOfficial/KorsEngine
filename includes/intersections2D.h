@@ -8,5 +8,7 @@
 #ifdef __cplusplus
 extern "C"
 {
+#endif
 
+	bool IntersectGJK2D(GJKObject* gjk, void* obj1, void* obj2);
 }
