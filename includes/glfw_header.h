@@ -170,3 +170,5 @@
 #define GLFW_MOD_SUPER			0x0008
 
 #define GLFW_MOD_CAPS_LOCK		0x0010
+
+#define GLFW_MOD_NUM_LOCK		0x0020
