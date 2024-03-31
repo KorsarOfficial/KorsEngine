@@ -174,5 +174,8 @@ int read_struct(const char* point, json_struct* out)
 {
 	int iter = 0;
 
-	if(point[iter] == '{')
+	if (point[iter] == '{')
+	{
+		iter++;
+	}
 }
