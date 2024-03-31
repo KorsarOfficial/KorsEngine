@@ -76,4 +76,11 @@ extern "C"
 
 		bool init;
 	} Shape;
+
+	enum EngineDescriptorType {
+		ENGINE_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+		ENGINE_DESCRIPTOR_TYPE_IMAGE_SAMPLER
+		ENGINE_DESCRIPTOR_TYPE_IMAGE_ARRAY
+	};
+
 }
