@@ -14,4 +14,9 @@ extern "C"
 		char* code;
 		site_t size;
 	} shader;
+
+	typedef struct {
+		void* pipeLine;
+		void* layout;
+	} PipelineStruct;
 }
