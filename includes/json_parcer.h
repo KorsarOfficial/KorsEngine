@@ -115,6 +115,11 @@ int read_value(char* point, json_struct* out)
 				int_point = out->data;
 				*int_point = atoi(buff);
 				break;
+
+			case gltf_type_none:
+				break;
+			default:
+				break;
 		}
 	}
 }
