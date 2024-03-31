@@ -45,3 +45,4 @@
 #define GLFW_KEY_2			50
 #define GLFW_KEY_3			51
 #define GLFW_KEY_4			52
+#define GLFW_KEY_5			53
