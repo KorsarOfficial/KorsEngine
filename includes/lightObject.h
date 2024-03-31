@@ -35,4 +35,6 @@ extern "C"
 
 		ELightType type;
 	} LightObject;
+
+	void LightObjectFillDirLights(DirLightBuffer* blb);
 }
