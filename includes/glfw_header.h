@@ -164,3 +164,5 @@
 #define GLFW_MOD_SHIFT			0x0001
 
 #define GLFW_MOD_CONTROL		0x0002
+
+#define GLFW_MOD_SUPER			0x0004
