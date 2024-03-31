@@ -59,4 +59,10 @@ int read_value(char* point, json_struct* out)
 	int len = 0, iter = 0;
 
 	char buff[256];
+
+	while (point[iter] == ' ')
+		iter++;
+
+	if (point[iter] == '"')
+		iter++;
 }
