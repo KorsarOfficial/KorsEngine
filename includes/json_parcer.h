@@ -213,7 +213,9 @@ int read_struct(const char* point, json_struct* out)
 					}
 					else
 					{
-
+						out->size++;
+						out->data = realloc(out->data, out->size * sizeof(json_struct*));
+						json_struct* json_point = out->data;
 					}
 				}
 			}
