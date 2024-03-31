@@ -429,3 +429,5 @@ extern PFN_glfwSetMouseButtonCallback glfwSetMouseButtonCallback;
 extern PFN_glfwSetKeyCallback glfwSetKeyCallback;
 extern PFN_glfwGetMouseButton glfwGetMouseButton;
 extern PFN_glfwWindowShouldClose glfwWindowShouldClose;
+
+void InitGLFWFun();
