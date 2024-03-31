@@ -11,3 +11,5 @@ typedef struct {
 	float* grid;
 	uint32_t size;
 } MarchingCubeObject;
+
+void MarchingCubeObjectSetGridValue(float* grid, uint32_t size, int x, int y, int z, float value);
