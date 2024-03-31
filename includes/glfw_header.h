@@ -51,3 +51,4 @@
 #define GLFW_KEY_8			56
 #define GLFW_KEY_9			57
 #define GLFW_KEY_SEMICOLON	59
+#define GLFW_KEY_EQUAL		61
