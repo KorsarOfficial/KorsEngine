@@ -40,4 +40,7 @@ extern "C"
 		void* obj;
 		uint32_t obj_size;
 	} ModelObject3D;
+
+	void ModelModelBufferUpdate(ModelObject3D* mo, uint32_t indx_node, BluePrintDescriptor* descriptor);
+
 }
