@@ -7,3 +7,9 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+	int IntersectionSpherePlane(void* plane, void* sphere, float* distance, float* depth, vec3* dir);
+	
+}
