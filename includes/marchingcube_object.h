@@ -5,3 +5,9 @@
 
 #include "gameObject3D.h"
 
+typedef struct {
+	GameObject3D go;
+	float isolevel;
+	float* grid;
+	uint32_t size;
+} MarchingCubeObject;
