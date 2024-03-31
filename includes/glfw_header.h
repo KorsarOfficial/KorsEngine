@@ -393,3 +393,5 @@ typedef const char** (*PFN_glfwGetRequiredInstanceExtensions)(uint32_t* count);
 typedef void (*PFN_glfwGetFramebufferSize)(GLFWwindow* window, int* width, int* height);
 typedef double (*PFN_glfwGetTime)(void);
 typedef GLFWcharfun(*PFN_glfwSetCharCallback)(GLFWwindow* window, GLFWcharfun callback);
+typedef void (*PFN_glfwWaitEvents)(void);
+typedef void (*PFN_glfwPollEvents)(void);
