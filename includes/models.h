@@ -48,4 +48,6 @@ extern "C"
 
 	void ModelDefaultDraw(ModelObject3D* mo, void* command);
 	void ModelDefaultUpdate(ModelObject3D* mo);
+	void ModelClean(ModelObject3D* mo);
+
 }
