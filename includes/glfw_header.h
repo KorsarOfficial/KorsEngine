@@ -422,3 +422,4 @@ extern PFN_glfwPollEvents glfwPollEvents;
 extern PFN_glfwGetCursorPos glfwGetCursorPos;
 extern PFN_glfwSetInputMode glfwSetInputMode;
 extern PFN_glfwSetCursorPos glfwSetCursorPos;
+extern PFN_glfwTerminate glfwTerminate;
