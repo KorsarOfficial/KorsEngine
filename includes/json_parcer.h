@@ -17,3 +17,10 @@ typedef struct {
 	site_t size;
 	engine_gltf_type_num type;
 } json_struct;
+
+int read_string(const char* point, char* out);
+{
+	int iter = 0;
+
+	if(point[iter] == '"')
+}
