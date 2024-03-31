@@ -25,4 +25,10 @@ extern "C"
 		void* descr_set_layout;
 		void** descr_sets;
 	} ShaderDescriptor;
+
+	typedef struct {
+		ShaderDescriptor descriptor;
+		PipelineStruct pipelines[MAX_PIPELINES];
+		uint32_t num_pipelines;
+	} ShaderPack;
 }
