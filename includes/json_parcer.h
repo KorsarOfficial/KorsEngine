@@ -45,4 +45,6 @@ int read_string(const char* point, char* out);
 	{
 		char_point[len] = '\0';
 	}
+
+	return iter;
 }
