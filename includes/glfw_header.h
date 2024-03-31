@@ -188,3 +188,4 @@
 
 #define GLFW_JOYSTICK_1			0
 #define GLFW_JOYSTICK_2			1
+#define GLFW_JOYSTICK_3			2
