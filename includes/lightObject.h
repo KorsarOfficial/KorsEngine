@@ -40,4 +40,6 @@ extern "C"
 	void LightObjectFillPointLights(PointLightBuffer* plb);
 	void LightObjectFillSpotLights(SpotLightBuffer* slb);
 	void LightObjectFillLightStatus(LightStatusBuffer* lsb);
+
+	void LightObjectInit(LightObject* lo, ELightType type);
 }
