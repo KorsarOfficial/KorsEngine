@@ -19,5 +19,7 @@ extern "C"
 	int IntersectionSphereCapsule(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
 	int IntersectionCapsuleCapsule(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
 	int IntersectionSphereAABB(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
+	int IntersectionAABBPlane(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
+
 
 }
