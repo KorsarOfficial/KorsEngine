@@ -44,4 +44,7 @@ extern "C"
 	void LightObjectInit(LightObject* lo, ELightType type);
 
 	void LightObjectSetPosition(LightObject* lo, float x, float y, float z);
+	vec3 LightObjectGetPosition(LightObject* lo);
+
+	
 }
