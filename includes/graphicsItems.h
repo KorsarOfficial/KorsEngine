@@ -37,4 +37,14 @@ extern "C"
 		uint32_t num_shader_packs;
 		bool perspective;
 	} GraphicItems;
+
+	typedef struct {
+		void* vertexBuffer;
+		void* vertexBufferMemory;
+		uint32_t typeSize;
+		uint32_t verticesSize;
+		uint32_t bufferSize;
+		bool extend;
+		void* vertices;
+	} vertexParam;
 }
