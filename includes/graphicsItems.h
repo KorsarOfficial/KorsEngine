@@ -57,4 +57,9 @@ extern "C"
 		bool extend;
 		uint32_t* indices;
 	} indexParam;
+
+	typedef struct {
+		char vertShader[256];
+		char fragShader[256];
+	} aboutShader;
 }
