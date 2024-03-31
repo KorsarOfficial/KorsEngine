@@ -17,5 +17,5 @@ extern "C"
 	int IntersectionCircleSquare(InterCircleParam* sph, InterSquareParam* o2, float* dist, float* depth, vec2* dir);
 	int IntersectionSquareSquare(InterSquareParam* box1, InterSquareParam* box2, float* dist, float* depth, vec2* dir);
 	int IntersectionTriangleSquare(InterTriangleParam triangle, InterSquareParam* box);
-
+	int IntersectionSphapeSquare(void* obj1, InterSquareParam* square);
 }
