@@ -19,4 +19,20 @@ extern "C"
 		ENGINE_SHADOW_TYPE_POINT,
 		ENGINE_SHADOW_TYPE_SPOT
 	} EShadowType;
+
+	typedef struct {
+		vec3 position;
+		vec3 direction;
+		vec3 ambient;
+		vec3 diffuse;
+		vec3 specular;
+
+		float constant;
+		float linear;
+		float quadratic;
+		float cutOff;
+
+
+		ELightType type;
+	} LightObject;
 }
