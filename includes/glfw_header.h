@@ -87,48 +87,49 @@
 #define GLFW_KEY_WORLD_2			162
 
 // keys
-#define GLFW_KEY_ESCAPE		256
-#define GLFW_KEY_ENTER		257
-#define GLFW_KEY_TAB		258
-#define GLFW_KEY_BACKSPACE
-#define GLFW_KEY_INSERT
-#define GLFW_KEY_DELETE
-#define GLFW_KEY_RIGHT
-#define GLFW_KEY_LEFT
-#define GLFW_KEY_DOWN
-#define GLFW_KEY_UP
-#define GLFW_KEY_PAGE_UP
-#define GLFW_KEY_PAGE_DOWN
-#define GLFW_KEY_HOME
-#define GLFW_KEY_END
-#define GLFW_KEY_CAPS_LOCK
-#define GLFW_KEY_SCROLL_LOCK
-#define GLFW_KEY_NUM_LOCK
-#define GLFW_KEY_PRINT_SCREEN
-#define GLFW_KEY_PAUSE
-#define GLFW_KEY_F1
-#define GLFW_KEY_F2
-#define GLFW_KEY_F3
-#define GLFW_KEY_F4
-#define GLFW_KEY_F5
-#define GLFW_KEY_F6
-#define GLFW_KEY_F7
-#define GLFW_KEY_F8
-#define GLFW_KEY_F9
-#define GLFW_KEY_F10
-#define GLFW_KEY_F11
-#define GLFW_KEY_F12
-#define GLFW_KEY_F13
-#define GLFW_KEY_F14
-#define GLFW_KEY_F15
-#define GLFW_KEY_F16
-#define GLFW_KEY_F17
-#define GLFW_KEY_F18
-#define GLFW_KEY_F19
-#define GLFW_KEY_F20
-#define GLFW_KEY_F21
-#define GLFW_KEY_F22
-#define GLFW_KEY_F23
-#define GLFW_KEY_F24
-#define GLFW_KEY_F25
-#define GLFW_KEY_KP_0
+#define GLFW_KEY_ESCAPE			256
+#define GLFW_KEY_ENTER			257
+#define GLFW_KEY_TAB			258
+#define GLFW_KEY_BACKSPACE		259
+#define GLFW_KEY_INSERT			260
+#define GLFW_KEY_DELETE			261
+#define GLFW_KEY_RIGHT			262
+#define GLFW_KEY_LEFT			263
+#define GLFW_KEY_DOWN			264
+#define GLFW_KEY_UP				265
+#define GLFW_KEY_PAGE_UP		266
+#define GLFW_KEY_PAGE_DOWN		267
+#define GLFW_KEY_HOME			268
+#define GLFW_KEY_END			269
+#define GLFW_KEY_CAPS_LOCK		280
+#define GLFW_KEY_SCROLL_LOCK	281
+#define GLFW_KEY_NUM_LOCK		282
+#define GLFW_KEY_PRINT_SCREEN	283
+#define GLFW_KEY_PAUSE			284
+#define GLFW_KEY_F1				290
+#define GLFW_KEY_F2				291
+#define GLFW_KEY_F3				292
+#define GLFW_KEY_F4				293
+#define GLFW_KEY_F5				294
+#define GLFW_KEY_F6				295
+#define GLFW_KEY_F7				296
+#define GLFW_KEY_F8				297
+#define GLFW_KEY_F9				298
+#define GLFW_KEY_F10			299
+#define GLFW_KEY_F11			300
+#define GLFW_KEY_F12			301
+#define GLFW_KEY_F13			302
+#define GLFW_KEY_F14			303
+#define GLFW_KEY_F15			304
+#define GLFW_KEY_F16			305
+#define GLFW_KEY_F17			306
+#define GLFW_KEY_F18			307
+#define GLFW_KEY_F19			308
+#define GLFW_KEY_F20			309
+#define GLFW_KEY_F21			310
+#define GLFW_KEY_F22			312
+#define GLFW_KEY_F23			313
+#define GLFW_KEY_F24			314
+#define GLFW_KEY_F25			320
+#define GLFW_KEY_KP_0			321
+#define GLFW_KEY_KP_1			322
