@@ -7,3 +7,11 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+	#endif
+
+	typedef struct {
+		char* code;
+		site_t size;
+	} shader;
+}
