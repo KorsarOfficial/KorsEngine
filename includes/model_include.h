@@ -10,3 +10,8 @@ typedef struct {
 	mat4 join_mat;
 	uint32_t id_node;
 } join_mat_struct;
+
+typedef struct skin_vertex {
+	uint8_t bone_index[4];
+	uint8_t bone_weight[4];
+} skin_vertex;
