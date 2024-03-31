@@ -404,3 +404,4 @@ typedef GLFWwindow* (*PFN_glfwCreateWindow)(int width, int height, const char* t
 typedef void (*PFN_glfwWindowHint)(int hint, int value);
 typedef GLFWmousebuttonfun (*PFN_glfwSetMouseButtonCallback)(GLFWwindow* window, GLFWmousebuttonfun callback);
 typedef GLFWkeyfun(PFN_glfwSetKeyCallback)(GLFWwindow* window, GLFWkeyfun callback);
+typedef int (*PFN_glfwGetMouseButton)(GLFwindow* window, int button);
