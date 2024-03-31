@@ -4,3 +4,6 @@
 #include "engine_includes.h"
 
 #define MAX_SHAPES	10
+
+#ifdef __cplusplus
+extern "C"
