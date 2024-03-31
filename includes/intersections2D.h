@@ -16,4 +16,6 @@ extern "C"
 	int IntersectionCircleCirlce(InterCircleParam* o1, InterCircleParam* o2, float* dist, float* depth, float* depth, vec2* dir);
 	int IntersectionCircleSquare(InterCircleParam* sph, InterSquareParam* o2, float* dist, float* depth, vec2* dir);
 	int IntersectionSquareSquare(InterSquareParam* box1, InterSquareParam* box2, float* dist, float* depth, vec2* dir);
+	int IntersectionTriangleSquare(InterTriangleParam triangle, InterSquareParam* box);
+
 }
