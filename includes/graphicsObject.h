@@ -25,5 +25,6 @@ extern "C"
 	void GraphicsObjectSetVertex(GraphicsObject* graphObj, void* vert, int vertCount, uint32_t type_v_size, uint32_t* inx, int indxCount, uint32_t type_i_size);
 
 	void GraphicsObjectCreateDrawItems(GraphicsObject* graphObj);
+	void GraphicsObjectCleanPipelines(GraphicsObject* graphObj);
 	
 }
