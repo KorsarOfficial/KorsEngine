@@ -46,4 +46,6 @@ extern "C"
 	void ModelInvMatrixBuffer(ModelObject3D* mo, uint32_t indx_node, BluePrintDescriptor* descriptor);
 	void ModelDescriptorLightObjectsUpdate(ModelObject3D* mo, uint32_t indx_node, BluePrintDescriptor* descriptor);
 
+	void ModelDefaultDraw(ModelObject3D* mo, void* command);
+	void ModelDefaultUpdate(ModelObject3D* mo);
 }
