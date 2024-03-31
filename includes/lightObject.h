@@ -46,5 +46,6 @@ extern "C"
 	void LightObjectSetPosition(LightObject* lo, float x, float y, float z);
 	vec3 LightObjectGetPosition(LightObject* lo);
 
-	
+	void LightObjectSetDirection(LightObject* lo, float x, float y, float z);
+	vec3 LightObjectGetDirection(LightObject* lo);
 }
