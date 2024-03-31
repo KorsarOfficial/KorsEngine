@@ -53,4 +53,5 @@ extern "C"
 	void ModelRecreate(ModelObject3D* mo);
 
 	void ModelSetLightEnable(void* obj, bool enable);
+	void ModelSetSelCameraEnable(void* obj, bool enable);
 }
