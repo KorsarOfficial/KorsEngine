@@ -387,3 +387,4 @@ typedef GLFWcursorposfun(*PFN_glfwSetCursorPosCallback)(GLFWwindow* window, GLFW
 typedef GLFWwindow* (*PFN_glfwCreateWindow)(int width, int height, const char* title, GLFWmonitor* monitor, GLFWmonitor* share);
 typedef VkResult(*PFN_glfwCreateWindowSurface)(VkInstance instance, GLFWwindow* window, const VkAllocationCallbacks* allocator, VkSurfaceKHR* surface);
 typedef GLFWframebuffersizefun(*PFN_glfwSetFramebufferSizeCallback)(GLFWwindow* window, GLFWframebuffersizefun callback);
+typedef int (*PFN_glfwGetKey)(GLFWwindow* window, int key);
