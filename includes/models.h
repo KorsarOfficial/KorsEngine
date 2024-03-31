@@ -54,4 +54,6 @@ extern "C"
 
 	void ModelSetLightEnable(void* obj, bool enable);
 	void ModelSetSelCameraEnable(void* obj, bool enable);
+	void ModelSetSomeViewport(ModelObject3D* mo, float x, float y, float height, float width);
+
 }
