@@ -34,4 +34,4 @@ extern "C"
 }
 #endif
 
-#endif // GRAPHICSOBJECT_H
+#endif
