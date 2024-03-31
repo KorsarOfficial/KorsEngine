@@ -73,5 +73,16 @@ int read_value(char* point, json_struct* out)
 			out->type = gltf_type_float;
 		else if (point[iter] == '"')
 			out->type = gltf_type_string;
+
+		len++;
+		iter++;
+	}
+
+	if (out->type == gltf_type_none)
+		out->type = gltf_type_scalar;
+
+	if (len > 0)
+	{
+
 	}
 }
