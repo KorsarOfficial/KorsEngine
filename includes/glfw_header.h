@@ -376,5 +376,6 @@
 typedef struct GLFWwindow GLFWwindow;
 typedef struct GLFWmonitor GLFWmonitor;
 
-typedef void(*GLFWglproc)(void);
+typedef void (*GLFWglproc)(void);
 typedef void (*GLFWcursorposfun)(GLFWwindow*, double, double);
+typedef void (*GLFWframebuffersizefun)(GLFWwindow*, int, int);
