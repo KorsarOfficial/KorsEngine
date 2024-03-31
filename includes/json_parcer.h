@@ -122,4 +122,17 @@ int read_value(char* point, json_struct* out)
 				break;
 		}
 	}
+
+	return iter;
 }
+
+int read_array(const char* point, json_struct* out) {
+	int iter = 0;
+
+	if (point[iter] == '[')
+	{
+		out = calloc(1, sizeof(json_struct));
+		out->size = 0;
+		out->type = gltf_type_array;
+	}
+	}
