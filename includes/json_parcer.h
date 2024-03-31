@@ -149,7 +149,14 @@ int read_array(const char* point, json_struct* out)
 
 				iter += read_struct(&point[iter], &json_point[out->size - 1]);
 			}
-			else if(point[iter] != ' ' && point[iter] != '\n')
+			else if (point[iter] != ' ' && point[iter] != '\n')
+			{
+				out->data = calloc(1, sizeof(json_struct*));
+
+				json_struct* json_point = out->data;
+
+				iter += read_value(&point[iter], &json_point[out->size - 1]);
+			}
 		}
 	}
 	}
