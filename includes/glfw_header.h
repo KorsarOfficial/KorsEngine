@@ -41,3 +41,4 @@
 #define GLFW_KEY_PERIOD		46
 #define GLFW_KEY_SLASH		47
 #define GLFW_KEY_0			48
+#define GLFW_KEY_1			49
