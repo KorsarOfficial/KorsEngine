@@ -388,3 +388,5 @@ typedef GLFWwindow* (*PFN_glfwCreateWindow)(int width, int height, const char* t
 typedef VkResult(*PFN_glfwCreateWindowSurface)(VkInstance instance, GLFWwindow* window, const VkAllocationCallbacks* allocator, VkSurfaceKHR* surface);
 typedef GLFWframebuffersizefun(*PFN_glfwSetFramebufferSizeCallback)(GLFWwindow* window, GLFWframebuffersizefun callback);
 typedef int (*PFN_glfwGetKey)(GLFWwindow* window, int key);
+typedef int (*PFN_glfwInit)(void);
+typedef const char** (*PFN_glfwGetRequiredInstanceExtensions)(uint32_t* count);
