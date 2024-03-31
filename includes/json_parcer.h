@@ -35,4 +35,9 @@ int read_string(const char* point, char* out);
 		len++;
 		iter++;
 	}
+
+	iter++;
+	char* char_point;
+	out = calloc(len + 1, sizeof(char));
+	char_point = out;
 }
