@@ -349,3 +349,4 @@
 
 #define GLFW_NO_API						0
 #define GLFW_OPENGL_API					0x00030001
+#define GLFW_OPENGL_ES_API				0x00030002
