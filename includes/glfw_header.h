@@ -408,3 +408,4 @@ typedef int (*PFN_glfwGetMouseButton)(GLFwindow* window, int button);
 typedef int (*PFN_glfwWindowShouldClose)(GLFWwindow* window);
 
 extern PFN_glfwSetCursorPosCallback glfwSetCursorPosCallback;
+extern PFN_glfwCreateWindow glfwCreateWindow;
