@@ -69,4 +69,14 @@
 #define GLFW_KEY_O			79
 #define GLFW_KEY_P			80
 #define GLFW_KEY_Q			81
+#define GLFW_KEY_R			82
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
+#define GLFW_KEY_
 #define GLFW_KEY_
