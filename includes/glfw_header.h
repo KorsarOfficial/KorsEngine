@@ -160,3 +160,5 @@
 #define GLFW_KEY_MENU			348
 
 #define GLFW_KEY_LAST			GLFW_KEY_MENU
+
+#define GLFW_MOD_SHIFT			0x0001
