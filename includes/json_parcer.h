@@ -242,6 +242,10 @@ int read_struct(const char* point, json_struct* out)
 
 				iter += read_struct(&buffer[iter], &json_point[json->size - 1]);
 			}
+
+			iter++;
 		}
 	}
 }
+
+#endif // JSON_PARCER_H
