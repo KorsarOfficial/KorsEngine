@@ -37,3 +37,4 @@
 #define GLFW_KEY_SPACE		32
 #define	GLFW_KEY_APOSTROPHE	39
 #define GLFW_KEY_COMMA		44
+#define GLFW_KEY_MINUS		45
