@@ -19,4 +19,10 @@ extern "C"
 		void* pipeLine;
 		void* layout;
 	} PipelineStruct;
+
+	typedef struct {
+		void* descr_pool;
+		void* descr_set_layout;
+		void** descr_sets;
+	} ShaderDescriptor;
 }
