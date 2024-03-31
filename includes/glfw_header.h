@@ -426,3 +426,4 @@ extern PFN_glfwTerminate glfwTerminate;
 extern PFN_glfwDestroyWindow glfwDestroyWindow;
 extern PFN_glfwWindowHint glfwWindowHint;
 extern PFN_glfwSetMouseButtonCallback glfwSetMouseButtonCallback;
+extern PFN_glfwSetKeyCallback glfwSetKeyCallback;
