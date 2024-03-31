@@ -13,3 +13,5 @@ void GrassObjectSetDefaultDescriptor(GrassObject* grass, DrawParam* dParam);
 void GrassObjectSetInstanceDescriptor(GrassObject* grass, DrawParam* dParam);
 
 void GrassObjectInit(GrassObject* grass, DrawParam* dParam);
+
+#endif // GRASS_OBJECT_H
