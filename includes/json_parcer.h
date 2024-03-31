@@ -94,5 +94,15 @@ int read_value(char* point, json_struct* out)
 		char* char_point;
 		int* int_point;
 		double* float_point;
+
+		switch (out->type)
+		{
+			case gltf_type_string;
+				out->data = calloc(out->size, sizeof(char*));
+				char_point = out->data;
+				char_point[out->size - 1] = calloc(len, sizeof(char));
+				memcpy(&out->data[out->size - 1], buff, len);
+				break;
+		}
 	}
 }
