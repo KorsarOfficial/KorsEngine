@@ -83,6 +83,12 @@ int read_value(char* point, json_struct* out)
 
 	if (len > 0)
 	{
+		memcpy(buff, temp, len);
 
+		for (int i = 0; i < len; i++)
+		{
+			if (buff[i] == '.')
+				buff[i] = ',';
+		}
 	}
 }
