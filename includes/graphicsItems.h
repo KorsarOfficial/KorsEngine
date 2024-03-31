@@ -31,4 +31,10 @@ extern "C"
 		PipelineStruct pipelines[MAX_PIPELINES];
 		uint32_t num_pipelines;
 	} ShaderPack;
+
+	typedef struct {
+		ShaderPack shader_packs[MAX_BLUE_PRINTS];
+		uint32_t num_shader_packs;
+		bool perspective;
+	} GraphicItems;
 }
