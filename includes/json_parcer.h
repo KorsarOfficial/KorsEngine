@@ -170,3 +170,9 @@ int read_array(const char* point, json_struct* out)
 		return iter;
 	}
 }
+int read_struct(const char* point, json_struct* out)
+{
+	int iter = 0;
+
+	if(point[iter] == '{')
+}
