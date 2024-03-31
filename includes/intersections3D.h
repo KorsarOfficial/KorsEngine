@@ -22,5 +22,5 @@ extern "C"
 	int IntersectionAABBPlane(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
 	int IntersectionAABBAABB(void* obj1, void* obj2, float* dist, float* depth, vec3* dir);
 	int IntersectionAABBCapsule(void* obj1, void* obj2, float* dist, float depth, vec3* dir);
-
+	int IntersectionTriangleAABB(vec3 v0, vec3 v1, vec3 v2, void* obj, float* dist, float* depth, vec3* dir);
 }
