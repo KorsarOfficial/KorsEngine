@@ -134,5 +134,7 @@ int read_array(const char* point, json_struct* out) {
 		out = calloc(1, sizeof(json_struct));
 		out->size = 0;
 		out->type = gltf_type_array;
+
+		iter++;
 	}
 	}
