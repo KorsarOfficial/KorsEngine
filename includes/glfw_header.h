@@ -424,3 +424,4 @@ extern PFN_glfwSetInputMode glfwSetInputMode;
 extern PFN_glfwSetCursorPos glfwSetCursorPos;
 extern PFN_glfwTerminate glfwTerminate;
 extern PFN_glfwDestroyWindow glfwDestroyWindow;
+extern PFN_glfwWindowHint glfwWindowHint;
