@@ -157,6 +157,10 @@ int read_array(const char* point, json_struct* out)
 
 				iter += read_value(&point[iter], &json_point[out->size - 1]);
 			}
+			if (point[iter] == ',')
+			{
+				out->size++;
+			}
 		}
 	}
 	}
