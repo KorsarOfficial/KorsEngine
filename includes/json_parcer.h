@@ -22,5 +22,11 @@ int read_string(const char* point, char* out);
 {
 	int iter = 0;
 
-	if(point[iter] == '"')
+	if (point[iter] == '"')
+	{
+		iter++;
+
+		int len = 0;
+		char* start = &point[iter];
+	}
 }
