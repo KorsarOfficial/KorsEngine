@@ -66,7 +66,7 @@
 #define GLFW_KEY_L			76
 #define GLFW_KEY_M			77
 #define GLFW_KEY_N			78
-#define GLFW_KEY_
+#define GLFW_KEY_O			79
 #define GLFW_KEY_
 #define GLFW_KEY_
 #define GLFW_KEY_
