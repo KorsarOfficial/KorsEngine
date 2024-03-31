@@ -54,4 +54,9 @@ extern "C"
 	void LightObjectSetSpecularColor(LightObject* lo, float r, float g, float b);
 
 	void LightObjectDraw(LightObject* lo);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // LIGHTOBJECT_H
