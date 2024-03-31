@@ -62,4 +62,18 @@ extern "C"
 		char vertShader[256];
 		char fragShader[256];
 	} aboutShader;
+
+	typedef struct {
+		indexParam iParam;
+		vertexParam vParam;
+
+		EIVertexInputBindingDescription* bindingDescription;
+		EIVertexInputAttributeDescription* attr;
+		uint32_t countBind;
+		uint32_t countrAttr;
+
+		uint32_t type;
+
+		bool init;
+	} Shape;
 }
