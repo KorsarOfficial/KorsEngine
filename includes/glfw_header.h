@@ -175,3 +175,4 @@
 
 #define GLFW_MOUSE_BUTTON_1		0
 #define GLFW_MOUSE_BUTTON_2		1
+#define GLFW_MOUSE_BUTTON_3		2
