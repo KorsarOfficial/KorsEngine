@@ -19,4 +19,9 @@ extern "C"
 	int IntersectionTriangleSquare(InterTriangleParam triangle, InterSquareParam* box);
 	int IntersectionSphapeSquare(void* obj1, InterSquareParam* square);
 	int IntersectionShapeShape(void* obj1, void* obj2);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // INTERSECTIONS2D_H
