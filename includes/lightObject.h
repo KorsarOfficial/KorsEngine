@@ -59,4 +59,4 @@ extern "C"
 }
 #endif
 
-#endif // LIGHTOBJECT_H
+#endif
