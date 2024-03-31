@@ -228,4 +228,20 @@ int read_struct(const char* point, json_struct* out)
 	}
 
 	void read_json(char* buffer, int size, json_struct * json)
+	{
+		int iter = 0;
+		while (iter <= size)
+		{
+
+			if (buffer[iter] == '{')
+			{
+				json->data = calloc(1, sizeof(json_struct*));
+				json->size++;
+
+				json_struct* json_point = json->data;
+
+				iter += read_struct(&buffer[iter], &json_point[json->size - 1]);
+			}
+		}
+	}
 }
