@@ -10,3 +10,4 @@ typedef struct {
 } GrassObject;
 
 void GrassObjectSetDefaultDescriptor(GrassObject* grass, DrawParam* dParam);
+void GrassObjectSetInstanceDescriptor(GrassObject* grass, DrawParam* dParam);
