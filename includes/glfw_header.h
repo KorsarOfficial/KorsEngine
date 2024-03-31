@@ -416,3 +416,4 @@ extern PFN_glfwInit glfwInit;
 extern PFN_glfwGetRequiredInstanceExtensions glfwGetRequiredInstanceExtensions;
 extern PFN_glfwGetFramebufferSize glfwGetFramebufferSize;
 extern PFN_glfwGetTime glfwGetTime;
+extern PFN_glfwSetCharCallback glfwSetCharCallback;
