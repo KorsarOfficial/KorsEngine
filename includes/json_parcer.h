@@ -126,7 +126,8 @@ int read_value(char* point, json_struct* out)
 	return iter;
 }
 
-int read_array(const char* point, json_struct* out) {
+int read_array(const char* point, json_struct* out) 
+{
 	int iter = 0;
 
 	if (point[iter] == '[')
@@ -136,5 +137,18 @@ int read_array(const char* point, json_struct* out) {
 		out->type = gltf_type_array;
 
 		iter++;
+
+		while (point[iter] != ']')
+		{
+			if (point[iter] == '{')
+			{
+				out->data = calloc(1, sizeof(json_struct*));
+				out->size++;
+
+				json_struct* json_point = out->data;
+
+				iter += read_struct(&point[iter], &json_point[out->size - 1]);
+			}
+		}
 	}
 	}
