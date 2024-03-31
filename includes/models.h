@@ -27,4 +27,17 @@ extern "C"
 		uint32_t id_node;
 		mat4 model;
 	} ModelNode;
+
+	typedef struct {
+		GameObject self;
+		Transform3D transform;
+
+		ModelNode* nodes;
+		uint32_t num_draw_nodes;
+
+		mat4 join_mats[MAX_BONES];
+
+		void* obj;
+		uint32_t obj_size;
+	} ModelObject3D;
 }
