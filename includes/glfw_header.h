@@ -412,3 +412,4 @@ extern PFN_glfwCreateWindow glfwCreateWindow;
 extern PFN_glfwCreateWindowSurface glfwCreateWindowSurface;
 extern PFN_glfwSetFramebufferSizeCallback glfwSetFramebufferSizeCallback;
 extern PFN_glfwGetKey glfwGetKey;
+extern PFN_glfwInit glfwInit;
