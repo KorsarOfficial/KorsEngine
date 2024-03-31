@@ -11,3 +11,13 @@
 
 #ifdef __cplusplus
 extern "C"
+{
+#endif
+
+	typedef struct {
+		GraphicsObject graphObj;
+		GameObjectImage* diffuse;
+		GameObjectImage* specular;
+		GameObjectImage* normal;
+	} ModelStruct;
+}
