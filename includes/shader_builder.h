@@ -156,3 +156,4 @@ typedef struct
 
 void ShaderBuilderInit(ShaderBuilder* builder, ShaderType type);
 void ShaderBuilderMake(ShaderBuilder* builder);
+void ShaderBuilderWriteToFile(ShaderBuilder* builder, const char* path);
