@@ -35,4 +35,6 @@ extern "C"
 		Particle3D* particles;
 		int num_parts;
 	} ParticleObject3D;
+
+	void GameObject3DApplyVertexes(GameObject3D* go);
 }
