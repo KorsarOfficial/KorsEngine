@@ -6,5 +6,7 @@
 #ifdef __cplusplus
 extern "C"
 {
+#endif
 
+	int IntersectRayCircle(InterRay2DParam* ray, InterCircleParam* circle, float* t, vec2* q);
 }
