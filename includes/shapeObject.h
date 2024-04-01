@@ -28,4 +28,11 @@ extern "C"
 		int freq;
 		vec3 color;
 	} CircleParams;
+
+	typedef struct
+	{
+		vec2* positions;
+		uint32_t num_positions;
+		vec3 color;
+	} ShapeParams;
 }
