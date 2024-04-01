@@ -4,3 +4,5 @@
 #include <stdint.h>
 
 #define EXTERN_IMPORT_POINT_INDEX 0x1
+
+#define SHADER_MAX_LENGTH 2048
