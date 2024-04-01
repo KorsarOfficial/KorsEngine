@@ -133,3 +133,9 @@ typedef struct
 	uint32_t type;
 	uint32_t val;
 } ShaderDecoration;
+
+typedef struct
+{
+	uint32_t code[SHADER_MAX_LENGTH];
+	uint32_t size;
+};
