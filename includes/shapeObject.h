@@ -35,4 +35,12 @@ extern "C"
 		uint32_t num_positions;
 		vec3 color;
 	} ShapeParams;
+	
+	typedef enum
+	{
+		ENGINE_SHAPE_OBJECT_LINE,
+		ENGINE_SHAPE_OBJECT_QUAD,
+		ENGINE_SHAPE_OBJECT_CIRCLE,
+		ENGINE_SHAPE_OBJECT_SHAPE
+	} ShapeType;
 }
