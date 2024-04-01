@@ -92,3 +92,4 @@ void RenderTextureReload(RenderTexture* render, uint32_t indx_surf);
 
 void RenderTextureSetCurrentFrame(RenderTexture* render, uint32_t indx_frame);
 void RenderTextureBeginRendering(RenderTexture* render, void* cmd_buff);
+void RenderTextureRecreate(RenderTexture* render);
