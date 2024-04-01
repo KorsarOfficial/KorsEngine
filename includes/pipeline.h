@@ -22,4 +22,6 @@ extern "C"
 	} PipelineStack;
 
 	void PipelineDestroyStack(void* pipeline);
+
+	void PipelineClearAll();
 }
