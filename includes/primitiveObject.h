@@ -60,4 +60,6 @@ extern "C"
 		int sectorCount;
 		int stackCount;
 	} ConeParam;
+	
+	void PrimitiveObjectInit(PrimitiveObject* go, DrawParam* dParam, char type, void* params);
 }
