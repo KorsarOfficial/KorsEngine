@@ -70,4 +70,5 @@ extern "C"
 
 	void* PrimitiveObjectGetVertex(PrimitiveObject* po);
 	void PrimitiveObjectDiffuseTextureSetData(PrimitiveObject* po, void* data, uint32_t size_data, uint32_t offset);
+	void PrimitiveObjectDiffuseSetTexture(PrimitiveObject* po, const char* path);
 }
