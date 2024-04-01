@@ -15,4 +15,10 @@ extern "C"
 		float length;
 		vec3 color;
 	} LineParam;
+
+	typedef struct
+	{
+		float size;
+		vec3 color;
+	} QuadParam;
 }
