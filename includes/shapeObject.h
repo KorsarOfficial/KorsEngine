@@ -49,4 +49,6 @@ extern "C"
 		GameObject2D go;
 		uint32_t type;
 	} ShapeObject;
+
+	void ShapeObjectInit(ShapeObject* so, DrawParam* dParam, ShapeType type, void* param);
 }
