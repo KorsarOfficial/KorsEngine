@@ -67,4 +67,6 @@ extern "C"
 	void PrimitiveObjectSetDefaultDescriptor(PrimitiveObject* po, DrawParam* dParam);
 	void PrimitiveObjectSetInstanceDescriptor(PrimitiveObject* po, DrawParam* dParam);
 	void PrimitiveObjectSetShadowDefaultDescriptor(PrimitiveObject* po, DrawParam* dParam);
+
+	void* PrimitiveObjectGetVertex(PrimitiveObject* po);
 }
