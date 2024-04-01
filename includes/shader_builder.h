@@ -99,3 +99,10 @@ typedef struct
 	ShaderVariableType type;
 	uint32_t index;
 } ShaderFuncParam;
+
+typedef struct
+{
+	uint32_t index;
+	ShaderOperand operands[256];
+	uint32_t num_operands;
+} ShaderLabel;
