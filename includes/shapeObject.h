@@ -6,5 +6,13 @@
 #ifdef __cplusplus
 extern "C"
 {
+#endif
 
+	typedef struct
+	{
+		vec2 position;
+		vec2 direction;
+		float length;
+		vec3 color;
+	} LineParam;
 }
