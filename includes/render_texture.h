@@ -4,3 +4,5 @@
 #include "engine_includes.h"
 
 #include "gameObject.h"
+
+#define MAX_SURFACES 10
