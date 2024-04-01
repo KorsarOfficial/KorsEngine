@@ -69,4 +69,5 @@ extern "C"
 	void PrimitiveObjectSetShadowDefaultDescriptor(PrimitiveObject* po, DrawParam* dParam);
 
 	void* PrimitiveObjectGetVertex(PrimitiveObject* po);
+	void PrimitiveObjectDiffuseTextureSetData(PrimitiveObject* po, void* data, uint32_t size_data, uint32_t offset);
 }
