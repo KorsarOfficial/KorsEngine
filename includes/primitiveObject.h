@@ -25,4 +25,11 @@ extern "C"
 		ENGINE_PRIMITIVE3D_CYLINDER,
 		ENGINE_PRIMITIVE3D_SKYBOX
 	};
+
+	typedef struct
+	{
+		GameObject3D go;
+		void* params;
+		uint32_t type;
+	} PrimitiveObject;
 }
