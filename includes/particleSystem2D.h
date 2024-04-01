@@ -31,3 +31,6 @@ extern "C"
 	void Particle2DInit(ParticleObject2D* particle, DrawParam dParam);
 
 	void Particle2DAddDefault(ParticleObject2D* particle, void* render);
+
+	void Particle2DAdd(ParticleObject2D* particle, vec2 position, vec2 direction, float speed, float gravity, float life);
+
