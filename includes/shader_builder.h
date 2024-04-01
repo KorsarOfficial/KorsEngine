@@ -106,3 +106,15 @@ typedef struct
 	ShaderOperand operands[256];
 	uint32_t num_operands;
 } ShaderLabel;
+
+typedef struct
+{
+	uint32_t result_type_indx;
+	uint32_t func_type_indx;
+	uint32_t indx;
+	uint32_t function_control;
+	ShaderFuncParam params[6];
+	uint32_t num_params;
+	ShaderLabel labels[32];
+	uint32_t num_labels;
+} ShaderFunc;
