@@ -27,4 +27,6 @@ extern "C"
 
 	void PipelineSettingSetDefault(GraphicsObject* graphObj, void* setting);
 	void PipelineSettingSetShader(PipelineSetting* setting, char* shader, size_t size, uint32_t type);
+
+	void PipelineCreateGraphics(GraphicsObject* graphObj);
 }
