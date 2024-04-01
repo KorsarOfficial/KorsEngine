@@ -20,3 +20,10 @@ extern "C"
 		float speed;
 		float gravity;
 	} Particle2D;
+
+	typedef struct
+	{
+		GameObject2D go;
+		Particle2D* particles;
+		int num_parts;
+	} ParticleObject2D;
