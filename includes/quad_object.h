@@ -17,3 +17,5 @@ typedef struct
 	GameObject2D go;
 	uint32_t type;
 } QuadObject;
+
+void QuadObjectInit(QuadObject* qu, uint32_t type);
