@@ -24,4 +24,6 @@ extern "C"
 	void PipelineDestroyStack(void* pipeline);
 
 	void PipelineClearAll();
+
+	void PipelineSettingSetDefault(GraphicsObject* graphObj, void* setting);
 }
