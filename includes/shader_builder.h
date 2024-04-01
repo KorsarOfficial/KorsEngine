@@ -162,3 +162,4 @@ int ShaderBuilderAddFuncAdd(ShaderBuilder* builder, ShaderLabel* label, uint32_t
 uint32_t ShaderBuilderAddFuncMove(ShaderBuilder* builder, ShaderLabel* label, uint32_t src_indx, uint32_t src_size, uint32_t dest_indx);
 
 uint32_t ShaderBuilderAddUniform(ShaderBuilder* builder, ShaderStructConstr* struct_arr, uint32_t count, char* name);
+uint32_t ShaderBuilderAddIOData(ShaderBuilder* builder, ShaderVariableType type, ShaderDataFlags flags, ShaderStructConstr* struct_arr, uint32_t size, char* name, uint32_t location);
