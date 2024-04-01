@@ -140,4 +140,6 @@ typedef struct
 	uint32_t size;
 	InputOutputData ioData[SHADER_MAX_IODATA];
 	uint32_t num_io_data;
+	ShaderVariable variables[SHADER_MAX_VARIABLES];
+	uint32_t num_variables;
 };
