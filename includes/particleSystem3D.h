@@ -40,5 +40,6 @@ extern "C"
 	void GameObject3DRebuildVertexes(GameObject3D* go);
 
 	void Particle3DInit(ParticleObject3D* particle, DrawParam dParam);
+	void Particle3DAdd(ParticleObject3D* particle, vec3 position, vec3 direction, float speed, float gravity, float life);
 
 }
