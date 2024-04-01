@@ -24,5 +24,8 @@ extern "C"
 
 	void ProjectionPlaneInit(GameObject2D* go, DrawParam dParam);
 
-
+#ifdef __cplusplus
 }
+#endif
+
+#endif
