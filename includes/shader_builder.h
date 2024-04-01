@@ -36,3 +36,11 @@ typedef enum
 	SHADER_VARIABLE_TYPE_FUNCTION,
 	SHADER_VARIABLE_TYPE_EXTENDED_IMPORT,
 } ShaderVariableType;
+
+typedef struct
+{
+	ShaderVariableType var_Type;
+	uint32_t size;
+	uint32_t type;
+	char name[32];
+} ShaderStructConstr;
