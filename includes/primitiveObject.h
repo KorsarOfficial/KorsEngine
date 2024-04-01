@@ -45,4 +45,12 @@ extern "C"
 		float radius;
 		int verperrow;
 	} CubeSphereParam;
+
+	typedef struct
+	{
+		int sectorCount;
+		int stackCount;
+		uint32_t texture_width;
+		uint32_t texture_height;
+	} PlaneParam;
 }
