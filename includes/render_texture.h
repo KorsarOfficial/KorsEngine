@@ -24,4 +24,23 @@ typedef enum
 	ENGINE_RENDER_FLAG_FRUSTRUM = 0x8,
 	ENGINE_RENDER_FLAG_ORTHOGRAPHIC = 0x10,
 	ENGINE_RENDER_FLAG_DEPTH = 0x20,
-} EngineRenderFlag;
+} EngineRenderFlag; 
+
+typedef struct
+{
+	void* depth_image;
+	void* depth_memory;
+	void* depth_view;
+
+	void* image;
+	void* image_memory;
+	void* sampler;
+	void* view;
+
+	void** shadowCubeRenderPass;
+	void** shadowCubeMapFaceImageViews;
+
+	void** framebuffers;
+
+	uint32_t m_currentLayout;
+} RenderFrame;
