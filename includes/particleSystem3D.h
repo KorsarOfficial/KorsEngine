@@ -37,4 +37,5 @@ extern "C"
 	} ParticleObject3D;
 
 	void GameObject3DApplyVertexes(GameObject3D* go);
+	void GameObject3DRebuildVertexes(GameObject3D* go);
 }
