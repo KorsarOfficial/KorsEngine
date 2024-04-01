@@ -126,3 +126,10 @@ typedef struct
 	char child_name[6][64];
 	uint32_t num_childs;
 } ShaderDebugInfo;
+
+typedef struct
+{
+	uint32_t indx;
+	uint32_t type;
+	uint32_t val;
+} ShaderDecoration;
