@@ -148,4 +148,8 @@ typedef struct
 	uint32_t num_debug_infos;
 	ShaderDecoration decors[SHADER_MAX_DECORATIONS];
 	uint32_t num_decorations;
-};
+	ShaderType type;
+	uint32_t current_index;
+	ShaderFunc* main_point_index;
+	uint32_t gl_struct_indx;
+} ShaderBuilder;
