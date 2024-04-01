@@ -11,3 +11,9 @@ typedef enum
 	ENGINE_QUAD_TYPE_DEPTH,
 	ENGINE_QUAD_TYPE_CUBE,
 } EngineQuadType;
+
+typedef struct
+{
+	GameObject2D go;
+	uint32_t type;
+} QuadObject;
