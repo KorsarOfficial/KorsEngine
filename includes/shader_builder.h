@@ -64,3 +64,11 @@ typedef enum
 	SHADER_DATA_FLAG_OUTPUT = 0x2,
 	SHADER_DATA_FLAG_UNIFORM = 0x4,
 } ShaderDataFlags;
+
+typedef struct
+{
+	ShaderVariableType type;
+	uint32_t indx;
+	uint32_t orig_indx;
+	uint32_t location;
+} InputOutputData;
