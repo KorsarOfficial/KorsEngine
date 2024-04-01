@@ -20,4 +20,6 @@ extern "C"
 		void* GraphicsPipeline;
 		void* GraphicsPipelineLayout;
 	} PipelineStack;
+
+	void PipelineDestroyStack(void* pipeline);
 }
