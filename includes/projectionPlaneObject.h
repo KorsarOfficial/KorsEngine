@@ -21,4 +21,8 @@ extern "C"
 		vec3 camRot __attribute__((aligned(16)));
 		vec3 camPos __attribute__((aligned(16)));
 	} ProjDataBuffer;
+
+	void ProjectionPlaneInit(GameObject2D* go, DrawParam dParam);
+
+
 }
