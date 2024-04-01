@@ -31,6 +31,8 @@ extern "C"
 
 	typedef struct
 	{
-
-	};
+		GameObject3D go;
+		Particle3D* particles;
+		int num_parts;
+	} ParticleObject3D;
 }
