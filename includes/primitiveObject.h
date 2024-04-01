@@ -53,4 +53,11 @@ extern "C"
 		uint32_t texture_width;
 		uint32_t texture_height;
 	} PlaneParam;
+
+	typedef struct
+	{
+		float height;
+		int sectorCount;
+		int stackCount;
+	} ConeParam;
 }
