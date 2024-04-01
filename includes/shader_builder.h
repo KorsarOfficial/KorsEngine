@@ -157,3 +157,5 @@ typedef struct
 void ShaderBuilderInit(ShaderBuilder* builder, ShaderType type);
 void ShaderBuilderMake(ShaderBuilder* builder);
 void ShaderBuilderWriteToFile(ShaderBuilder* builder, const char* path);
+
+int ShaderBuilderAddFuncAdd(ShaderBuilder* builder, ShaderLabel* label, uint32_t val_1, uint32_t val_2, uint32_t size, uint32_t res_store);
