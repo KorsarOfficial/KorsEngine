@@ -31,4 +31,6 @@ extern "C"
 	void PipelineCreateGraphics(GraphicsObject* graphObj);
 
 	void PipelineCreateRenderPass();
+
+	void PipelineDestroy(ShaderPack* pipeline);
 }
