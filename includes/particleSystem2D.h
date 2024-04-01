@@ -8,7 +8,7 @@
 #ifndef __cplusplus
 extern "C"
 {
-#endif
+	#endif
 
 	typedef struct
 	{
@@ -34,3 +34,5 @@ extern "C"
 
 	void Particle2DAdd(ParticleObject2D* particle, vec2 position, vec2 direction, float speed, float gravity, float life);
 
+#ifdef __cplusplus
+}
