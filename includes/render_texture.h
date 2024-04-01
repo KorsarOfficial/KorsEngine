@@ -95,3 +95,5 @@ void RenderTextureBeginRendering(RenderTexture* render, void* cmd_buff);
 void RenderTextureRecreate(RenderTexture* render);
 void RenderTextureEndRendering(RenderTexture* render, void* cmd_buff);
 void RenderTextureDestroy(RenderTexture* render);
+
+#endif
