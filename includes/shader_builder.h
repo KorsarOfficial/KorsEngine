@@ -163,3 +163,5 @@ uint32_t ShaderBuilderAddFuncMove(ShaderBuilder* builder, ShaderLabel* label, ui
 
 uint32_t ShaderBuilderAddUniform(ShaderBuilder* builder, ShaderStructConstr* struct_arr, uint32_t count, char* name);
 uint32_t ShaderBuilderAddIOData(ShaderBuilder* builder, ShaderVariableType type, ShaderDataFlags flags, ShaderStructConstr* struct_arr, uint32_t size, char* name, uint32_t location);
+
+#endif // SHADER_BUILDER_H
