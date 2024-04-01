@@ -144,4 +144,6 @@ typedef struct
 	uint32_t num_variables;
 	ShaderFunc functions[SHADER_MAX_FUNCTIONS];
 	uint32_t num_functions;
+	ShaderDebugInfo infos[SHADER_MAX_DEBUG_NAMES];
+	uint32_t num_debug_infos;
 };
