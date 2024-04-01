@@ -89,3 +89,5 @@ void RenderTextureInit(RenderTexture* render, uint32_t type, uint32_t width, uin
 
 void RenderTextureAddSurface(RenderTexture* render);
 void RenderTextureReload(RenderTexture* render, uint32_t indx_surf);
+
+void RenderTextureSetCurrentFrame(RenderTexture* render, uint32_t indx_frame);
