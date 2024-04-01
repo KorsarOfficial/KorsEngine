@@ -72,3 +72,12 @@ typedef struct
 	uint32_t orig_indx;
 	uint32_t location;
 } InputOutputData;
+
+typedef struct
+{
+	uint32_t indx;
+	uint32_t res_store_indx;
+	ShaderOperandType op_type;
+	uint32_t var_indx[8];
+	uint32_t num_vars;
+} ShaderOperand;
