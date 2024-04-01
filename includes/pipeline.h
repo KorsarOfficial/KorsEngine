@@ -33,4 +33,9 @@ extern "C"
 	void PipelineCreateRenderPass();
 
 	void PipelineDestroy(ShaderPack* pipeline);
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // PIPELINE_H
