@@ -81,3 +81,15 @@ typedef struct
 	uint32_t var_indx[8];
 	uint32_t num_vars;
 } ShaderOperand;
+
+typedef struct ShaderVariable
+{
+	ShaderVariableType type;
+	uint32_t indx;
+	uint32_t args[6];
+	uint32_t num_args;
+	uint32_t values[6];
+	uint32_t num_value;
+	ShaderDataFlags flags;
+	uint32_t result_type_indx;
+} ShaderVariable;
