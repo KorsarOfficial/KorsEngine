@@ -17,4 +17,20 @@ extern "C"
 		vec3 camRot __attribute__ ((aligned(16)));
 		vec3 camPos __attribute__ ((aligned(16)));
 	} DataBuffer;
+
+	typedef struct
+	{
+		vec3 position;
+		vec3 direction;
+		vec3 color;
+		float scale;
+		float life;
+		float speed;
+		float gravity;
+	} Particle3D;
+
+	typedef struct
+	{
+
+	};
 }
