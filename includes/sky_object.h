@@ -8,5 +8,5 @@
 typedef enum
 {
 	ENGINE_SKY_TYPE_NIGHT,
-	
+	ENGINE_SKY_TYPE_DAY,
 };
