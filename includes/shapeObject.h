@@ -43,4 +43,10 @@ extern "C"
 		ENGINE_SHAPE_OBJECT_CIRCLE,
 		ENGINE_SHAPE_OBJECT_SHAPE
 	} ShapeType;
+
+	typedef struct
+	{
+		GameObject2D go;
+		uint32_t type;
+	} ShapeObject;
 }
