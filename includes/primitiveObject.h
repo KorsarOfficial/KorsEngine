@@ -39,4 +39,10 @@ extern "C"
 		int sectorCount;
 		int stackCount;
 	} SphereParam;
+
+	typedef struct
+	{
+		float radius;
+		int verperrow;
+	} CubeSphereParam;
 }
