@@ -4,3 +4,9 @@
 #include "engine_includes.h"
 
 #include "gameObject2D.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+
+}
