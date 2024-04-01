@@ -38,4 +38,7 @@ extern "C"
 
 	void GameObject3DApplyVertexes(GameObject3D* go);
 	void GameObject3DRebuildVertexes(GameObject3D* go);
+
+	void Particle3DInit(ParticleObject3D* particle, DrawParam dParam);
+
 }
