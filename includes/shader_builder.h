@@ -153,3 +153,5 @@ typedef struct
 	ShaderFunc* main_point_index;
 	uint32_t gl_struct_indx;
 } ShaderBuilder;
+
+void ShaderBuilderInit(ShaderBuilder* builder, ShaderType type);
