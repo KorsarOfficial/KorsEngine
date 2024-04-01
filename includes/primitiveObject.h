@@ -65,5 +65,5 @@ extern "C"
 	void PrimitiveObjectInitDefault(PrimitiveObject* po, DrawParam* dParam, char type, void* params);
 
 	void PrimitiveObjectSetDefaultDescriptor(PrimitiveObject* po, DrawParam* dParam);
-
+	void PrimitiveObjectSetInstanceDescriptor(PrimitiveObject* po, DrawParam* dParam);
 }
