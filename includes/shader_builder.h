@@ -57,3 +57,10 @@ typedef enum
 	SHADER_OPERAND_TYPE_MUL,
 	SHADER_OPERAND_TYPE_DIV,
 } ShaderOperandType;
+
+typedef enum
+{
+	SHADER_DATA_FLAG_UNSIGNED = 0x1,
+	SHADER_DATA_FLAG_OUTPUT = 0x2,
+	SHADER_DATA_FLAG_UNIFORM = 0x4,
+} ShaderDataFlags;
