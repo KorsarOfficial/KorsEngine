@@ -29,3 +29,5 @@ extern "C"
 	} ParticleObject2D;
 
 	void Particle2DInit(ParticleObject2D* particle, DrawParam dParam);
+
+	void Particle2DAddDefault(ParticleObject2D* particle, void* render);
