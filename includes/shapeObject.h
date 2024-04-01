@@ -55,4 +55,5 @@ extern "C"
 	void ShapeObjectInitDefault(ShapeObject* so, DrawParam* dParam, Shapetype type, void* param);
 
 	void ShapeObjectAddDefault(ShapeObject* so, void* render);
+	void ShapeObjectAddShaderBuilder(ShapeObject* so, void* render, void* vertex, void* fragment);
 }
