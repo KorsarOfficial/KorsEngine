@@ -21,3 +21,5 @@ typedef struct
 void QuadObjectInit(QuadObject* qu, uint32_t type);
 
 void QuadObjectAddDefault(QuadObject* qu, void* render);
+
+#endif
