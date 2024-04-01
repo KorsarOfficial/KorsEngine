@@ -155,3 +155,4 @@ typedef struct
 } ShaderBuilder;
 
 void ShaderBuilderInit(ShaderBuilder* builder, ShaderType type);
+void ShaderBuilderMake(ShaderBuilder* builder);
