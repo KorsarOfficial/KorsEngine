@@ -32,4 +32,11 @@ extern "C"
 		void* params;
 		uint32_t type;
 	} PrimitiveObject;
+
+	typedef struct
+	{
+		float radius;
+		int sectorCount;
+		int stackCount;
+	} SphereParam;
 }
