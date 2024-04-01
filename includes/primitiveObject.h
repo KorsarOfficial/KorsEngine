@@ -62,4 +62,5 @@ extern "C"
 	} ConeParam;
 	
 	void PrimitiveObjectInit(PrimitiveObject* go, DrawParam* dParam, char type, void* params);
+	void PrimitiveObjectInitDefault(PrimitiveObject* go, DrawParam* dParam, char type, void* params);
 }
