@@ -93,3 +93,9 @@ typedef struct ShaderVariable
 	ShaderDataFlags flags;
 	uint32_t result_type_indx;
 } ShaderVariable;
+
+typedef struct
+{
+	ShaderVariableType type;
+	uint32_t index;
+} ShaderFuncParam;
