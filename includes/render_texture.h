@@ -44,3 +44,43 @@ typedef struct
 
 	uint32_t m_currentLayout;
 } RenderFrame;
+
+typedef struct
+{
+	RenderFrame* frames;
+	uint32_t num_frames;
+
+	void* render_pass;
+
+	double persp_view_distance;
+	double persp_view_near;
+	double persp_view_angle;
+
+	double frust_side;
+	double frust_near;
+	double frush_far;
+
+	double ortg_view_distance;
+	double ortg_view_size;
+
+	float cascadeSplit;
+
+	vec3 clear_color;
+	vec3 up_vector;
+
+	mat4 view;
+
+	uint32_t m_currentStage;
+	
+	uint32_t currFrame;
+
+	uint32_t width;
+	uint32_t height;
+	uint32_t mip_levels;
+	uint32_t m_format;
+
+	EngineRenderType type;
+
+	uint32_t indx_descriptor;
+	uint32_t flags;
+} RenderTexture;
