@@ -61,8 +61,9 @@ extern "C"
 		int stackCount;
 	} ConeParam;
 	
-	void PrimitiveObjectInit(PrimitiveObject* go, DrawParam* dParam, char type, void* params);
-	void PrimitiveObjectInitDefault(PrimitiveObject* go, DrawParam* dParam, char type, void* params);
+	void PrimitiveObjectInit(PrimitiveObject* po, DrawParam* dParam, char type, void* params);
+	void PrimitiveObjectInitDefault(PrimitiveObject* po, DrawParam* dParam, char type, void* params);
 
 	void PrimitiveObjectSetDefaultDescriptor(PrimitiveObject* po, DrawParam* dParam);
+
 }
