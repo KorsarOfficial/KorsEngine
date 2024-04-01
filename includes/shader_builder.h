@@ -118,3 +118,11 @@ typedef struct
 	ShaderLabel labels[32];
 	uint32_t num_labels;
 } ShaderFunc;
+
+typedef struct
+{
+	uint32_t indx;
+	char name[64];
+	char child_name[6][64];
+	uint32_t num_childs;
+} ShaderDebugInfo;
