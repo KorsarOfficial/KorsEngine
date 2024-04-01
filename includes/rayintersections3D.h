@@ -8,4 +8,5 @@ extern "C"
 {
 #endif
 
+	int Intersect3DRaySphere(InterRay3DParam* ray, vec3 ObjP, float* t, vec3* q);
 }
