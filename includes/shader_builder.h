@@ -146,4 +146,6 @@ typedef struct
 	uint32_t num_functions;
 	ShaderDebugInfo infos[SHADER_MAX_DEBUG_NAMES];
 	uint32_t num_debug_infos;
+	ShaderDecoration decors[SHADER_MAX_DECORATIONS];
+	uint32_t num_decorations;
 };
