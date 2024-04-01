@@ -9,4 +9,6 @@ extern "C"
 #endif
 
 	int IntersectRayCircle(InterRay2DParam* ray, InterCircleParam* circle, float* t, vec2* q);
+	int IntersectRaySquare(InterRay2DParam* ray, InterSquareParam* square, float* tmin, float* tmax, vec2* q);
+
 }
