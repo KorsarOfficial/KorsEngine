@@ -14,4 +14,11 @@ extern "C"
 	{
 		GameObject2D go;
 	} ProjectionPlaneObject;
+
+	typedef struct
+	{
+		float time __attribute__((aligned(16)));
+		vec3 camRot __attribute__((aligned(16)));
+		vec3 camPos __attribute__((aligned(16)));
+	} ProjDataBuffer;
 }
