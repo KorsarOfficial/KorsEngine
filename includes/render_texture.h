@@ -84,3 +84,5 @@ typedef struct
 	uint32_t indx_descriptor;
 	uint32_t flags;
 } RenderTexture;
+
+void RenderTextureInit(RenderTexture* render, uint32_t type, uint32_t width, uint32_t height, uint32_t flags);
