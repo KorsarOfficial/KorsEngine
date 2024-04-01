@@ -51,4 +51,6 @@ extern "C"
 	} ShapeObject;
 
 	void ShapeObjectInit(ShapeObject* so, DrawParam* dParam, ShapeType type, void* param);
+
+	void ShapeObjectInitDefault(ShapeObject* so, DrawParam* dParam, Shapetype type, void* param);
 }
