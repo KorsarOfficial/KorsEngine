@@ -8,5 +8,15 @@
 #ifndef __cplusplus
 extern "C"
 {
+#endif
 
-}
+	typedef struct
+	{
+		vec2 position;
+		vec2 direction;
+		vec3 color;
+		float scale;
+		float life;
+		float speed;
+		float gravity;
+	} Particle2D;
