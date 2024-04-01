@@ -27,3 +27,5 @@ extern "C"
 		Particle2D* particles;
 		int num_parts;
 	} ParticleObject2D;
+
+	void Particle2DInit(ParticleObject2D* particle, DrawParam dParam);
