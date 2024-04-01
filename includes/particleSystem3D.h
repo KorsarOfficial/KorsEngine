@@ -8,5 +8,13 @@
 #ifdef __cplusplus
 extern "C"
 {
+#endif
 
+	typedef struct
+	{
+		vec2 mouse;
+		float time;
+		vec3 camRot __attribute__ ((aligned(16)));
+		vec3 camPos __attribute__ ((aligned(16)));
+	} DataBuffer;
 }
