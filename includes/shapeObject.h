@@ -21,4 +21,11 @@ extern "C"
 		float size;
 		vec3 color;
 	} QuadParam;
+
+	typedef struct
+	{
+		float radius;
+		int freq;
+		vec3 color;
+	} CircleParams;
 }
