@@ -17,4 +17,5 @@ typedef struct
 	float time;
 	vec3 cam_pos __attribute__((aligned(16)));
 	vec3 cam_rot __attribute__((aligned(16)));
+	vec3 dir_light __attribute__((aligned(16)));
 };
