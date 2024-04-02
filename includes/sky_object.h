@@ -11,3 +11,8 @@ typedef enum
 	ENGINE_SKY_TYPE_DAY,
 	ENGINE_SKY_TYPE_ATMOSPHERIC
 } EngineSkyType;
+
+typedef struct
+{
+
+};
