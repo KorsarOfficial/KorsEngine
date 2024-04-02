@@ -14,5 +14,6 @@ typedef enum
 
 typedef struct
 {
+	float time;
 
 };
