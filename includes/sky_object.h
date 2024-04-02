@@ -19,3 +19,8 @@ typedef struct
 	vec3 cam_rot __attribute__((aligned(16)));
 	vec3 dir_light __attribute__((aligned(16)));
 } SkyBuffer;
+
+typedef struct
+{
+
+};
