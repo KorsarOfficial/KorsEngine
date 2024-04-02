@@ -22,5 +22,5 @@ typedef struct
 
 typedef struct
 {
-
+	GameObject2D go;
 };
