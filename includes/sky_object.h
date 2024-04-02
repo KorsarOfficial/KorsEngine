@@ -27,3 +27,4 @@ typedef struct
 } SkyObject;
 
 void SkyObjectInit(SkyObject* so, DrawParam* dParam, EngineSkyType type);
+void SkyObjectSetMousePos(SkyObject* so, float pos_x, float pos_y);
