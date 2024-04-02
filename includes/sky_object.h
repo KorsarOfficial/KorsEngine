@@ -23,4 +23,5 @@ typedef struct
 typedef struct
 {
 	GameObject2D go;
+	uint32_t type;
 };
