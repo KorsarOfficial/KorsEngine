@@ -15,5 +15,5 @@ typedef enum
 typedef struct
 {
 	float time;
-
+	vec3 cam_pos __attribute__((aligned(16)));
 };
