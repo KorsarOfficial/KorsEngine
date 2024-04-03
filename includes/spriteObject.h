@@ -15,4 +15,9 @@ extern "C"
 		char vertShader[256];
 		char fragShader[256];
 	} SpriteParam;
+
+	typedef struct
+	{
+		GameObject2D go;
+	};
 }
