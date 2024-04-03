@@ -86,5 +86,10 @@ extern "C"
 		StillEvolving
 	}EvolveResult;
 
-
+#ifdef __cplusplus
 }
+
+#endif
+
+
+#endif
