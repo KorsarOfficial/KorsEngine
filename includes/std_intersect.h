@@ -16,4 +16,9 @@ extern "C"
 		float radius;
 		float height;
 	} InterCapsuleParam;
+
+	typedef struct
+	{
+		vec2 center;
+	};
 }
