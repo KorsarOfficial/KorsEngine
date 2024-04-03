@@ -54,4 +54,11 @@ extern "C"
 		vec2 direction;
 		float distance;
 	} InterRay2DParam;
+
+	typedef struct
+	{
+		vec3 position;
+		vec3 direction;
+		float distance;
+	} InterRay3DParam;
 }
