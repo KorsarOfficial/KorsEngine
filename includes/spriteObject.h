@@ -14,5 +14,5 @@ extern "C"
 		char texturePath[256];
 		char vertShader[256];
 		char fragShader[256];
-	};
+	} SpriteParam;
 }
