@@ -65,5 +65,6 @@ extern "C"
 	typedef struct
 	{
 		vec2 p1;
+		vec2 p2;
 	};
 }
