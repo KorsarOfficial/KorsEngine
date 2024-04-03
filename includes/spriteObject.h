@@ -26,4 +26,6 @@ extern "C"
 	void SpriteObjectInitDefault(SpriteOject* go, DrawParam* dParam);
 
 	void SpriteObjectAddDefault(SpriteOject* go, DrawParam* dParam);
+
+	void SpriteObjectSetOffsetRect(SpriteObject* so, float x, float y, float width, float height);
 }
