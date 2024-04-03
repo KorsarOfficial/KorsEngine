@@ -44,5 +44,6 @@ extern "C"
 	typedef struct
 	{
 		vec3 center;
+		vec3 axes;
 	};
 }
