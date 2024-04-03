@@ -67,5 +67,5 @@ extern "C"
 		vec2 p1;
 		vec2 p2;
 		vec2 p3;
-	};
+	} InterTriangleParam;
 }
