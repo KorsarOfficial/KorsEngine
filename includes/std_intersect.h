@@ -74,5 +74,6 @@ extern "C"
 		vec2 simplex[3];
 		uint32_t num_verts;
 		void* obj1;
+		void* obj2;
 	};
 }
