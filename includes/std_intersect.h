@@ -21,5 +21,5 @@ extern "C"
 	{
 		vec2 center;
 		float radius;
-	};
+	} InterCircleParam;
 }
