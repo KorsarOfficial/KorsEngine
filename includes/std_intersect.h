@@ -14,5 +14,6 @@ extern "C"
 	{
 		vec3 position;
 		float radius;
+		float height;
 	};
 }
