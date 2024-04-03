@@ -4,3 +4,9 @@
 #include "engine_includes.h"
 
 #include "e_math.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+
+}
