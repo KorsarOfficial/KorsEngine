@@ -13,5 +13,6 @@ extern "C"
 	typedef struct
 	{
 		vec3 position;
+		float radius;
 	};
 }
