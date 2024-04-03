@@ -53,5 +53,5 @@ extern "C"
 		vec2 position;
 		vec2 direction;
 		float distance;
-	};
+	} InterRay2DParam;
 }
