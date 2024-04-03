@@ -22,4 +22,9 @@ extern "C"
 		vec2 center;
 		float radius;
 	} InterCircleParam;
+
+	typedef struct
+	{
+		vec3 center;
+	};
 }
