@@ -20,4 +20,6 @@ extern "C"
 	{
 		GameObject2D go;
 	} SpriteOject;
+
+	void SpriteObjectInit(SpriteObject* go, DrawParam* dParam);
 }
