@@ -22,4 +22,6 @@ extern "C"
 	} SpriteOject;
 
 	void SpriteObjectInit(SpriteObject* go, DrawParam* dParam);
+
+	void SpriteObjectInitDefault(SpriteOject* go, DrawParam* dParam);
 }
