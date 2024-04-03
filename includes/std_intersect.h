@@ -76,5 +76,6 @@ extern "C"
 		void* obj1;
 		void* obj2;
 		vec2(*support1(void*, vec2);
+		vec2(*support2)(void*, vec2);
 	};
 }
