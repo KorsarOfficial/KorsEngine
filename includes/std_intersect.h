@@ -78,4 +78,13 @@ extern "C"
 		vec2(*support1)(void*, vec2);
 		vec2(*support2)(void*, vec2);
 	} GJKObject;
+
+	typedef enum
+	{
+		NoIntersection,
+		FoundIntersection,
+		StillEvolving
+	}EvolveResult;
+
+
 }
