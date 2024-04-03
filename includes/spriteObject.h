@@ -19,5 +19,5 @@ extern "C"
 	typedef struct
 	{
 		GameObject2D go;
-	};
+	} SpriteOject;
 }
