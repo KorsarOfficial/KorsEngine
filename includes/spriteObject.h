@@ -13,5 +13,6 @@ extern "C"
 		vec3 color;
 		char texturePath[256];
 		char vertShader[256];
+		char fragShader[256];
 	};
 }
