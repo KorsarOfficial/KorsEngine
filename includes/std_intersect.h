@@ -48,4 +48,8 @@ extern "C"
 		vec3 halfwidth;
 	} InterOBBParam;
 
+	typedef struct
+	{
+		vec2 position;
+	};
 }
