@@ -72,5 +72,7 @@ extern "C"
 	typedef struct
 	{
 		vec2 simplex[3];
+		uint32_t num_verts;
+		void* obj1;
 	};
 }
