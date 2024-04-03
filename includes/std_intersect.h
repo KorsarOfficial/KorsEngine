@@ -20,5 +20,6 @@ extern "C"
 	typedef struct
 	{
 		vec2 center;
+		float radius;
 	};
 }
