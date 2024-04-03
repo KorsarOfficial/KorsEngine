@@ -51,5 +51,6 @@ extern "C"
 	typedef struct
 	{
 		vec2 position;
+		vec2 direction;
 	};
 }
