@@ -11,5 +11,7 @@ extern "C"
 	typedef struct
 	{
 		vec3 color;
+		char texturePath[256];
+
 	};
 }
