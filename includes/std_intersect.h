@@ -8,5 +8,10 @@
 #ifdef __cplusplus
 extern "C"
 {
+#endif
 
+	typedef struct
+	{
+		vec3 position;
+	};
 }
