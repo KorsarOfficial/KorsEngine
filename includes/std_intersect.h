@@ -68,4 +68,9 @@ extern "C"
 		vec2 p2;
 		vec2 p3;
 	} InterTriangleParam;
+
+	typedef struct
+	{
+		vec2 simplex[3];
+	};
 }
