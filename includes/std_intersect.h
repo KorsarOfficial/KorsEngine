@@ -45,5 +45,6 @@ extern "C"
 	{
 		vec3 center;
 		vec3 axes;
+		vec3 halfwidth;
 	};
 }
