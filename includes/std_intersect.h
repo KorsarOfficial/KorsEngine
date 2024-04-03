@@ -33,5 +33,5 @@ extern "C"
 	{
 		vec3 position;
 		float size;
-	};
+	} InterSquareParam;
 }
