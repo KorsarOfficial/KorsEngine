@@ -19,5 +19,5 @@ extern "C"
 
 	EDSurfaceFormatKHR chooseSwapSurfaceFormat(const EDSurfaceFormatKHR* availableFormats, uint32_t sizeFormats);
 
-
+	uint32_t chooseSwapPresentMode(const void** availablePresentModes, uint32_t sizeModes);
 }
