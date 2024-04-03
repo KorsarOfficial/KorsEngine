@@ -28,4 +28,9 @@ extern "C"
 		vec3 center;
 		float radius;
 	} InterSphereParam;
+
+	typedef struct
+	{
+		vec3 position;
+	};
 }
