@@ -40,4 +40,9 @@ extern "C"
 		vec3 position;
 		float size;
 	} InteraAABBParam;
+
+	typedef struct
+	{
+		vec3 center;
+	};
 }
