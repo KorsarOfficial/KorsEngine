@@ -162,11 +162,11 @@
 #define GLFW_KEY_MENU               348
 
 #define GLFW_KEY_LAST               GLFW_KEY_MENU
-
+// bbit is set one or more Shift keys wwere held down.
 #define GLFW_MOD_SHIFT           0x0001
-
+// bit is set one or more Control keys we held down 
 #define GLFW_MOD_CONTROL         0x0002
-
+// Alr #ingroup  (@ref input_key) for how these are used.
 #define GLFW_MOD_ALT             0x0004
 
 #define GLFW_MOD_SUPER           0x0008
