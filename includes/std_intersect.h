@@ -34,4 +34,9 @@ extern "C"
 		vec3 position;
 		float size;
 	} InterSquareParam;
+
+	typedef struct
+	{
+		vec3 position;
+	};
 }
