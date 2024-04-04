@@ -24,3 +24,13 @@ typedef struct {
     uint32_t texture_height;
     uint32_t num_textures;
 } TerrainTextureParam;
+
+typedef struct {
+    uint32_t size_patch;
+    uint32_t flags;
+    float vertex_step;
+    TerrainGeneratorParam t_g_param;
+    TerrainTextureParam t_t_param;
+    char* texture_map;
+    char** textures;
+} TerrainParam;
