@@ -7,7 +7,12 @@
 
 #define MAX_TEXTURE_STACK 4
 
-typedef struct
-{
-
-};
+typedef struct {
+    uint32_t size_factor;
+    uint32_t height_factor;
+    float displaisment_factor;
+    float tesselation_factor;
+    uint32_t amplitude;
+    uint32_t frequency;
+    uint32_t octaves;
+} TerrainGeneratorParam;
