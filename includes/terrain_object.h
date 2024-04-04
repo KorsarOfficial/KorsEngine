@@ -16,3 +16,11 @@ typedef struct {
     uint32_t frequency;
     uint32_t octaves;
 } TerrainGeneratorParam;
+
+typedef struct {
+    uint32_t height_map_scale;
+    uint32_t texture_scale;
+    uint32_t texture_width;
+    uint32_t texture_height;
+    uint32_t num_textures;
+} TerrainTextureParam;
