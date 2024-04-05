@@ -43,3 +43,10 @@ ShaderVariable* ShaderBuilderFindVar(ShaderBuilder* builder, uint32_t indx) {
 
     return res;
 }
+
+void ShaderBuilderAddOp(ShaderBuilder* builder, uint32_t code, uint32_t value) {
+
+    builder->code[builder->size] = (value << 16) | code;
+
+    builder->size++;
+}
