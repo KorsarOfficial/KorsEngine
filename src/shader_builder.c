@@ -27,3 +27,19 @@ uint32_t ShaderBuilderCheckVariable(ShaderBuilder* builder, ShaderVariableType v
 
     return 0;
 }
+
+}
+
+ShaderVariable* ShaderBuilderFindVar(ShaderBuilder* builder, uint32_t indx) {
+
+    ShaderVariable* res = NULL;
+
+    for (int i = 0; i < builder->num_variables; i++) {
+        if (builder->variables[i].indx == indx) {
+            res = &builder->variables[i];
+            break;
+        }
+    }
+
+    return res;
+}
