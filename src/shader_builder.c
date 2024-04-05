@@ -24,3 +24,6 @@ uint32_t ShaderBuilderCheckVariable(ShaderBuilder* builder, ShaderVariableType v
                 return builder->variables[i].indx;
         }
     }
+
+    return 0;
+}
