@@ -58,4 +58,8 @@ void ShaderBuilderAddValue(ShaderBuilder* builder, uint32_t value) {
 
 void ShaderBuilderAddString(ShaderBuilder* builder, char* string) {
     uint32_t len = strlen(string);
+
+    char* point = &builder->code[builder->size];
+
+    
 }
