@@ -48,3 +48,10 @@ void ShaderBuilderAddOp(ShaderBuilder* builder, uint32_t code, uint32_t value) {
 
     builder->size++;
 }
+
+void ShaderBuilderAddValue(ShaderBuilder* builder, uint32_t value) {
+
+    builder->code[builder->size] = value;
+
+    builder->size++;
+}
