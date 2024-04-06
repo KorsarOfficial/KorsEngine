@@ -62,4 +62,8 @@ void ShaderBuilderAddString(ShaderBuilder* builder, char* string) {
     char* point = &builder->code[builder->size];
 
     memcpy(point, string, len);
+
+    while (len % sizeof(uint32_t)) {
+        builder->infos[builder->num_debug_infos].name[len] = 0;
+    }
 }
