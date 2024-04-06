@@ -61,5 +61,5 @@ void ShaderBuilderAddString(ShaderBuilder* builder, char* string) {
 
     char* point = &builder->code[builder->size];
 
-    
+    memcpy(point, string, len);
 }
