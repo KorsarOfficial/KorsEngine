@@ -65,5 +65,6 @@ void ShaderBuilderAddString(ShaderBuilder* builder, char* string) {
 
     while (len % sizeof(uint32_t)) {
         builder->infos[builder->num_debug_infos].name[len] = 0;
+        len++;
     }
 }
