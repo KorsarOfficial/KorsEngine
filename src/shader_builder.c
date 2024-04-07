@@ -114,4 +114,5 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
 
 uint32_t ShaderBuilderAddFloat(ShaderBuilder* builder) {
 
+    uint32_t arr[] = { 32, 1 };
 }
