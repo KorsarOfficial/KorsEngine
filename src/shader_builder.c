@@ -103,4 +103,7 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
     
     variable->num_values = num_vals;
     variable->flags = flags;
+
+    builder->num_variables++;
+    builder->current_index++;
 }
