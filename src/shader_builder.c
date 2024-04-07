@@ -116,4 +116,8 @@ uint32_t ShaderBuilderAddFloat(ShaderBuilder* builder) {
 
     uint32_t arr[] = { 32, 1 };
     uint32_t res = ShaderBuilderCheckVariable(builder, SHADER_VARIABLE_TYPE_FLOAT, arr, 2);
+
+    if (!res) {
+        res = ShaderBuilderAddVariable(builder, SHADER_VARIABLE_TYPE_FLOAT, 0, NULL, 0, arr, 2);
+    }
 }
