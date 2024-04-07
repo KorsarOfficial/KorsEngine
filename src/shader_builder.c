@@ -89,4 +89,10 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
     }
 
     variable->num_args = num_args;
+
+    if (num_vals > 0)
+    {
+        if (vals == NULL)
+            return;
+    }
 }
