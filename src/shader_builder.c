@@ -123,3 +123,8 @@ uint32_t ShaderBuilderAddFloat(ShaderBuilder* builder) {
 
     return res;
 }
+
+uint32_t ShaderBuilderAddInt(ShaderBuilder* builder, uint32_t sign) {
+
+    uint32_t arr[] = { 32, sign };
+}
