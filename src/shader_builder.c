@@ -120,4 +120,6 @@ uint32_t ShaderBuilderAddFloat(ShaderBuilder* builder) {
     if (!res) {
         res = ShaderBuilderAddVariable(builder, SHADER_VARIABLE_TYPE_FLOAT, 0, NULL, 0, arr, 2);
     }
+
+    return res;
 }
