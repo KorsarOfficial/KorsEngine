@@ -106,4 +106,6 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
 
     builder->num_variables++;
     builder->current_index++;
+
+    return builder->current_index;
 }
