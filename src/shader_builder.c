@@ -75,5 +75,5 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
 
     ShaderVariable* variable = &builder->variables[builder->num_variables];
 
-
+    variable->type = type;
 }
