@@ -73,5 +73,7 @@ void ShaderBuilderAddString(ShaderBuilder* builder, char* string) {
 
 uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType type, uint32_t flags, uint32_t* args, uint32_t num_args, uint32_t* vals, uint32_t num_vals) {
 
+    ShaderVariable* variable = &builder->variables[builder->num_variables];
+
 
 }
