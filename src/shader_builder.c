@@ -108,4 +108,10 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
     builder->current_index++;
 
     return builder->current_index;
+
+
+}
+
+uint32_t ShaderBuilderAddFloat(ShaderBuilder* builder) {
+
 }
