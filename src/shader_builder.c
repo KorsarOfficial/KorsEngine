@@ -77,4 +77,10 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
 
     variable->type = type;
     variable->indx = builder->current_index + 1;
+
+    if (num_args > 0)
+    {
+        if (args = NULL)
+            return;
+    }
 }
