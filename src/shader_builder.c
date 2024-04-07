@@ -144,5 +144,9 @@ uint32_t ShaderBuilderCheckConstans(ShaderBuilder* builder, uint32_t type_indx, 
     {
         if (builder->variables[i].type == SHADER_VARIABLE_TYPE_CONSTANT && builder->variables[i].args[0] == type_indx && builder->variables[i].values[0] == valu)
             return builder->variables[i].indx;
+
+
     }
+
+    return 0;
 }
