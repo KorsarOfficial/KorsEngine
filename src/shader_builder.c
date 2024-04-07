@@ -135,4 +135,10 @@ uint32_t ShaderBuilderAddInt(ShaderBuilder* builder, uint32_t sign) {
 
 
     return res;
+
+}
+
+uint32_t ShaderBuilderCheckConstans(ShaderBuilder* builder, uint32_t type_indx, uint32_t valu) {
+
+
 }
