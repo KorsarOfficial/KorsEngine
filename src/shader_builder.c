@@ -155,4 +155,11 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
     
     uint32_t arr[] = { 32, sign };
     uint32_t type_indx = ShaderBuilderCheckVariable(builder, var_type, arr, 2);
+
+    if (!type_indx) {
+        switch (var_type) {
+        case SHADER_VARIABLE_TYPE_INT:
+            type_indx = ShaderBuilderAddInt(builder, sign);
+        }
+    }
 }
