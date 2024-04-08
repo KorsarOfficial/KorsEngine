@@ -168,4 +168,8 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
     }
 
     uint32_t res = ShaderBuilderCheckConstans(builder, type_indx, valu);
+
+    if (!res) {
+        ShaderVariable* variable = &builder->variables[builder->num_variables];
+    }
 }
