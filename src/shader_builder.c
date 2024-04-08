@@ -189,3 +189,5 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
 
     return res;
 }
+
+uint32_t ShaderBuilderCheckArray(ShaderBuilder* builder, uint32_t type_indx, uint32_t const_indx);
