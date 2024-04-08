@@ -180,5 +180,8 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
         variable->num_args = 1;
         variable->num_values = 1;
         variable->flags = flags;
+
+        builder->num_variables++;
+        builder->current_index++;
     }
 }
