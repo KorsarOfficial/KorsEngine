@@ -166,4 +166,6 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
             break;
         }
     }
+
+    uint32_t res = ShaderBuilderCheckConstans(builder, type_indx, valu);
 }
