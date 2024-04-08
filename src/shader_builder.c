@@ -150,3 +150,9 @@ uint32_t ShaderBuilderCheckConstans(ShaderBuilder* builder, uint32_t type_indx, 
 
     return 0;
 }
+
+int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type, ShaderDataFlags flags, uint32_t valu, uint32_t sign) {
+    
+    uint32_t arr[] = { 32, sign };
+    uint32_t type_indx = ShaderBuilderCheckVariable(builder, var_type, arr, 2);
+}
