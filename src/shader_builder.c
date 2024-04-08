@@ -183,5 +183,7 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
 
         builder->num_variables++;
         builder->current_index++;
+
+        return builder->current_index;
     }
 }
