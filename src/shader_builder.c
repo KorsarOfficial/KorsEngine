@@ -186,4 +186,6 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
 
         return builder->current_index;
     }
+
+    return res;
 }
