@@ -160,6 +160,10 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
         switch (var_type) {
         case SHADER_VARIABLE_TYPE_INT:
             type_indx = ShaderBuilderAddInt(builder, sign);
+            break;
+        case SHADER_VARIABLE_TYPE_FLOAT:
+            type_indx = ShaderBuilderAddFloat(builder);
+            break;
         }
     }
 }
