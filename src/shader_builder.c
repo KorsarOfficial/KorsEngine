@@ -208,8 +208,11 @@ uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_ty
     uint32_t res = 0, type_indx = 0;
 
     switch (var_type) {
-        case SHADER_VARIABLE_TYPE_FLOAT;
+    case SHADER_VARIABLE_TYPE_FLOAT:
             type_indx = ShaderBuilderAddFloat(builder);
+            break;
+        case SHADER_VARIABLE_TYPE_INT:
+            type_indx = ShaderBuilderAddInt(builder, 0);
             break;
     }
 }
