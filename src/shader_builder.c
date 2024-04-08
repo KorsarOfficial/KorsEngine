@@ -192,7 +192,8 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
 
 uint32_t ShaderBuilderCheckArray(ShaderBuilder* builder, uint32_t type_indx, uint32_t const_indx) {
 
-    for (int i = 0; i < builder->num_variables; i++) {
+    for (int i = 0; i < builder->num_variables; i++) 
+    {
 
         if (variable->type == SHADER_VARIABLE_TYPE_ARRAY)
             if (variable->args[0] == type_indx && variable->args[1] == const_indx)
@@ -200,5 +201,9 @@ uint32_t ShaderBuilderCheckArray(ShaderBuilder* builder, uint32_t type_indx, uin
     }
 
     return 0;
+}
 
+uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_type, uint32_t count, char* name) {
+    
+    uint32_t res = 0, type_indx = 0;
 }
