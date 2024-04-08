@@ -206,4 +206,10 @@ uint32_t ShaderBuilderCheckArray(ShaderBuilder* builder, uint32_t type_indx, uin
 uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_type, uint32_t count, char* name) {
     
     uint32_t res = 0, type_indx = 0;
+
+    switch (var_type) {
+        case SHADER_VARIABLE_TYPE_FLOAT;
+            type_indx = ShaderBuilderAddFloat(builder);
+            break;
+    }
 }
