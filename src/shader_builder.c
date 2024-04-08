@@ -232,5 +232,9 @@ uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_ty
 
         memcpy(builder->infos[builder->num_debug_infos].name, name, len);
         builder->infos[builder->num_debug_infos].indx = res;
+
+        builder->num_debug_infos++;
     }
+
+    return res;
 }
