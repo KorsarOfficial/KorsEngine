@@ -217,4 +217,6 @@ uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_ty
     }
 
     uint32_t cnst = ShaderBuilderAddConstant(builder, SHADER_VARIABLE_TYPE_INT, 0, count, 0);
+
+    uint32_t check = ShaderBuilderCheckArray(builder, type_indx, cnst);
 }
