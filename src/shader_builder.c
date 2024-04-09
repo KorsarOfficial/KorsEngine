@@ -238,3 +238,9 @@ uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_ty
 
     return res;
 }
+
+uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* name) {
+    
+    uint32_t arr[] = { size };
+    uint32_t res = ShaderBuilderCheckVariable(builder, SHADER_VARIABLE_TYPE_VECTOR, arr, 1);
+}
