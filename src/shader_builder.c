@@ -243,4 +243,11 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
     
     uint32_t arr[] = { size };
     uint32_t res = ShaderBuilderCheckVariable(builder, SHADER_VARIABLE_TYPE_VECTOR, arr, 1);
+
+    if (!res) {
+        res = ShaderBuilderAddFloat(builder);
+
+        uint32_t arr[] = { res };
+
+    }
 }
