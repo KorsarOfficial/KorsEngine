@@ -260,3 +260,6 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
 
         builder->num_debug_infos++;
     }
+
+    return res;
+}
