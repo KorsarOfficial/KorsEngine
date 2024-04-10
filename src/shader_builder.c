@@ -251,3 +251,6 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
         uint32_t arr2[] = { size };
         res = ShaderBuilderAddVariable(builder, SHADER_VARIABLE_TYPE_VECTOR, 0, arr, 1, arr2, 1);
     }
+
+    if(name != NULL) {
+        uint32_t len strlen(name);
