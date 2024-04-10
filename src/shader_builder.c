@@ -63,12 +63,16 @@ void ShaderBuilderAddString(ShaderBuilder* builder, char* string) {
 
     memcpy(point, string, len);
 
+
     while (len % sizeof(uint32_t)) {
         builder->infos[builder->num_debug_infos].name[len] = 0;
         len++;
     }
 
     builder->size += len / sizeof(uint32_t);
+
+    /*if(string[len + 1] != 0)
+        ShaderBuilderAddValue(builder, 0x0 );*/
 }
 
 uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType type, uint32_t flags, uint32_t* args, uint32_t num_args, uint32_t* vals, uint32_t num_vals) {
@@ -80,10 +84,10 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
 
     if (num_args > 0)
     {
-        if (args = NULL)
+        if (args == NULL)
             return;
 
-        for (int i = 0; i < num_args;i++)
+        for (int i = 0; i < num_args; i++)
             variable->args[i] = args[i];
 
     }
@@ -96,11 +100,10 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
             return;
 
         for (int i = 0; i < num_vals; i++)
-            variable->value[i] = vals[i];
-
+            variable->values[i] = vals[i];
 
     }
-    
+
     variable->num_values = num_vals;
     variable->flags = flags;
 
@@ -108,7 +111,6 @@ uint32_t ShaderBuilderAddVariable(ShaderBuilder* builder, ShaderVariableType typ
     builder->current_index++;
 
     return builder->current_index;
-
 
 }
 
@@ -133,9 +135,7 @@ uint32_t ShaderBuilderAddInt(ShaderBuilder* builder, uint32_t sign) {
         res = ShaderBuilderAddVariable(builder, SHADER_VARIABLE_TYPE_INT, 0, NULL, 0, arr, 2);
     }
 
-
     return res;
-
 }
 
 uint32_t ShaderBuilderCheckConstans(ShaderBuilder* builder, uint32_t type_indx, uint32_t valu) {
@@ -144,15 +144,13 @@ uint32_t ShaderBuilderCheckConstans(ShaderBuilder* builder, uint32_t type_indx, 
     {
         if (builder->variables[i].type == SHADER_VARIABLE_TYPE_CONSTANT && builder->variables[i].args[0] == type_indx && builder->variables[i].values[0] == valu)
             return builder->variables[i].indx;
-
-
     }
 
     return 0;
 }
 
 int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type, ShaderDataFlags flags, uint32_t valu, uint32_t sign) {
-    
+
     uint32_t arr[] = { 32, sign };
     uint32_t type_indx = ShaderBuilderCheckVariable(builder, var_type, arr, 2);
 
@@ -192,9 +190,10 @@ int ShaderBuilderAddConstant(ShaderBuilder* builder, ShaderVariableType var_type
 
 uint32_t ShaderBuilderCheckArray(ShaderBuilder* builder, uint32_t type_indx, uint32_t const_indx) {
 
-    for (int i = 0; i < builder->num_variables; i++) 
-    {
 
+    for (int i = 0; i < builder->num_variables; i++)
+    {
+        ShaderVariable* variable = &builder->variables[i];
         if (variable->type == SHADER_VARIABLE_TYPE_ARRAY)
             if (variable->args[0] == type_indx && variable->args[1] == const_indx)
                 return builder->variables[i].indx;
@@ -204,16 +203,16 @@ uint32_t ShaderBuilderCheckArray(ShaderBuilder* builder, uint32_t type_indx, uin
 }
 
 uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_type, uint32_t count, char* name) {
-    
+
     uint32_t res = 0, type_indx = 0;
 
     switch (var_type) {
     case SHADER_VARIABLE_TYPE_FLOAT:
-            type_indx = ShaderBuilderAddFloat(builder);
-            break;
-        case SHADER_VARIABLE_TYPE_INT:
-            type_indx = ShaderBuilderAddInt(builder, 0);
-            break;
+        type_indx = ShaderBuilderAddFloat(builder);
+        break;
+    case SHADER_VARIABLE_TYPE_INT:
+        type_indx = ShaderBuilderAddInt(builder, 0);
+        break;
     }
 
     uint32_t cnst = ShaderBuilderAddConstant(builder, SHADER_VARIABLE_TYPE_INT, 0, count, 0);
@@ -237,10 +236,11 @@ uint32_t ShaderBuilderAddArray(ShaderBuilder* builder, ShaderVariableType var_ty
     }
 
     return res;
+
 }
 
 uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* name) {
-    
+
     uint32_t arr[] = { size };
     uint32_t res = ShaderBuilderCheckVariable(builder, SHADER_VARIABLE_TYPE_VECTOR, arr, 1);
 
@@ -248,6 +248,6 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
         res = ShaderBuilderAddFloat(builder);
 
         uint32_t arr[] = { res };
-
+        uint32_t arr2[] = { size };
+        res = ShaderBuilderAddVariable(builder, SHADER_VARIABLE_TYPE_VECTOR, 0, arr, 1, arr2, 1);
     }
-}
