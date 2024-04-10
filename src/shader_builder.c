@@ -254,3 +254,5 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
 
     if(name != NULL) {
         uint32_t len strlen(name);
+
+        memcpy(builder->infos[builder->num_debug_infos].name, name, len);
