@@ -252,8 +252,11 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
         res = ShaderBuilderAddVariable(builder, SHADER_VARIABLE_TYPE_VECTOR, 0, arr, 1, arr2, 1);
     }
 
-    if(name != NULL) {
+    if (name != NULL) {
         uint32_t len strlen(name);
 
         memcpy(builder->infos[builder->num_debug_infos].name, name, len);
         builder->infos[builder->num_debug_infos].indx = res;
+
+        builder->num_debug_infos++;
+    }
