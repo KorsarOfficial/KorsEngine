@@ -263,3 +263,8 @@ uint32_t ShaderBuilderAddVector(ShaderBuilder* builder, uint32_t size, char* nam
 
     return res;
 }
+
+uint32_t ShaderBuilderAddStruct(ShaderBuilder* builder, ShaderStructConstr* struct_arr, uint32_t count, char* name) {
+    
+
+}
