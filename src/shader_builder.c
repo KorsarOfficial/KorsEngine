@@ -268,5 +268,12 @@ uint32_t ShaderBuilderAddStruct(ShaderBuilder* builder, ShaderStructConstr* stru
     
     uint32_t elem_indx[count];
 
-    
+    for (int i = 0; i < count; i++) {
+
+        switch (struct_arr[i].var_type) {
+        case SHADER_VARIABLE_TYPE_INT:
+            elem_indx[i] = ShaderBuilderAddInt(builder, 1);
+            break;
+        }
+    }
 }
