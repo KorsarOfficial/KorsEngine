@@ -120,3 +120,5 @@ e_var_num_lights = num_dir_shadows = num_point_shadows = num_spot_shadows = 0;
 
 e_var_images = calloc(MAX_IMAGES, sizeof(engine_buffered_image));
 e_var_num_images = 0;
+
+e_var_fonts = calloc(MAX_FONTS, sizeof(FontCache));
