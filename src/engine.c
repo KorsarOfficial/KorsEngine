@@ -118,4 +118,6 @@ void EngineInitSystem(int width, int height, const char* name){
 
     initWindow();
     EngineInitVulkan();
+
+    glfwSetCharCallback(e_window, EngineCharacterCallback);
 }
