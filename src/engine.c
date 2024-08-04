@@ -155,6 +155,6 @@ void EngineHideCursor(char state){
 int EngineGetMousePress(int Key){
     int state = glfwGetMouseButton(e_window, Key);
 
-    
+    return state;
 }
 
