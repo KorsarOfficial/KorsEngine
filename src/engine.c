@@ -95,3 +95,16 @@ void EngineKeyCallback(GLFWwindow* window, int key, int scancode, int action, in
 	for(int i=0; i < keyCallbackSize; i++)
 	keyCallbacks[i](window,key,scancode,action,mods);
 }
+
+void EngineInitVulkan(){
+    createInstance();
+    setupDebugMessenger();
+    createSurface();
+    pickPhysicalDevice();
+    createLogicalDevice();
+    SwapChainCreate();
+    SwapChainCreateImageViews();
+    BuffersCreateCommandPool();
+    ToolsCreateDepthResources();
+    BuffersCreateCommand();
+    EngineCreateSyncobjects();
