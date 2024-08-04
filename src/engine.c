@@ -166,7 +166,9 @@ double EngineGetTime(){
     return glfwGetTime();
 }
 
-
+const char *EngineGetClipBoardString(){
+    return glfwGetClipboardString(e_window);
+}
 
 
 
