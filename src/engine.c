@@ -113,3 +113,4 @@ void EngineInitVulkan(){
     memset(&renderItems, 0, sizeof(EngineRenderItems));
 
     charCallbacks = (e_charCallback *) calloc(0, sizeof(e_charCallback));
+    keyCallbacks = (e_keyCallback *) calloc(0, sizeof(e_keyCallback));
