@@ -105,5 +105,7 @@ void EngineInitVulkan(){
 
 void EngineInitSystem(int width, int height, const char* name){
     strcpy(app_name, name);
-
+    
+    WIDTH = width;
+    HEIGHT = height;
 }
