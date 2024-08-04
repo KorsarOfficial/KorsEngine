@@ -108,4 +108,7 @@ void EngineInitSystem(int width, int height, const char* name){
     
     WIDTH = width;
     HEIGHT = height;
+
+    viewSize.x = WIDTH;
+    viewSize.y = HEIGHT;
 }
