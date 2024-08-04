@@ -143,10 +143,14 @@ void EngineHideCursor(char state){
         case 0 :
             glfwSetInputMode(e_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
             break;
-            case 1 :
+        case 1 :
             glfwSetInputMode(e_window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
             break;
-
+        case 2 :
+            glfwSetInputMode(e_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+            break;
+    }
+}
 
 
 
