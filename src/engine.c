@@ -125,5 +125,9 @@ e_var_fonts = calloc(MAX_FONTS, sizeof(FontCache));
 e_var_num_fonts = 0;
 
 engine_buffered_image *images = e_var_images;
-TextureCreateEmptyDefault(&images[e_var_num_images].texture);
+    TextureCreateEmptyDefault(&images[e_var_num_images].texture);
     TextureCreateTextureImageView(&images[e_var_num_images].texture, VK_IMAGE_VIEW_TYPE_2D);
+    TextureCreateSampler(&images[e_var_num_images].texture.textureSampler, images[e_var_num_images].texture.textureType,  images[e_var_num_images].texture.image_data.mip_levels);
+    char *text = "Null texture";
+    memcpy(images[e_var_num_images].path, text, strlen(text));
+    e_var_num_images ++;
