@@ -76,3 +76,6 @@ void *RecreateFunc = NULL;
 
 e_charCallback *charCallbacks;
 int charCallbackSize;
+
+e_keyCallback *keyCallbacks;
+int keyCallbackSize;
