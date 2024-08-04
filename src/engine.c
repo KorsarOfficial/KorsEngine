@@ -87,3 +87,9 @@ void EngineCharacterCallback(GLFWwindow* window, uint32_t codepoint)
 	for(int i=0; i < charCallbackSize;i++)
 	charCallbacks[i](window,codepoint)
 }
+
+void EngineKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+	EntryWidgetCharacterCallback(window, key, scancode, action, mods);
+	
+}
