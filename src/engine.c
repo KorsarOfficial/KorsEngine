@@ -124,9 +124,4 @@ void EngineInitSystem(int width, int height, const char* name){
 
     e_var_current_entry = NULL;
 
-
-
-
-
-
 }
