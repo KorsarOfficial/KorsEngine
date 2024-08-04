@@ -125,3 +125,5 @@ e_var_fonts = calloc(MAX_FONTS, sizeof(FontCache));
 e_var_num_fonts = 0;
 
 engine_buffered_image *images = e_var_images;
+TextureCreateEmptyDefault(&images[e_var_num_images].texture);
+    TextureCreateTextureImageView(&images[e_var_num_images].texture, VK_IMAGE_VIEW_TYPE_2D);
