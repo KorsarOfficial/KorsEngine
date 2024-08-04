@@ -122,3 +122,4 @@ e_var_images = calloc(MAX_IMAGES, sizeof(engine_buffered_image));
 e_var_num_images = 0;
 
 e_var_fonts = calloc(MAX_FONTS, sizeof(FontCache));
+e_var_num_fonts = 0;
