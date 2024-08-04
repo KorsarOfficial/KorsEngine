@@ -138,7 +138,11 @@ void EngineSetCursorPos(float xpos, float ypos){
     glfwSetCursorPos(e_window, xpos, ypos);
 }
 
-
+void EngineHideCursor(char state){
+    switch(state){
+        case 0 :
+            glfwSetInputMode(e_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+            break;
 
 
 
