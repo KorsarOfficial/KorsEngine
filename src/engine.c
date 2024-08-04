@@ -113,5 +113,5 @@ void EngineInitSystem(int width, int height, const char* name){
     viewSize.y = HEIGHT;
 
     alloc_buffers_memory_head = calloc(1, sizeof(ChildStack));
-
+    alloc_descriptor_head = calloc(1, sizeof(ChildStack));
 }
