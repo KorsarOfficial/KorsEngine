@@ -120,4 +120,13 @@ void EngineInitSystem(int width, int height, const char* name){
     EngineInitVulkan();
 
     glfwSetCharCallback(e_window, EngineCharacterCallback);
+    glfwSetKeyCallback(e_window, EngineKeyCallback);
+
+
+
+
+
+
+
+
 }
