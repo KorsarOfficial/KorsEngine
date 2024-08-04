@@ -79,3 +79,11 @@ int charCallbackSize;
 
 e_keyCallback *keyCallbacks;
 int keyCallbackSize;
+
+void EngineCharacterCallback(GLFWwindow* window, uint32_t codepoint)
+{
+	EntryWidgetCharacterCallback(window, codepoint)
+
+	for(int i=0; i < charCallbackSize;i++)
+	charCallbacks[i](window,codepoint)
+}
