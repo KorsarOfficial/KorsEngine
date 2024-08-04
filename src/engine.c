@@ -71,3 +71,8 @@
 EngineRenderItems renderItems;
 
 EngineDrawItems drawItems;
+
+void *RecreateFunc = NULL;
+
+e_charCallback *charCallbacks;
+int charCallbackSize;
