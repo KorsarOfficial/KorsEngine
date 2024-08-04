@@ -122,7 +122,7 @@ void EngineInitSystem(int width, int height, const char* name){
     glfwSetCharCallback(e_window, EngineCharacterCallback);
     glfwSetKeyCallback(e_window, EngineKeyCallback);
 
-
+    e_var_current_entry = NULL;
 
 
 
