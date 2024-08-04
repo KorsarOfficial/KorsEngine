@@ -161,3 +161,16 @@ int EngineGetMousePress(int Key){
 int EngineWindowIsClosed(){
     return glfwWindowShouldClose(e_window);
 }
+
+double EngineGetTime(){
+    return glfwGetTime();
+}
+
+
+
+
+
+
+
+
+
