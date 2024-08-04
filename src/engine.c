@@ -108,3 +108,6 @@ void EngineInitVulkan(){
     ToolsCreateDepthResources();
     BuffersCreateCommand();
     EngineCreateSyncobjects();
+
+    memset(&drawItems, 0, sizeof(EngineDrawItems));
+    memset(&renderItems, 0, sizeof(EngineRenderItems));
