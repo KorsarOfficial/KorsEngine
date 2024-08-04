@@ -92,4 +92,6 @@ void EngineKeyCallback(GLFWwindow* window, int key, int scancode, int action, in
 {
 	EntryWidgetCharacterCallback(window, key, scancode, action, mods);
 	
+	for(int i=0; i < keyCallbackSize; i++)
+	keyCallbacks[i](window,key,scancode,action,mods);
 }
