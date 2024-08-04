@@ -70,3 +70,4 @@
 
 EngineRenderItems renderItems;
 
+EngineDrawItems drawItems;
