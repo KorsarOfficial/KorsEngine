@@ -158,3 +158,6 @@ int EngineGetMousePress(int Key){
     return state;
 }
 
+int EngineWindowIsClosed(){
+    return glfwWindowShouldClose(e_window);
+}
