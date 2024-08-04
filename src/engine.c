@@ -114,3 +114,5 @@ void EngineInitVulkan(){
 
     charCallbacks = (e_charCallback *) calloc(0, sizeof(e_charCallback));
     keyCallbacks = (e_keyCallback *) calloc(0, sizeof(e_keyCallback));
+
+e_var_lights = calloc(0, sizeof(LightObject *));
