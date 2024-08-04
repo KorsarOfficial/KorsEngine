@@ -116,3 +116,4 @@ void EngineInitVulkan(){
     keyCallbacks = (e_keyCallback *) calloc(0, sizeof(e_keyCallback));
 
 e_var_lights = calloc(0, sizeof(LightObject *));
+e_var_num_lights = num_dir_shadows = num_point_shadows = num_spot_shadows = 0;
