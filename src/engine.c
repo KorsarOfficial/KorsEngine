@@ -129,3 +129,7 @@ void EngineInitSystem(int width, int height, const char* name){
 void EngineFixedCursorCenter(){
     glfwSetCursorPos(e_window, WIDTH / 2, HEIGHT / 2);
 }
+
+void EngineGetCursorPos(double *xpos, double *ypos){
+    glfwGetCursorPos(e_window, xpos, ypos);
+}
