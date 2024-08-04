@@ -117,3 +117,5 @@ void EngineInitVulkan(){
 
 e_var_lights = calloc(0, sizeof(LightObject *));
 e_var_num_lights = num_dir_shadows = num_point_shadows = num_spot_shadows = 0;
+
+e_var_images = calloc(MAX_IMAGES, sizeof(engine_buffered_image));
