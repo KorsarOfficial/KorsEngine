@@ -133,3 +133,14 @@ void EngineFixedCursorCenter(){
 void EngineGetCursorPos(double *xpos, double *ypos){
     glfwGetCursorPos(e_window, xpos, ypos);
 }
+
+void EngineSetCursorPos(float xpos, float ypos){
+    glfwSetCursorPos(e_window, xpos, ypos);
+}
+
+
+
+
+
+
+
