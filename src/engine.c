@@ -206,6 +206,8 @@ void EngineSetCharCallback(void *callback){
     charCallbacks[charCallbackSize - 1] = (e_charCallback *)callback;
 }
 
-
+void EngineSetCursorPoscallback(void * callback){
+    glfwSetCursorPosCallback(e_window, callback);
+}
 
 
