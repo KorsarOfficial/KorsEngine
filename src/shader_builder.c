@@ -284,3 +284,5 @@ uint32_t ShaderBuilderAddStruct(ShaderBuilder *builder, ShaderStructConstr *stru
                  break;
          }
     }
+
+    ShaderVariable *variable = &builder->variables[builder->num_variables];
