@@ -245,3 +245,10 @@ void EnginereRecreateSwapChain() {
         glfwGetFramebufferSize(e_window, &WIDTH, &HEIGHT);
         glfwWaitEvents();
     }
+
+    if(RecreateFunc != NULL)
+    {
+        void (*reZero)(void) = RecreateFunc;
+
+        reZero();
+    }
