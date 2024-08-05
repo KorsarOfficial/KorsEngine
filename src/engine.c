@@ -236,3 +236,12 @@ void EngineCleanupSwapChain() {
     vkDestroySwapchainKHR(e_device, swapChain, NULL);
 
 }
+
+void EnginereRecreateSwapChain() {
+
+    glfwGetFramebufferSize(e_window, &WIDTH, &HEIGHT);
+
+    while (WIDTH == 0 || HEIGHT == 0) {
+        glfwGetFramebufferSize(e_window, &WIDTH, &HEIGHT);
+        glfwWaitEvents();
+    }
