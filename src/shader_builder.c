@@ -286,3 +286,5 @@ uint32_t ShaderBuilderAddStruct(ShaderBuilder *builder, ShaderStructConstr *stru
     }
 
     ShaderVariable *variable = &builder->variables[builder->num_variables];
+
+    memcpy(variable->args, elem_indx, sizeof(uint32_t) * count);
