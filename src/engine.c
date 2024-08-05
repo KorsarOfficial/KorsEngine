@@ -182,3 +182,8 @@ void EngineDeviceWaitIdle(){
     vkDeviceWaitIdle(e_device);
 }
 
+int EngineGetKeyPress(int Key){
+    int res = glfwGetKey(e_window, Key);
+
+    return res;
+}
