@@ -294,3 +294,13 @@ uint32_t ShaderBuilderAddStruct(ShaderBuilder *builder, ShaderStructConstr *stru
     variable->num_args = count;
     variable->num_values = 0;
     variable->flags = 0;
+
+    uint32_t len = strlen(name);
+
+    memcpy(builder->infos[builder->num_debug_infos].name, name, len);
+    builder->infos[builder->num_debug_infos].indx = builder->current_index + 1;
+
+    for(int i=0;i < count;i++){
+        len = strlen(struct_arr[i].name);
+        memcpy(builder->infos[builder->num_debug_infos].child_name[i], struct_arr[i].name, len);
+    }
