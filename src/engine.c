@@ -187,3 +187,15 @@ int EngineGetKeyPress(int Key){
 
     return res;
 }
+
+void EngineSetMouseKeyCallback(void *callback){
+    glfwSetMouseButtonCallback(e_window, callback);
+}
+
+
+
+
+
+
+
+
