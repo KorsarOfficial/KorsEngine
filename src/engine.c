@@ -286,3 +286,9 @@ void EnginereRecreateSwapChain() {
     framebufferwasResized = true;
 
 }
+
+void EngineCreateSyncobjects() {
+    imageAvailableSemaphores = (VkSemaphore *) calloc(MAX_FRAMES_IN_FLIGHT, sizeof(VkSemaphore));
+    renderFinishedSemaphores = (VkSemaphore *) calloc(MAX_FRAMES_IN_FLIGHT, sizeof(VkSemaphore));
+    inFlightFences = (VkFence *) calloc(MAX_FRAMES_IN_FLIGHT, sizeof(VkFence));
+    imagesInFlight = (VkFence *) calloc(imagesCount, sizeof(VkFence));
