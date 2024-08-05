@@ -174,7 +174,9 @@ void EngineSetClipBoardString(const char *string){
     glfwSetClipboardString( e_window, string);
 }
 
-
+void EnginePoolEvents(){
+    glfwPollEvents();
+}
 
 
 
