@@ -192,7 +192,12 @@ void EngineSetMouseKeyCallback(void *callback){
     glfwSetMouseButtonCallback(e_window, callback);
 }
 
+void EngineSetKeyCallback(void *callback){
+    keyCallbackSize ++;
 
+    keyCallbacks = (e_keyCallback *)realloc(keyCallbacks, keyCallbackSize * sizeof(e_keyCallback));
+    keyCallbacks[keyCallbackSize - 1] = (e_keyCallback *)callback;
+}
 
 
 
