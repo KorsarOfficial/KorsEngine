@@ -266,3 +266,4 @@ void EnginereRecreateSwapChain() {
     }
 
     SwapChainCreate();
+    SwapChainCreateImageViews();
