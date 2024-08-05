@@ -269,3 +269,8 @@ void EnginereRecreateSwapChain() {
     SwapChainCreateImageViews();
     PipelineCreateRenderPass();
     ToolsCreateDepthResources();
+
+    for(int i=0;i < renderItems.size;i++)
+    {
+        RenderTextureRecreate(renderItems.objects[i]);
+    }
