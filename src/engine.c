@@ -255,3 +255,12 @@ void EnginereRecreateSwapChain() {
 
     diffSize.x =  1;
     diffSize.y =  1;
+
+    vkDeviceWaitIdle(e_device);
+
+    EngineCleanupSwapChain();
+
+    for(int i=0; i < drawItems.size;i++)
+    {
+        GameObjectClean(drawItems.objects[i]);
+    }
