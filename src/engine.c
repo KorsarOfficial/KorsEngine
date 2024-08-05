@@ -217,7 +217,7 @@ void EngineSetRecreateFunc(void *func){
 void EngineCleanupSwapChain() {
 
     vkDestroyImageView(e_device, depthImageView, NULL);
-
+    vkDestroyImage(e_device, depthImage, NULL);
 
 
 
