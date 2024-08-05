@@ -213,3 +213,15 @@ void EngineSetCursorPoscallback(void * callback){
 void EngineSetRecreateFunc(void *func){
     RecreateFunc = func;
 }
+
+void EngineCleanupSwapChain() {
+
+    vkDestroyImageView(e_device, depthImageView, NULL);
+
+
+
+
+
+
+
+
