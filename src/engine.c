@@ -264,3 +264,5 @@ void EnginereRecreateSwapChain() {
     {
         GameObjectClean(drawItems.objects[i]);
     }
+
+    SwapChainCreate();
