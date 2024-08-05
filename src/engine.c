@@ -268,3 +268,4 @@ void EnginereRecreateSwapChain() {
     SwapChainCreate();
     SwapChainCreateImageViews();
     PipelineCreateRenderPass();
+    ToolsCreateDepthResources();
