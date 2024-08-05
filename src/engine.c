@@ -199,7 +199,12 @@ void EngineSetKeyCallback(void *callback){
     keyCallbacks[keyCallbackSize - 1] = (e_keyCallback *)callback;
 }
 
+void EngineSetCharCallback(void *callback){
+    charCallbackSize ++;
 
+    charCallbacks = (e_charCallback *)realloc(charCallbacks, charCallbackSize * sizeof(e_charCallback));
+    charCallbacks[charCallbackSize - 1] = (e_charCallback *)callback;
+}
 
 
 
