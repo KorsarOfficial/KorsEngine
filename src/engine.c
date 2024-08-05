@@ -210,4 +210,6 @@ void EngineSetCursorPoscallback(void * callback){
     glfwSetCursorPosCallback(e_window, callback);
 }
 
-
+void EngineSetRecreateFunc(void *func){
+    RecreateFunc = func;
+}
