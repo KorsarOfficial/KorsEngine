@@ -220,7 +220,9 @@ void EngineCleanupSwapChain() {
     vkDestroyImage(e_device, depthImage, NULL);
     vkFreeMemory(e_device, depthImageMemory, NULL);
 
-
+    vkFreeCommandBuffers(e_device, commandPool, imagesCount, commandBuffers);
+    free(commandBuffers);
+    commandBuffers = NULL;
 
 
 
