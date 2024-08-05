@@ -224,6 +224,6 @@ void EngineCleanupSwapChain() {
     free(commandBuffers);
     commandBuffers = NULL;
 
-
+    vkDestroyRenderPass(e_device, renderPass, NULL);
 
 
