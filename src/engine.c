@@ -178,5 +178,7 @@ void EnginePoolEvents(){
     glfwPollEvents();
 }
 
-
+void EngineDeviceWaitIdle(){
+    vkDeviceWaitIdle(e_device);
+}
 
