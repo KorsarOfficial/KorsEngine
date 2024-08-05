@@ -229,3 +229,10 @@ void EngineCleanupSwapChain() {
     for (size_t i = 0; i < imagesCount; i++) {
         vkDestroyImageView(e_device, swapChainImageViews[i], NULL);
     }
+    free(swapChainImages);
+    free(swapChainImageViews);
+    swapChainImageViews = NULL;
+
+    vkDestroySwapchainKHR(e_device, swapChain, NULL);
+
+}
