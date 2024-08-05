@@ -252,3 +252,6 @@ void EnginereRecreateSwapChain() {
 
         reZero();
     }
+
+    diffSize.x =  1;
+    diffSize.y =  1;
