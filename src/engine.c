@@ -218,7 +218,7 @@ void EngineCleanupSwapChain() {
 
     vkDestroyImageView(e_device, depthImageView, NULL);
     vkDestroyImage(e_device, depthImage, NULL);
-
+    vkFreeMemory(e_device, depthImageMemory, NULL);
 
 
 
