@@ -274,3 +274,8 @@ void EnginereRecreateSwapChain() {
     {
         RenderTextureRecreate(renderItems.objects[i]);
     }
+
+    for(int i=0; i < drawItems.size;i++)
+    {
+        GameObjectRecreate(drawItems.objects[i]);
+    }
