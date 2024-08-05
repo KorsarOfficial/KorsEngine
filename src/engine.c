@@ -270,6 +270,7 @@ void EnginereRecreateSwapChain() {
     PipelineCreateRenderPass();
     ToolsCreateDepthResources();
 
+
     for(int i=0;i < renderItems.size;i++)
     {
         RenderTextureRecreate(renderItems.objects[i]);
@@ -279,3 +280,9 @@ void EnginereRecreateSwapChain() {
     {
         GameObjectRecreate(drawItems.objects[i]);
     }
+
+    BuffersCreateCommand();
+
+    framebufferwasResized = true;
+
+}
