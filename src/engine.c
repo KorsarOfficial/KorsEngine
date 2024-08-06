@@ -341,3 +341,4 @@ void EngineAcceptShadow(void *shadow, uint32_t count, uint32_t shadow_type)
     for(int i=0;i < count;i++)
         array[i] = &renders[i];
 }
+
