@@ -56,4 +56,7 @@ const char** getRequiredExtensions(){
 
 }
 
-void initWindow()
+void initWindow(){
+
+    glfwInit();
+}
