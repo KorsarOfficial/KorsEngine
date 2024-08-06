@@ -299,3 +299,16 @@ void EngineCreateSyncobjects() {
     VkFenceCreateInfo fenceInfo = {};
     fenceInfo.sType = VK_STRUCTURE_TYPE_FENCE_CREATE_INFO;
     fenceInfo.flags = VK_FENCE_CREATE_SIGNALED_BIT;
+
+    for(int i=0;i < imagesCount; i++)
+        imagesInFlight[i] = VK_NULL_HANDLE;
+
+    for (int i = 0; i < MAX_FRAMES_IN_FLIGHT; i++) {
+        if (vkCreateSemaphore(e_device, &semaphoreInfo, NULL, &imageAvailableSemaphores[i]) != VK_SUCCESS ||
+                vkCreateSemaphore(e_device, &semaphoreInfo, NULL, &renderFinishedSemaphores[i]) != VK_SUCCESS ||
+                vkCreateFence(e_device, &fenceInfo, NULL, &inFlightFences[i]) != VK_SUCCESS) {
+            printf("failed to create synchronization objects for a frame!");
+            exit(1);
+        }
+    }
+}
