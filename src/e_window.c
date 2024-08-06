@@ -62,4 +62,8 @@ void initWindow(){
 
     glfwWindowHint(GLFW_CLIENT_API,  GLFW_NO_API);
     glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
+
+    e_window = glfwCreateWindow(WIDTH, HEIGHT, app_name, NULL, NULL);
+
+    glfwSetFramebufferSizeCallback(e_window, framebufferResizeCallback);
 }
