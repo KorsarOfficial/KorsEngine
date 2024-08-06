@@ -43,3 +43,9 @@ const char** getRequiredExtensions()
 const char** extensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
 
 memcpy(glfwExtensions, extensions, sizeof(char *) * glfwExtensionCount);
+
+if(enableValidationLayers){
+        glfwExtensionCount ++;
+        realloc(glfwExtensions, sizeof(const char*) * glfwExtensionCount);
+        glfwExtensions[glfwExtensionCount - 1] = VK_EXT_DEBUG_UTILS_EXTENSION_NAME;
+    }
