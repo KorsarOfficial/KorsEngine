@@ -31,3 +31,9 @@ bool checkValidationLayerSupport(){
         if(!layerFound)
             return false;
     }
+
+    free(availableLayers);
+
+    return true;
+
+}
