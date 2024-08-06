@@ -314,3 +314,24 @@ void EngineCreateSyncobjects() {
 }
 
 void EngineAcceptShadow(void *shadow, uint32_t count, uint32_t shadow_type)
+
+{
+    RenderTexture **array;
+
+    switch(shadow_type){
+        case ENGINE_SHADOW_TYPE_DIRECTIONAL :
+            dir_shadow_array = calloc(count, sizeof(RenderTexture *));
+            array = dir_shadow_array;
+            num_dir_shadows = count;
+            break;
+        case ENGINE_SHADOW_TYPE_POINT :
+            point_shadow_array = calloc(count, sizeof(RenderTexture *));
+            array = point_shadow_array;
+            num_point_shadows = count;
+            break;
+        case ENGINE_SHADOW_TYPE_SPOT :
+            spot_shadow_array = calloc(count, sizeof(RenderTexture *));
+            array = spot_shadow_array;
+            num_spot_shadows = count;
+            break;
+    }
