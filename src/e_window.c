@@ -6,4 +6,11 @@
 #include "e_resource_data.h"
 #include "e_resource_engine.h"
 
-bool checkValidationLayerSupport()
+bool checkValidationLayerSupport(){
+    uint32_t layerCount;
+    vkEnumerateInstanceLayerProperties(&layerCount, NULL);
+
+    VkLayerProperties* availableLayers = (VkLayerProperties*) malloc(layerCount * sizeof(VkLayerProperties));
+    vkEnumerateInstanceLayerProperties(&layerCount, availableLayers);
+
+    bool layerFound;
