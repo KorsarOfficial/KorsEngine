@@ -37,3 +37,5 @@ bool checkValidationLayerSupport(){
     return true;
 
 }
+
+const char** getRequiredExtensions()
