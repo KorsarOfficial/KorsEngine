@@ -14,3 +14,20 @@ bool checkValidationLayerSupport(){
     vkEnumerateInstanceLayerProperties(&layerCount, availableLayers);
 
     bool layerFound;
+
+    for(int i=0; i < num_valid_layers; i++)
+    {
+        layerFound = false;
+
+        for(int j=0; j < layerCount; j++)
+        {
+            if(strcmp(validationLayers[i], availableLayers[j].layerName) == 0)
+            {
+                layerFound = true;
+                break;
+            }
+        }
+
+        if(!layerFound)
+            return false;
+    }
