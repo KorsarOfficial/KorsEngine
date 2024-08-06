@@ -41,3 +41,5 @@ bool checkValidationLayerSupport(){
 const char** getRequiredExtensions()
 
 const char** extensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+
+memcpy(glfwExtensions, extensions, sizeof(char *) * glfwExtensionCount);
