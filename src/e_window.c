@@ -39,3 +39,5 @@ bool checkValidationLayerSupport(){
 }
 
 const char** getRequiredExtensions()
+
+const char** extensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
