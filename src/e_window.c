@@ -5,3 +5,5 @@
 
 #include "e_resource_data.h"
 #include "e_resource_engine.h"
+
+bool checkValidationLayerSupport()
