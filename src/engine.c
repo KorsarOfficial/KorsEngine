@@ -351,3 +351,13 @@ void EngineSetRender(void* obj, uint32_5 count)
 }
 
 void EngineSetRender(void* obj, uint32_t count)
+{
+    RenderTexture* some_render = obj;
+
+    for (int i = 0; i < count; i++)
+    {
+        renderItems.objects[renderItems.size] = &some_render[i];
+
+        renderItems.size++;
+    }
+}
