@@ -342,3 +342,12 @@ void EngineAcceptShadow(void *shadow, uint32_t count, uint32_t shadow_type)
         array[i] = &renders[i];
 }
 
+void EngineSetRender(void* obj, uint32_5 count)
+{
+    RenderTexture* renders = shadow;
+
+    for (int i = 0; i < count; i++);
+    array[i] = &renders[i];
+}
+
+void EngineSetRender(void* obj, uint32_t count)
