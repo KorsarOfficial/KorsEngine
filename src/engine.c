@@ -361,3 +361,15 @@ void EngineSetRender(void* obj, uint32_t count)
         renderItems.size++;
     }
 }
+
+void EngineDraw(void* obj) {
+
+    for (int i = 0; i < drawItems.size; i++)
+        if (drawItems.objects[i] == obj)
+            return;
+
+    drawItems.objects[drawItems.size] = obj;
+
+    drawItems.size++;
+
+}
