@@ -105,12 +105,14 @@ void EngineInitVulkan(){
 
 void EngineInitSystem(int width, int height, const char* name){
     strcpy(app_name, name);
-    
+
     WIDTH = width;
     HEIGHT = height;
 
     viewSize.x = WIDTH;
     viewSize.y = HEIGHT;
+
+    //rootDirPath = e_GetCurrectFilePath();
 
     alloc_buffers_memory_head = calloc(1, sizeof(ChildStack));
     alloc_descriptor_head = calloc(1, sizeof(ChildStack));
@@ -123,7 +125,6 @@ void EngineInitSystem(int width, int height, const char* name){
     glfwSetKeyCallback(e_window, EngineKeyCallback);
 
     e_var_current_entry = NULL;
-
 }
 
 void EngineFixedCursorCenter(){
@@ -314,7 +315,6 @@ void EngineCreateSyncobjects() {
 }
 
 void EngineAcceptShadow(void *shadow, uint32_t count, uint32_t shadow_type)
-
 {
     RenderTexture **array;
 
@@ -342,34 +342,248 @@ void EngineAcceptShadow(void *shadow, uint32_t count, uint32_t shadow_type)
         array[i] = &renders[i];
 }
 
-void EngineSetRender(void* obj, uint32_5 count)
+void EngineSetRender(void *obj, uint32_t count)
 {
-    RenderTexture* renders = shadow;
+    RenderTexture *some_render = obj;
 
-    for (int i = 0; i < count; i++);
-    array[i] = &renders[i];
-}
-
-void EngineSetRender(void* obj, uint32_t count)
-{
-    RenderTexture* some_render = obj;
-
-    for (int i = 0; i < count; i++)
+    for(int i=0;i < count; i++ )
     {
         renderItems.objects[renderItems.size] = &some_render[i];
 
-        renderItems.size++;
+        renderItems.size ++;
     }
 }
 
-void EngineDraw(void* obj) {
+void EngineDraw(void *obj){
 
-    for (int i = 0; i < drawItems.size; i++)
-        if (drawItems.objects[i] == obj)
+    for(int i=0; i < drawItems.size;i++)
+        if(drawItems.objects[i] == obj)
             return;
 
     drawItems.objects[drawItems.size] = obj;
 
-    drawItems.size++;
+    drawItems.size ++;
+
+}
+
+void EngineLoop(){
+
+    VkResult result = vkAcquireNextImageKHR(e_device, swapChain, UINT64_MAX, imageAvailableSemaphores[currentFrame], VK_NULL_HANDLE, &imageIndex);
+
+    if (result == VK_ERROR_OUT_OF_DATE_KHR && framebufferwasResized) {
+        EnginereRecreateSwapChain();
+        return 1;
+    } else if (result != VK_SUCCESS && result != VK_SUBOPTIMAL_KHR) {
+        printf("failed to acquire swap chain image!");
+        exit(1);
+    }
+
+    if (imagesInFlight[imageIndex] != VK_NULL_HANDLE) {
+        vkWaitForFences(e_device, 1, &imagesInFlight[imageIndex], VK_TRUE, UINT64_MAX);
+    }
+
+    imagesInFlight[imageIndex] = inFlightFences[currentFrame];
+
+    //vkResetCommandPool(e_device, commandPool, 0);
+
+    VkCommandBufferBeginInfo *beginInfo = calloc(1, sizeof(VkCommandBufferBeginInfo));
+    beginInfo->sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
+    //beginInfo->flags = VK_COMMAND_BUFFER_USAGE_SIMULTANEOUS_USE_BIT;
+
+    if(vkBeginCommandBuffer(commandBuffers[imageIndex], beginInfo) != VK_SUCCESS){
+        printf("failed begin command buffer\n");
+        exit(1);
+    }
+
+    free(beginInfo);
+
+    for(int i=0;i < renderItems.size;i++)
+    {
+        RenderTexture *render;
+        current_render = render = renderItems.objects[i];
+
+        if((render->flags & ENGINE_RENDER_FLAG_ONE_SHOT) && (render->flags & ENGINE_RENDER_FLAG_SHOOTED))
+            continue;
+
+        if(render->type & ENGINE_RENDER_TYPE_CUBEMAP)
+        {
+            for(int k=0;k < 6;k++)
+            {
+                RenderTextureSetCurrentFrame(current_render, k);
+
+                RenderTextureBeginRendering(current_render, commandBuffers[imageIndex]);
+
+                for(int l=0; l < drawItems.size;l++)
+                {
+                    GameObjectUpdate(drawItems.objects[l]);
+
+
+                    GameObjectDraw(drawItems.objects[l], commandBuffers[imageIndex]);
+
+                }
+
+                RenderTextureEndRendering(current_render, commandBuffers[imageIndex]);
+            }
+        }else{
+
+            RenderTextureBeginRendering(current_render, commandBuffers[imageIndex]);
+
+            for(int l=0; l < drawItems.size;l++)
+            {
+                GameObjectUpdate(drawItems.objects[l]);
+
+
+                GameObjectDraw(drawItems.objects[l], commandBuffers[imageIndex]);
+
+            }
+
+            RenderTextureEndRendering(current_render, commandBuffers[imageIndex]);
+        }
+
+
+    }
+
+    if (vkEndCommandBuffer(commandBuffers[imageIndex]) != VK_SUCCESS) {
+        printf("failed to record command buffer!");
+        exit(1);
+    }
+
+    VkSubmitInfo submitInfo = {};
+    submitInfo.sType = VK_STRUCTURE_TYPE_SUBMIT_INFO;
+
+    VkSemaphore waitSemaphores[] = {imageAvailableSemaphores[currentFrame]};
+    VkPipelineStageFlags waitStages[] = {VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT};
+    submitInfo.waitSemaphoreCount = 1;
+    submitInfo.pWaitSemaphores = waitSemaphores;
+    submitInfo.pWaitDstStageMask = waitStages;
+
+    submitInfo.commandBufferCount = 1;
+    submitInfo.pCommandBuffers = &commandBuffers[imageIndex];
+
+    VkSemaphore signalSemaphores[] = {renderFinishedSemaphores[currentFrame]};
+    submitInfo.signalSemaphoreCount = 1;
+    submitInfo.pSignalSemaphores = signalSemaphores;
+
+    vkResetFences(e_device, 1, &inFlightFences[currentFrame]);
+
+    if (vkQueueSubmit(graphicsQueue, 1, &submitInfo, inFlightFences[currentFrame]) != VK_SUCCESS) {
+        printf("failed to submit draw command buffer!");
+        exit(1);
+    }
+
+    VkPresentInfoKHR presentInfo = {};
+    presentInfo.sType = VK_STRUCTURE_TYPE_PRESENT_INFO_KHR;
+    presentInfo.waitSemaphoreCount = 1;
+    presentInfo.pWaitSemaphores = signalSemaphores;
+
+    VkSwapchainKHR swapChains[] = {swapChain};
+    presentInfo.swapchainCount = 1;
+    presentInfo.pSwapchains = swapChains;
+    presentInfo.pImageIndices = &imageIndex;
+
+    result = vkQueuePresentKHR(presentQueue, &presentInfo);
+
+    vkQueueWaitIdle(presentQueue);
+
+    if (result == VK_ERROR_OUT_OF_DATE_KHR || result == VK_SUBOPTIMAL_KHR || (framebufferResized && framebufferwasResized)) {
+        framebufferResized = false;
+        framebufferwasResized = false;
+        EnginereRecreateSwapChain();
+    } else if (result != VK_SUCCESS) {
+        printf("failed to present swap chain image!");
+        exit(1);
+    }
+
+    memset(&drawItems, 0, sizeof(EngineDrawItems));
+
+    for(int i=0; i < renderItems.size;i++)
+    {
+        RenderTexture *render = renderItems.objects[i];
+
+        if((render->flags & ENGINE_RENDER_FLAG_ONE_SHOT) && !(render->flags & ENGINE_RENDER_FLAG_SHOOTED))
+            render->flags |= ENGINE_RENDER_FLAG_SHOOTED;
+    }
+
+    memset(&renderItems, 0, sizeof(EngineRenderItems));
+
+    currentFrame = (currentFrame + 1) % MAX_FRAMES_IN_FLIGHT;
+
+    free(e_var_lights);
+    e_var_lights = calloc(0, sizeof(LightObject *));
+    e_var_num_lights = 0;
+}
+
+void EngineCleanUp(){
+
+    vkDeviceWaitIdle(e_device);
+
+    EngineCleanupSwapChain();
+
+    for (size_t i = 0; i < MAX_FRAMES_IN_FLIGHT; i++) {
+        vkDestroySemaphore(e_device, renderFinishedSemaphores[i], NULL);
+        vkDestroySemaphore(e_device, imageAvailableSemaphores[i], NULL);
+        vkDestroyFence(e_device, inFlightFences[i], NULL);
+    }
+
+    free(renderFinishedSemaphores);
+    free(imageAvailableSemaphores);
+    free(inFlightFences);
+    free(imagesInFlight);
+
+    vkDestroyCommandPool(e_device, commandPool, NULL);
+
+
+    if(e_var_num_fonts > 0)
+    {
+        FontCache *fonts = e_var_fonts;
+
+        for(int i=0; i < e_var_num_fonts;i++)
+        {
+            free(fonts[i].cdata);
+            free(fonts[i].info);
+            ImageDestroyTexture(fonts[i].texture);
+            free(fonts[i].texture);
+        }
+    }
+
+    free(e_var_fonts);
+    e_var_fonts = NULL;
+
+    if(e_var_num_images > 0)
+    {
+        engine_buffered_image *images = e_var_images;
+
+        for(int i=0; i < e_var_num_images;i++)
+        {
+            ImageDestroyTexture(&images[i].texture);
+        }
+    }
+
+    free(e_var_images);
+    e_var_images = NULL;
+
+    if(e_var_num_lights > 0)
+    {
+        free(e_var_lights);
+        e_var_lights = NULL;
+        e_var_num_lights = 0;
+    }
+
+    BuffersClearAll();
+    DescriptorClearAll();
+    PipelineClearAll();
+
+    vkDestroyDevice(e_device, NULL);
+
+    if (enableValidationLayers) {
+        DestroyDebugUtilsMessengerEXT(instance, debugMessenger, NULL);
+    }
+
+    vkDestroySurfaceKHR(instance, surface, NULL);
+    vkDestroyInstance(instance, NULL);
+
+    glfwDestroyWindow(e_window);
+
+    glfwTerminate();
 
 }
